@@ -30,16 +30,14 @@ h6 {
   font-family: "Nunito", sans-serif;
 }
 /* custom */
-.h-custom {
-height: calc(100% - 73px);
-}
-@media (max-width: 450px) {
-  .h-custom {
-  height: 100%;
-  }
-}
 .login-custom {
   background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 8%;
 }
 .login-custom button {
   color: white;
@@ -47,6 +45,24 @@ height: calc(100% - 73px);
   padding-right: 2.5rem;
   background-color: #012970;
 }
+
+.logo-login {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+.logo-login {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
 /* custom */
 
 /*--------------------------------------------------------------

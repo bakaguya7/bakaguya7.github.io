@@ -34,40 +34,42 @@
 <body>
 
   <main>
-      <div class="container-fluid login-custom">
+    <div class="container-fluid login-custom">
+      <section class="container">
+            <div class="row d-flex justify-content-center text-center">
+              <div class="col-md-8 mb-3">
+                <h1 class="">SMA NEGERI 1 YOGYAKARTA</h1>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center">
+              <div class="col-8 col-lg-6 col-xl-4 offset-xl-1-1">
+                <img src="img/lg.png"
+                class="logo-login" alt="Sample image" width="350px">
+              </div>
+              <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                <form>
+                  <!-- Username input -->
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example3">Username</label>
+                    <input type="text" id="form3Example3" class="form-control form-control-lg"
+                      placeholder="Masukkan username anda" />
+                  </div>
 
-      <section class="vh-100 container">
-        <div class="container-fluid h-custom">
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-md-9 col-lg-6 col-xl-5">
-            <img src="img/lg.png"
-            class="img-fluid" alt="Sample image" width="400px">
-          </div>
-        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-        <form>
-          <!-- Email input -->
-          <div class="form-outline mb-4">
-            <label class="form-label" for="form3Example3">Username</label>
-            <input type="text" id="form3Example3" class="form-control form-control-lg"
-              placeholder="Masukkan username anda" />
-          </div>
+                  <!-- Password input -->
+                  <div class="form-outline mb-3">
+                    <label class="form-label" for="form3Example4">Password</label>
+                    <input type="password" id="form3Example4" class="form-control form-control-lg"
+                      placeholder="Enter password" />
+                  </div>
 
-          <!-- Password input -->
-          <div class="form-outline mb-3">
-            <label class="form-label" for="form3Example4">Password</label>
-            <input type="password" id="form3Example4" class="form-control form-control-lg"
-              placeholder="Enter password" />
-          </div>
+                  <div class="text-center text-lg-start mt-4 pt-2">
+                    <button type="button" class="btn btn-lg">Login</button>
+                  </div>
 
-          <div class="text-center text-lg-start mt-4 pt-2">
-            <button type="button" class="btn btn-lg">Login</button>
-          </div>
-
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
+                </form>
+              </div>
+            </div>
+      </section>
 
     </div>
   </main><!-- End #main -->
