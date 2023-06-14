@@ -173,6 +173,12 @@ Route::get('/login-siswa', function () {
     ]);
 });
 
+// 
+Route::get('/landing-siswa', function () {
+    return view('layout.landing-siswa', [
+        "title" => "Landing Siswa"
+    ]);
+});
 
 
 
