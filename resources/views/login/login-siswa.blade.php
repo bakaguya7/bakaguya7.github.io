@@ -47,7 +47,7 @@
                 class="logo-login" alt="Sample image" width="350px">
               </div>
               <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                <form>
+                <form action="/landing-siswa">
                   <!-- Username input -->
                   <div class="form-outline mb-4">
                     <label class="form-label" for="form3Example3">Username</label>
