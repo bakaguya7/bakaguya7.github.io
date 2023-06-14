@@ -41,11 +41,13 @@
                 <h1 class="">SMA NEGERI 1 YOGYAKARTA</h1>
               </div>
             </div>
+
             <div class="row d-flex justify-content-center align-items-center">
               <div class="col-8 col-lg-6 col-xl-4 offset-xl-1-1">
                 <img src="img/lg.png"
                 class="logo-login" alt="Sample image" width="350px">
               </div>
+              
               <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
                 <form action="/landing-siswa">
                   <!-- Username input -->
