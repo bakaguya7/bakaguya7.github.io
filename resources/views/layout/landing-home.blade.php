@@ -25,6 +25,7 @@
   <link href="vendor-home/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="vendor-home/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+
   <!-- Variables CSS Files. Uncomment your preferred color scheme -->
   <link href="css/variables.css" rel="stylesheet">
 
@@ -36,7 +37,7 @@
 <body>
 
 <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top" data-scrollto-offset="0">
+  <header id="header" class="header fixed-top d-flex mb-10" data-scrollto-offset="0">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
         <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
@@ -51,7 +52,7 @@
           <li><a class="nav-link scrollto" href="index.html#services">Jurusan</a></li>
           <li class="dropdown"><a href="#"><span>Program Sekolah</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="#">Pembangunan</a></li>
+              <li><a href="/blog-pembangunan">Pembangunan</a></li>
               <li><a href="#">Program Praktikum</a></li>
               <li><a href="#">Program Lomba</a></li>
               <li><a href="#">Kunjungan Industri</a></li>
@@ -63,7 +64,7 @@
           <li class="dropdown btn-getstarted"><a href="#login"><span>LOGIN</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="/dashboard">Login Sebagai Guru</a></li>
-              <li><a href="/login-siswa">Login Sebagai Siswa</a></li>
+              <li><a href="/loginsiswa">Login Sebagai Siswa</a></li>
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
@@ -89,7 +90,7 @@
         <div class="row">
           <div class="col-lg-5 col-md-2" >
             <div class="footer-info">
-              <h3>SMA NEGER1 YOGYAKARTA</h3>
+              <h3>SMA NEGERI 1 YOGYAKARTA</h3>
               <p>
                 Abdul Khoir <br>
                 pasar concat, Sleman<br><br>

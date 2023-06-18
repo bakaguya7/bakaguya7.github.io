@@ -1,16 +1,16 @@
 @extends('layout.landing')
 
 <!-- ======= BAGIAN PAGES ======= -->
-  @section('main-home')
+  @section('main')
     <main id="main" class="main">
       <!-- page -->
       <div class="pagetitle">
-      <h1>Pembayaran</h1>
+      <h1>Data pembayaran siswa</h1>
       <nav>
       <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-              <li class="breadcrumb-item">Data Siswa</li>
-              <li class="breadcrumb-item active">Pembayaran</li>
+              <li class="breadcrumb-item">Supervisor</li>
+              <li class="breadcrumb-item active">Data Pembayaran Siswa</li>
           </ol>
       </nav>
       </div>

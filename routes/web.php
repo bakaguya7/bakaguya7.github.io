@@ -1,6 +1,20 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SessionController;
+
+
+// Route::group(['middleware' => 'web'], function () {
+//     //
+// });
+
+Route::get('/token', function (Request $request) {
+    $token = $request->session()->token();
+ 
+    $token = csrf_token();
+ 
+    // ...
+});
 
 //############################################################
 // Route HOME
@@ -167,8 +181,8 @@ Route::get('/login-guru', function () {
 });
 
 // Login siswa
-Route::get('/login-siswa', function () {
-    return view('login.login-siswa', [
+Route::get('/loginsiswa', function () {
+    return view('login.loginsiswa', [
         "title" => "Login"
     ]);
 });
@@ -179,6 +193,51 @@ Route::get('/landing-siswa', function () {
         "title" => "Landing Siswa"
     ]);
 });
+
+Route::get('/data-pembayaran', function () {
+    return view('supervisor.data-pembayaran', [
+        "title" => "Data Pembayaran Siswa"
+    ]);
+});
+
+Route::get('/hak-akses', function () {
+    return view('supervisor.hak-akses', [
+        "title" => "Hak Akses"
+    ]);
+});
+
+Route::get('/create-siswa-account', function () {
+    return view('supervisor.create-siswa-account', [
+        "title" => "Create Siswa Acccount"
+    ]);
+});
+
+Route::get('/buat-data-guru', function () {
+    return view('dataguru.create-data-guru', [
+        "title" => "Buat Data Guru"
+    ]);
+});
+
+Route::get('/blog-pembangunan', function () {
+    return view('programsekolah.pembangunan', [
+        "title" => "Pembangunan"
+    ]);
+});
+
+
+
+
+
+
+// Route::get('/login/example', function () {
+//     return view('login.example', [
+//         "title" => "Cuontoh"
+//     ]);
+// });
+
+Route::get('/login', [SessionController::class, 'index']);
+// Route::post('/login/siswa', [SessionController::class, 'login']);
+Route::post('/login/siswa', [SessionController::class, 'login']);
 
 
 

@@ -34,6 +34,8 @@
   <!-- Template Main CSS File -->
  <link rel="stylesheet" href="css/style.css">
 <!-- END CSS Files -->
+  <script src="js/jquery.js"></script>
+  
 </head>
 
 <body>
@@ -190,6 +192,29 @@
           <i class="bi bi-person"></i>
           <span>Profile</span>
         </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#comps" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>Supervisor</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="comps" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="/data-pembayaran">
+              <i class="bi bi-circle"></i><span>Data Pembayaran</span>
+            </a>
+          </li>
+          <li>
+            <a href="/hak-akses">
+              <i class="bi bi-circle"></i><span>Hak Akses Guru</span>
+            </a>
+          </li>
+          <li>
+            <a href="/gaji-guru">
+              <i class="bi bi-circle"></i><span>Gaji Guru</span>
+            </a>
+          </li>
+        </ul>
       </li>
 
       <!-- Bagian Login -->
