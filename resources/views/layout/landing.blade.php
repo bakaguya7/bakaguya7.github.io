@@ -30,15 +30,15 @@
 <body>
 
 <!-- ======= BAGIAN HEADER ======= -->
-  <header id="header" class="header fixed-top d-flex align-items-center hcolor-custom">
+  <header id="header" class="header fixed-top d-flex align-items-center header-custom hcolor-custom">
 
     <i class="bi bi-list toggle-sidebar-btn"></i>
 
     {{-- logo --}}
     <div class="d-flex align-items-center p-5">
       <a href="/dashboard" class="d-flex logo align-items-center">
-        <img class="logo" src="img/lg.png" alt="">
-        <span class="judul d-none d-lg-block p-2">DASHBOARD GURU</span>
+        <img class="" src="img/lg.png" alt="">
+        <span class="judul p-2">DASHBOARD GURU</span>
       </a>
     </div>
     {{-- end logo --}}
