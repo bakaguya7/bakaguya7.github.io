@@ -19,23 +19,23 @@
             <div class="container bg-white rounded-3">
                 <div class="row">
                     <div class="mb-3">
-                        <label for="ExampleUploadMateri1" class="form-label">Jadwal Pelajaran MIPA Tahun Ajaran
+                        <label for="ExampleJadwalMIPA" class="form-label">Jadwal Pelajaran Jurusan MIPA Tahun Ajaran
                             2023/2024</label>
-                        <div class="badge bg-primary text-wrap" style="width: 6rem;">
+                        <div class="badge bg-primary text-wrap" style="width: 6rem;" type="button">
                             Download
                         </div>
                     </div>
                     <div class="mb-3">
-                      <label for="ExampleUploadMateri1" class="form-label">Jadwal Pelajaran IPS Tahun Ajaran
+                      <label for="ExampleJadwalIPS" class="form-label">Jadwal Pelajaran Jurusan IPS Tahun Ajaran
                           2023/2024</label>
-                      <div class="badge bg-primary text-wrap" style="width: 6rem;">
+                      <div class="badge bg-primary text-wrap" style="width: 6rem;" type="button">
                           Download
                       </div>
                   </div>
                   <div class="mb-3">
-                    <label for="ExampleUploadMateri1" class="form-label">Jadwal Pelajaran Sastra Tahun Ajaran
+                    <label for="ExampleJadwalSastra" class="form-label">Jadwal Pelajaran Jurusan Sastra Tahun Ajaran
                         2023/2024</label>
-                    <div class="badge bg-primary text-wrap" style="width: 6rem;">
+                    <div class="badge bg-primary text-wrap" style="width: 6rem;" type="button">
                         Download
                     </div>
                 </div>
