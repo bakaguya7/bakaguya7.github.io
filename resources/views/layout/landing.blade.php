@@ -118,18 +118,8 @@
               </a>
             </li>
             <li>
-              <a href="/wali-siswa" class="{{ ( $title === "Data Wali Siswa") ? 'active' : '' }}">
+              <a href="/data-wali-siswa" class="{{ ( $title === "Data Wali Siswa") ? 'active' : '' }}">
                 <i class="bi bi-circle"></i><span>Data Wali Siswa</span>
-              </a>
-            </li>
-            <li>
-              <a href="/pembayaran" class="{{ ( $title === "Data Pembayaran") ? 'active' : '' }}">
-                <i class="bi bi-circle"></i><span>Data Pembayaran</span>
-              </a>
-            </li>
-            <li>
-              <a href="/data-kelas"class="{{ ( $title === "Data Kelas") ? 'active' : '' }}">
-                <i class="bi bi-circle"></i><span>Data Kelas</span>
               </a>
             </li>
           </ul>

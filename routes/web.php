@@ -230,6 +230,18 @@ Route::get('/buat-data-siswa', function () {
     ]);
 });
 
+Route::get('/data-wali-siswa', function () {
+    return view('datasiswa.wali-siswa', [
+        "title" => "Data Wali Siswa"
+    ]);
+});
+
+Route::get('/buat-data-walisiswa', function () {
+    return view('datasiswa.create-data-wali', [
+        "title" => "Buat Data Wali Siswa"
+    ]);
+});
+
 
 
 

@@ -537,6 +537,15 @@ table.table td .add {
   font-family: "Nunito", sans-serif;
 }
 
+.logo img {
+  max-height: 40px;
+  margin-right: 6px;
+  border-width: 1px;
+  border-style: groove;
+  border-radius: 100%;
+  border-color: rgb(255, 255, 255);
+}
+
 .header {
   transition: all 0.5s;
   z-index: 997;
