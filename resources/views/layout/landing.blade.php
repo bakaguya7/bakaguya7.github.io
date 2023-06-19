@@ -129,16 +129,6 @@
               <i class="bi bi-circle"></i><span>Data Wali Siswa</span>
             </a>
           </li>
-          <li>
-            <a href="/pembayaran">
-              <i class="bi bi-circle"></i><span>Data Pembayaran</span>
-            </a>
-          </li>
-          <li>
-            <a href="/data-kelas">
-              <i class="bi bi-circle"></i><span>Data Kelas</span>
-            </a>
-          </li>
         </ul>
       </li>
             
