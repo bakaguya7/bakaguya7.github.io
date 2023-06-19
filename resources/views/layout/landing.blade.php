@@ -98,7 +98,7 @@
             </li>
             <li>
               <a href="/mapel" class="{{ ( $title === "Data Mapel") ? 'active' : '' }}">
-                <i class="bi bi-circle"></i><span>Data Mapel</span>
+                <i class="bi bi-circle"></i><span>Data mapel</span>
               </a>
             </li>
           </ul>
