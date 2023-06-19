@@ -185,6 +185,10 @@ table.table td .add {
   background-color: #513483 !important;
 }
 
+.dropdown-custom li a span, .dropdown-custom li a i {
+  color: white;
+}
+
 /* custom */
 
 /*--------------------------------------------------------------
