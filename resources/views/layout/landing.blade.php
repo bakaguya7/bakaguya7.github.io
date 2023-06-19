@@ -107,7 +107,7 @@
           </li>
           <li>
             <a href="/mapel">
-              <i class="bi bi-circle"></i><span>Data Mapel</span>
+              <i class="bi bi-circle"></i><span>Data Materi</span>
             </a>
           </li>
         </ul>
