@@ -80,7 +80,7 @@
           data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
             <i class="bi bi-menu-button-wide"></i><span>Data Guru</span><i class="bi bi-chevron-down ms-auto"></i>
           </a>
-          <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <ul id="components-nav" class="nav-content collapse dropdown-custom" data-bs-parent="#sidebar-nav">
             <li>
               <a href="/data-guru" class="{{ ( $title === "Data Guru") ? 'active' : '' }}">  
                 <i class="bi bi-circle"></i><span>Data Guru</span>
@@ -111,7 +111,7 @@
           data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
             <i class="bi bi-journal-text"></i><span>Data Siswa</span><i class="bi bi-chevron-down ms-auto"></i>
           </a>
-          <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <ul id="forms-nav" class="nav-content collapse dropdown-custom" data-bs-parent="#sidebar-nav">
             <li>
               <a href="/data-siswa" class="{{ ( $title === "Data Siswa") ? 'active' : '' }}">
                 <i class="bi bi-circle"></i><span>Data Siswa</span>
@@ -142,7 +142,7 @@
           data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
             <i class="bi bi-bar-chart"></i><span>Program Sekolah</span><i class="bi bi-chevron-down ms-auto"></i>
           </a>
-          <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <ul id="charts-nav" class="nav-content collapse dropdown-custom" data-bs-parent="#sidebar-nav">
             <li>
               <a href="/pengembangan" class="{{ ( $title === "Pengembangan") ? 'active' : '' }}">
                 <i class="bi bi-circle"></i><span>Pengembangan</span>
