@@ -41,7 +41,7 @@
 <body>
 
 <!-- ======= BAGIAN HEADER ======= -->
-  <header id="header" class="header fixed-top d-flex align-items-center">
+  <header id="header" class="header fixed-top d-flex align-items-center hcolor-custom">
 
     <i class="bi bi-list toggle-sidebar-btn"></i>
 
@@ -67,7 +67,7 @@
 <!-- End HEADER -->
 
 <!-- ======= BAGIAN SIDEBAR ======= -->
-  <aside id="sidebar" class="sidebar">
+  <aside id="sidebar" class="sidebar hcolor-custom">
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
@@ -89,7 +89,7 @@
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-menu-button-wide"></i><span>Data Guru</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <ul id="components-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
           <li>
             <a href="/data-guru">
               <i class="bi bi-circle"></i><span>Data Guru</span>
