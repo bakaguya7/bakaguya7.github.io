@@ -181,6 +181,10 @@ table.table td .add {
   background-color: #513483 !important;
 }
 
+.header-custom {
+  border-bottom: 3px solid #a2aaa6e3;
+}
+
 .hcolor-custom ul li {
   background-color: #513483 !important;
 }
@@ -189,6 +193,10 @@ table.table td .add {
   color: white;
 }
 
+.judul {
+  font-size: 20px !important;
+  color: white !important;
+}
 /* custom */
 
 /*--------------------------------------------------------------
