@@ -224,6 +224,11 @@ Route::get('/blog-pembangunan', function () {
     ]);
 });
 
+Route::get('/buat-data-siswa', function () {
+    return view('datasiswa.create-data-siswa', [
+        "title" => "Buat Data Siswa"
+    ]);
+});
 
 
 

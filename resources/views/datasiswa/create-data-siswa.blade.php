@@ -5,12 +5,12 @@
 <main id="main" class="main">
       <!-- page -->
       <div class="pagetitle">
-      <h1>Data Guru</h1>
+      <h1>Data Siswa</h1>
       <nav>
       <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-              <li class="breadcrumb-item">Data Guru</li>
-              <li class="breadcrumb-item">Data Guru</li>
+              <li class="breadcrumb-item">Data Siswa</li>
+              <li class="breadcrumb-item">Data Siswa</li>
               <li class="breadcrumb-item active">Buat Data</li>
           </ol>
       </nav>
@@ -30,36 +30,36 @@
 + No. Telepon -->
                 <div class="col-6">
                     <div class="form-outline mb-4">
-                        <label class="form-label" for="nomorindukguru">Nomor Induk Guru</label>
-                        <input type="text" id="nomorindukguru" class="form-control form-control-sm"
-                            placeholder="00001" />
+                        <label class="form-label" for="nis">NIS</label>
+                        <input type="text" id="nis" class="form-control form-control-sm"
+                            placeholder="00101011" />
                     </div>
                     <div class="form-outline mb-4">
-                        <label class="form-label" for="pendidikan">Pendidikan</label>
-                        <input type="text" id="pendidikan" class="form-control form-control-sm"
-                            placeholder="S1 Teknik Tidur Ohio" />
+                        <label class="form-label" for="kelas">Kelas</label>
+                        <input type="text" id="kelas" class="form-control form-control-sm"
+                            placeholder="11B" />
                     </div>
                     <div class="form-outline mb-4">
-                        <label class="form-label" for="alamat">Alamat</label>
-                        <input type="text" id="alamat" class="form-control form-control-sm"
-                            placeholder="Jl. Bangkai No. 33" />
+                        <label class="form-label" for="noteleponsiswa">No. Telepon</label>
+                        <input type="text" id="noteleponsiswa" class="form-control form-control-sm"
+                            placeholder="082398887871" />
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="form-outline mb-4">
-                        <label class="form-label" for="namalengkapguru">Nama Lengkap Guru</label>
-                        <input type="text" id="namalengkapguru" class="form-control form-control-sm"
+                        <label class="form-label" for="namalengkapsiswa">Nama Lengkap Siswa</label>
+                        <input type="text" id="namalengkapsiswa" class="form-control form-control-sm"
                             placeholder="Sawi wal Kangkung" />
                     </div>
                     <div class="form-outline mb-4">
-                        <label class="form-label" for="matapelajaran">Mata Pelajaran</label>
-                        <input type="text" id="matapelajaran" class="form-control form-control-sm"
-                            placeholder="Pendidikan Radikal" />
+                        <label class="form-label" for="alamat">Alamat</label>
+                        <input type="text" id="alamat" class="form-control form-control-sm"
+                            placeholder="Jl. Juragan No. 22" />
                     </div>
                     <div class="form-outline mb-4">
-                        <label class="form-label" for="notelepon">No. Telepon</label>
-                        <input type="text" id="notelepon" class="form-control form-control-sm"
-                            placeholder="08 yang lain kapan2" />
+                        <label class="form-label" for="asalsekolah">Asal Sekolah</label>
+                        <input type="text" id="asalsekolah" class="form-control form-control-sm"
+                            placeholder="SMPN 1 Yogyakarta" />
                     </div>
                 </div>
                 <div class="d-flex justify-content-center text-center text-lg-start mt-4">
