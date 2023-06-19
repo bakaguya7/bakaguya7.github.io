@@ -177,6 +177,14 @@ table.table td .add {
   border-bottom-left-radius: 0 !important;
 }
 
+.hcolor-custom {
+  background-color: #513483 !important;
+}
+
+.hcolor-custom ul li {
+  background-color: #513483 !important;
+}
+
 /* custom */
 
 /*--------------------------------------------------------------
