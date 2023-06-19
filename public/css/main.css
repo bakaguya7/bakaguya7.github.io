@@ -24,7 +24,7 @@ body{
 
 .navbar .logo{
   margin-left: 20%;
-
+  min-width: 100%;
 }
 
 .navbar nav {

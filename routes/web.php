@@ -8,13 +8,13 @@ use App\Http\Controllers\SessionController;
 //     //
 // });
 
-Route::get('/token', function (Request $request) {
-    $token = $request->session()->token();
- 
-    $token = csrf_token();
- 
-    // ...
-});
+// Route::get('/token', function (Request $request) {
+//     $token = $request->session()->token();
+
+//     $token = csrf_token();
+
+//     // ...
+// });
 
 //############################################################
 // Route HOME
@@ -243,7 +243,3 @@ Route::get('/buat-data-siswa', function () {
 Route::get('/login', [SessionController::class, 'index']);
 // Route::post('/login/siswa', [SessionController::class, 'login']);
 Route::post('/login/siswa', [SessionController::class, 'login']);
-
-
-
-
