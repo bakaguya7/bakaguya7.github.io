@@ -24,6 +24,9 @@
                             <div class="col">Kelas
                                 <input type="text" class="form-control" placeholder="Kelas" aria-label="Kelas">
                             </div>
+                            <div class="col">Mata Pelajaran
+                                <input type="text" class="form-control" placeholder="Mata Pelajaran" aria-label="Mata Pelajaran">
+                            </div>
                             <div class="col">Materi
                                 <input type="text" class="form-control" placeholder="Materi" aria-label="Materi">
                             </div>
