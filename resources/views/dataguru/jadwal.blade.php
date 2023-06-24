@@ -5,7 +5,7 @@
     <main id="main" class="main">
         <!-- page -->
         <div class="pagetitle">
-            <h1>Data Guru</h1>
+            <h1>Jadwal Mengajar</h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.php">Home</a></li>
