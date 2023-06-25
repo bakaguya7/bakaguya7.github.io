@@ -11,10 +11,9 @@ body{
 /*=====================
   HEADER
   ===================== */
-  #navbarNavDropdown a{
-
+  #navbarNavDropdown a {
     font-family: poppins;
-    }
+  }
 
 .navbar {
   background-color: #513483;
@@ -22,13 +21,13 @@ body{
 
 }
 
-.navbar .logo{
+.navbar .logo {
   margin-left: 20%;
 
 }
 
 .navbar nav {
-  margin-right: ;
+  /* margin-right: ; */
   color: #e6e5e5;
 }
 

@@ -181,10 +181,22 @@ table.table td .add {
   background-color: #513483 !important;
 }
 
+.header-custom {
+  border-bottom: 3px solid #a2aaa6e3;
+}
+
 .hcolor-custom ul li {
   background-color: #513483 !important;
 }
 
+.dropdown-custom li a span, .dropdown-custom li a i {
+  color: white;
+}
+
+.judul {
+  font-size: 20px !important;
+  color: white !important;
+}
 /* custom */
 
 /*--------------------------------------------------------------
@@ -523,6 +535,15 @@ table.table td .add {
   font-weight: 700;
   color: #012970;
   font-family: "Nunito", sans-serif;
+}
+
+.logo img {
+  max-height: 40px;
+  margin-right: 6px;
+  border-width: 1px;
+  border-style: groove;
+  border-radius: 100%;
+  border-color: rgb(255, 255, 255);
 }
 
 .header {

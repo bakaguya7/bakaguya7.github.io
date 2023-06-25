@@ -30,15 +30,15 @@
 <body>
 
 <!-- ======= BAGIAN HEADER ======= -->
-  <header id="header" class="header fixed-top d-flex align-items-center">
+  <header id="header" class="header fixed-top d-flex align-items-center header-custom hcolor-custom">
 
     <i class="bi bi-list toggle-sidebar-btn"></i>
 
     {{-- logo --}}
     <div class="d-flex align-items-center p-5">
       <a href="/dashboard" class="d-flex logo align-items-center">
-        <img src="img/lg.png" alt="">
-        <span class="judul d-none d-lg-block p-2">DASHBOARD GURU</span>
+        <img class="" src="img/lg.png" alt="">
+        <span class="judul p-2">DASHBOARD GURU</span>
       </a>
     </div>
     {{-- end logo --}}
@@ -56,7 +56,7 @@
 <!-- End HEADER -->
 
 <!-- ======= BAGIAN SIDEBAR ======= -->
-  <aside id="sidebar" class="sidebar">
+  <aside id="sidebar" class="sidebar hcolor-custom">
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
@@ -80,7 +80,7 @@
           data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
             <i class="bi bi-menu-button-wide"></i><span>Data Guru</span><i class="bi bi-chevron-down ms-auto"></i>
           </a>
-          <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <ul id="components-nav" class="nav-content collapse dropdown-custom" data-bs-parent="#sidebar-nav">
             <li>
               <a href="/data-guru" class="{{ ( $title === "Data Guru") ? 'active' : '' }}">  
                 <i class="bi bi-circle"></i><span>Data Guru</span>
@@ -98,7 +98,7 @@
             </li>
             <li>
               <a href="/mapel" class="{{ ( $title === "Data Mapel") ? 'active' : '' }}">
-                <i class="bi bi-circle"></i><span>Data Mapel</span>
+                <i class="bi bi-circle"></i><span>Data mapel</span>
               </a>
             </li>
           </ul>
@@ -111,25 +111,15 @@
           data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
             <i class="bi bi-journal-text"></i><span>Data Siswa</span><i class="bi bi-chevron-down ms-auto"></i>
           </a>
-          <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <ul id="forms-nav" class="nav-content collapse dropdown-custom" data-bs-parent="#sidebar-nav">
             <li>
               <a href="/data-siswa" class="{{ ( $title === "Data Siswa") ? 'active' : '' }}">
                 <i class="bi bi-circle"></i><span>Data Siswa</span>
               </a>
             </li>
             <li>
-              <a href="/wali-siswa" class="{{ ( $title === "Data Wali Siswa") ? 'active' : '' }}">
+              <a href="/data-wali-siswa" class="{{ ( $title === "Data Wali Siswa") ? 'active' : '' }}">
                 <i class="bi bi-circle"></i><span>Data Wali Siswa</span>
-              </a>
-            </li>
-            <li>
-              <a href="/pembayaran" class="{{ ( $title === "Data Pembayaran") ? 'active' : '' }}">
-                <i class="bi bi-circle"></i><span>Data Pembayaran</span>
-              </a>
-            </li>
-            <li>
-              <a href="/data-kelas"class="{{ ( $title === "Data Kelas") ? 'active' : '' }}">
-                <i class="bi bi-circle"></i><span>Data Kelas</span>
               </a>
             </li>
           </ul>
@@ -142,7 +132,7 @@
           data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
             <i class="bi bi-bar-chart"></i><span>Program Sekolah</span><i class="bi bi-chevron-down ms-auto"></i>
           </a>
-          <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <ul id="charts-nav" class="nav-content collapse dropdown-custom" data-bs-parent="#sidebar-nav">
             <li>
               <a href="/pengembangan" class="{{ ( $title === "Pengembangan") ? 'active' : '' }}">
                 <i class="bi bi-circle"></i><span>Pengembangan</span>
