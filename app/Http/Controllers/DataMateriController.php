@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\DataMater;
-use App\Http\Requests\StoreDataMaterRequest;
-use App\Http\Requests\UpdateDataMaterRequest;
+use App\Http\Requests\StoreDataMateriRequest;
+use App\Http\Requests\UpdateDataMateriRequest;
 
-class DataMaterController extends Controller
+class DataMateriController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class DataMaterController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreDataMaterRequest $request)
+    public function store(StoreDataMateriRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class DataMaterController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(DataMater $dataMater)
+    public function show(DataMateri $dataMateri)
     {
         //
     }
@@ -43,7 +43,7 @@ class DataMaterController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(DataMater $dataMater)
+    public function edit(DataMater $dataMateri)
     {
         //
     }
@@ -51,7 +51,7 @@ class DataMaterController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateDataMaterRequest $request, DataMater $dataMater)
+    public function update(UpdateDataMateriRequest $request, DataMateri $dataMateri)
     {
         //
     }
@@ -59,7 +59,7 @@ class DataMaterController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(DataMater $dataMater)
+    public function destroy(DataMater $dataMateri)
     {
         //
     }

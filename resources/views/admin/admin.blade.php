@@ -101,6 +101,31 @@
           </li>
         </ul>
       </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav2" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i>
+            <span>Data Siswa dan Guru</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav2" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="/data-siswa">
+              <i class="bi bi-circle"></i><span>Data Siswa</span>
+            </a>
+          </li>
+          <li>
+            <a href="/data-guru">
+              <i class="bi bi-circle"></i><span>Data Guru</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/program-sekolah">
+          <i class="bi bi-grid"></i>
+          <span>Program Sekolah</span>
+        </a>
+      </li>
       
 
       <!-- Bagian Data Guru -->

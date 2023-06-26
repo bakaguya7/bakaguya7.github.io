@@ -11,12 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('data_materi', function (Blueprint $table) {
+        Schema::create('data_siswas', function (Blueprint $table) {
             $table->id();
+            $table->string('nis');
+            $table->string('nama');
+            $table->date('tgllahir');
             $table->string('kelas');
-            $table->string('matapelajaran');
-            $table->string('materi');
-            $table->string('pertemuan');
+            $table->string('notelp');
+            $table->string('asalsekolah');
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('data_materi');
+        Schema::dropIfExists('data_siswas');
     }
 };
