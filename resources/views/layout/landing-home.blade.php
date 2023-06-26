@@ -36,7 +36,7 @@
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="click nav-link active" aria-current="page" href="/">HOME</a>
+              <a class="click nav-link active" aria-current="page" href="#">HOME</a>
             </li>
             <li class="nav-item">
               <a class="click nav-link collapsed" aria-current="page" href="#profil">PROFIL</a>
@@ -63,7 +63,7 @@
                 LOGIN
               </button>
               <ul class="dropdown-menu login" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="/dashboard">Login Sebagai Guru</a></li>
+                <li><a class="dropdown-item" href="/dashboard-guru">Login Sebagai Guru</a></li>
                 <li><a class="dropdown-item" href="/loginsiswa">Login Sebagai Siswa</a></li>
               </ul>
             </li>
@@ -102,7 +102,7 @@
               <h5 class="widget-title">LINKS<span></span></h5>
                 <ul class="thumbnail-widget">
                   <li>
-                    <div class="thumb-content "><a href="#">HOME</a></div> 
+                    <div class="thumb-content"><a href="#">HOME</a></div> 
                   </li>
                   <li>
                     <div class="thumb-content"><a href="#profil">PROFIL</a></div> 
@@ -111,13 +111,10 @@
                     <div class="thumb-content"><a href="#jurusan">JURUSAN</a></div> 
                   </li>
                   <li>
-                    <div class="thumb-content"><a href="#">PROGRAM</a></div> 
+                    <div class="thumb-content"><a href="#about">ABOUT</a></div> 
                   </li>
                   <li>
-                    <div class="thumb-content"><a href="#">LOGIN</a></div> 
-                  </li>
-                  <li>
-                    <div class="thumb-content"><a href="#about">About</a></div> 
+                    <div class="thumb-content"><a href="/dashboard">ADMIN</a></div> 
                   </li>
                 </ul>
             </div>

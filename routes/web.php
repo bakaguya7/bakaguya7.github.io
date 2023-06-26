@@ -5,15 +5,15 @@ use App\Http\Controllers\RegisterSiswaController;
 use App\Http\Controllers\RegisterGuruController;
 
 // new route
-Route::get('/admin', function(){
-    return view('admin.dashboard',[
+Route::get('/admin', function () {
+    return view('admin.dashboard', [
         "title" => "Dashboard Admin"
     ]);
 });
 
 Route::resource('/register-siswa', RegisterSiswaController::class);
 
-Route::get('/register-siswa-create', function(){
+Route::get('/register-siswa-create', function () {
     return view('admin.register-siswa.create', [
         "title" => "Create Register Siswa"
     ]);
@@ -21,7 +21,7 @@ Route::get('/register-siswa-create', function(){
 
 Route::resource('/register-guru', RegisterGuruController::class);
 
-Route::get('/register-guru-create', function(){
+Route::get('/register-guru-create', function () {
     return view('admin.register-guru.create', [
         "title" => "Create Register Guru"
     ]);
@@ -65,12 +65,25 @@ Route::get('/', function () {
     ]);
 });
 
-
 //############################################################
 // Route Dashboard
 Route::get('/dashboard', function () {
     return view('home.dashboard', [
-        "title" => "Dashboard"
+        "title" => "Dashboard Admin"
+    ]);
+});
+
+// Route Dashboard Guru
+Route::get('/dashboard-guru', function () {
+    return view('home.dashboard-guru', [
+        "title" => "Dashboard Guru"
+    ]);
+});
+
+// Route Dashboard siswa
+Route::get('/dashboard-siswa', function () {
+    return view('home.dashboard-siswa', [
+        "title" => "Dashboard Siswa"
     ]);
 });
 
@@ -81,7 +94,7 @@ Route::get('/dashboard', function () {
 // Data Guru
 Route::get('/data-guru', function () {
     return view('dataguru.data-guru', [
-        "title" => "Data Guru"
+        "title" => "Data Guru",
     ]);
 });
 
@@ -144,14 +157,30 @@ Route::get('/data-kelas', function () {
     ]);
 });
 
+// ----------------------------------------------------
+// Data Materi
+Route::get('/materi', function () {
+    return view('datasiswa.materi', [
+        "title" => "Materi"
+    ]);
+});
+
+// ----------------------------------------------------
+// Data Nilai
+Route::get('/nilai', function () {
+    return view('datasiswa.nilai', [
+        "title" => "Nilai"
+    ]);
+});
+
 
 //############################################################
 // Route PROGRAM SEKOLAH
 // ----------------------------------------------------
 // Pembangunan
-Route::get('/pembangunan', function () {
-    return view('program.pembangunan', [
-        "title" => "Pembangunan"
+Route::get('/pengembangan', function () {
+    return view('program.pengembangan', [
+        "title" => "Pengembangan"
     ]);
 });
 
@@ -175,7 +204,7 @@ Route::get('/program-lomba', function () {
 // Kunjungan Industri
 Route::get('/kunjungan-industri', function () {
     return view('program.kunjungan-industri', [
-        "title" => "Kunjungan Industri "
+        "title" => "Kunjungan Industri"
     ]);
 });
 
