@@ -74,7 +74,7 @@
                     </div>
                     <div class="isi">                       
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus perferendis iure reiciendis incidunt. Saepe, voluptas adipisci corporis molestiae natus ducimus unde, aut odit quisquam recusandae temporibus laborum deserunt debitis at.
+                            Jurusan MIPA (Matematika dan Ilmu Pengetahuan Alam) merupakan salah satu jurusan yang fokus pada pemahaman dan penerapan ilmu pengetahuan alam, matematika, dan teknologi.
                         </p>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
                     </div>
                     <div class="isi">                       
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus perferendis iure reiciendis incidunt. Saepe, voluptas adipisci corporis molestiae natus ducimus unde, aut odit quisquam recusandae temporibus laborum deserunt debitis at.
+                            Jurusan IPS (Ilmu Pengetahuan Sosial) bertujuan untuk mengembangkan pemahaman siswa tentang berbagai aspek sosial, ekonomi, dan politik dalam masyarakat.
                         </p>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                     </div>
                     <div class="isi">
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus perferendis iure reiciendis incidunt. Saepe, voluptas adipisci corporis molestiae natus ducimus unde, aut odit quisquam recusandae temporibus laborum deserunt debitis at.
+                            Jurusan Sastra di SMA adalah program studi yang berfokus pada pemahaman dan pengapresiasian karya sastra dalam berbagai bentuknya, seperti puisi, prosa, drama, dan karya sastra lainnya.
                         </p>
                     </div>
                 </div>
