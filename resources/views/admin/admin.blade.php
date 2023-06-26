@@ -47,7 +47,7 @@
     <div class="d-flex align-items-center p-5">
       <a href="/admin" class="d-flex align-items-center">
         <img class="" src="img/lg.png" alt="" width="50px" height="50px">
-        <span class="p-2">DASHBOARD ADMIN</span>
+        <span class="p-2 text-white">DASHBOARD ADMIN</span>
       </a>
     </div>
     {{-- end logo --}}
