@@ -1,9 +1,50 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SessionController;
+use App\Http\Controllers\RegisterSiswaController;
+use App\Http\Controllers\RegisterGuruController;
+
+// new route
+Route::get('/admin', function(){
+    return view('admin.dashboard',[
+        "title" => "Dashboard Admin"
+    ]);
+});
+
+Route::resource('/register-siswa', RegisterSiswaController::class);
+
+Route::get('/register-siswa-create', function(){
+    return view('admin.register-siswa.create', [
+        "title" => "Create Register Siswa"
+    ]);
+});
+
+Route::resource('/register-guru', RegisterGuruController::class);
+
+Route::get('/register-guru-create', function(){
+    return view('admin.register-guru.create', [
+        "title" => "Create Register Guru"
+    ]);
+});
+
+Route::post('/register-siswa-store', [RegisterSiswaController::class, 'store']);
+Route::post('/register-guru-store', [RegisterGuruController::class, 'store']);
+
+// Route::get('/register-siswa-edit', function(){
+//     return view('admin.register-siswa.edit', [
+//         "title" => "Edit Register Siswa"
+//     ]);
+// });
+
+// Route::post('/register-siswa-edit', [RegisterSiswaController::class, 'edit']);
 
 
+
+// Route::get('/create', function(){
+//     return view('admin.register-siswa.create-siswa',[
+//         "title" => "Register Siswa"
+//     ]);
+// });
 // Route::group(['middleware' => 'web'], function () {
 //     //
 // });

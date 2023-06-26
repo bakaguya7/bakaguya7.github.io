@@ -105,6 +105,9 @@ table.table tr th, table.table tr td {
   border-color: #e9e9e9;
   width: 120px;
 }
+table.table tr .col-custom {
+  width: 50px;
+}
 table.table th {
   font-size: 14px;
   margin: 0 5px;
@@ -196,6 +199,13 @@ table.table td .add {
 .judul {
   font-size: 20px !important;
   color: white !important;
+}
+
+.img-max{
+  max-width: 300px;
+  max-height: 300px;
+  height: 100%;
+  width: 100%;
 }
 /* custom */
 
