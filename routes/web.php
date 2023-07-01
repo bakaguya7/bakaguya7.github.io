@@ -4,7 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterSiswaController;
 use App\Http\Controllers\RegisterGuruController;
 use App\Http\Controllers\DataSiswaController;
+use App\Http\Controllers\DataGuruController;
 use App\Http\Controllers\ProgramSekolahController;
+use App\Http\Controllers\TagihanSiswaController;
 
 // new route
 Route::get('/admin', function () {
@@ -63,14 +65,29 @@ Route::post('/program-sekolah-store', [ProgramSekolahController::class, 'store']
 // Data Guru
 Route::resource('/data-guru', DataGuruController::class);
 
-Route::get('/data-guru', function () {
+Route::get('/data-guru-create', function () {
     return view('admin.data-guru.create', [
         "title" => "Create Data Guru"
     ]);
 });
 
-Route::post('/data-guru', [DataGuruController::class, 'store']);
+Route::post('/data-guru-store', [DataGuruController::class, 'store']);
 
+// tagihan-siswa
+Route::resource('/tagihan-siswa', TagihanSiswaController::class);
+
+Route::get('/tagihan-siswa-create', function () {
+    return view('admin.tagihan-siswa.create', [
+        "title" => "Create Tagihan Siswa"
+    ]);
+});
+
+Route::post('/tagihan-siswa-store', [TagihanSiswaController::class, 'store']);
+
+
+
+Route::get('/login-guru', [RegisterGuruController::class, 'login'])->name('login');
+Route::post('/login-guru', [RegisterGuruController::class, 'loginPost'])->name('login');
 
 // Route::get('/register-siswa-edit', function(){
 //     return view('admin.register-siswa.edit', [

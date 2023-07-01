@@ -23,9 +23,6 @@
     @endif -->
                 <div class="d-flex align-items-center justify-content-between mb-3">
                     <h3>Register Siswa</h3>
-                    <a href="/register-siswa-create" class="btn btn-primary">
-                        <img src="img/icon/plus-square-fill.svg" class="svg-custom svg0" alt="">
-                    </a>
                 </div>  
                 @if(Session::has('success'))
                     <div class="alert alert-success" role="alert">
@@ -38,31 +35,41 @@
                             <th class="col-custom">NO</th>
                             <th class="col-custom">NIS</th>
                             <th>NAMA LENGKAP</th>
-                            <th>EMAIL</th>
-                            <th>PASSWORD</th> 
-                            <th>FITUR</th>
+                            <th class="">AKTIFKAN AKUN</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @if($RegisSiswa->count() > 0)
-                            @foreach($RegisSiswa as $siswa)
+                        @if($DataSiswa->count() > 0)
+                            @foreach($DataSiswa as $siswa)
                             <tr>
                                 <td class="align-middle col-custom">{{ $loop->iteration }}</td>
                                 <td class="align-middle col-custom">{{ $siswa->nis }}</td>
                                 <td class="align-middle">{{ $siswa->nama }}</td>
-                                <td class="align-middle">{{ $siswa->email }}</td>
-                                <td class="align-middle">*****</td>
-                                <td class="d-flex">
-                                    <a href="{{ route('register-siswa.edit', $siswa->id) }}" class="btn"><img src="img/icon/pen-fill.svg" class="svg-custom svg1"
-                                            alt=""></a>
-                                    <form action="{{ route('register-siswa.destroy', $siswa->id) }}" class="" method="POST" type="button" onsubmit="return confirm('Delete?'">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button class="btn"><img src="img/icon/trash-fill.svg"
-                                                class="svg-custom svg2" alt=""></button>
-                                    </form>
+                                
+                                <td class="d-flex justify-content-center px-0 py-0">
+                                    <div class="d-flex justify-content-center">
+                                        <a href="{{ route('register-siswa.edit', $siswa->id) }}" class="btn">
+                                            <i class="bi bi-check-circle-fill svg4" style="font-size: 1.3rem;"></i>
+                                        </a>
+                                    </div>
                                 </td>
+                                <!-- @if(isset($DataSiswa))
+                                    <td class="align-middle">
+                                            <p>AKTIF</p>
+                                    </td>
+                                    <td class="d-flex justify-content-center px-0 py-0">
+                                        <form action="{{ route('register-siswa.destroy', $siswa->id) }}" class="" method="POST" type="button" onsubmit="return confirm('Delete?'">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="btn"><i class="bi bi-trash3-fill svg-custom svg2"></i></button>
+                                        </form>
+                                    </td>
+                                @else -->
+                                    
+                                <!-- @endif -->
+                                
                             </tr>
+                            
                             @endforeach
                         @else
                         <tr>
@@ -71,7 +78,6 @@
                         @endif
                     </tbody>
                 </table>
-                
             </div>
         </section>
 </main>

@@ -22,9 +22,9 @@
         </div>
     @endif -->
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                    <h3>Data Siswa</h3>
-                    <a href="/data-siswa-create" class="btn btn-primary">
-                        <img src="img/icon/plus-square-fill.svg" class="svg-custom svg0" alt="">
+                    <h3>Data Guru</h3>
+                    <a href="/data-guru-create" class="btn">
+                        <i class="bi bi-plus-circle-fill svg4" style="font-size: 1.8rem;"></i>
                     </a>
                 </div>  
                 @if(Session::has('success'))
@@ -36,29 +36,34 @@
                     <thead class="table-primary">
                         <tr>
                             <th class="col-custom">NO</th>
-                            <th>NO INDUK SISWA</th>
+                            <th>NO INDUK GURU</th>
                             <th>NAMA LENGKAP</th>
-                            <th>KELAS</th> 
+                            <th>MATA PELAJARAN</th> 
                             <th>FITUR</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @if($DataSiswa->count() > 0)
-                            @foreach($DataSiswa as $siswa)
+                        @if($DataGuru->count() > 0)
+                            @foreach($DataGuru as $guru)
                             <tr>
                                 <td class="align-middle col-custom">{{ $loop->iteration }}</td>
-                                <td class="align-middle">{{ $siswa->nis }}</td>
-                                <td class="align-middle">{{ $siswa->nama }}</td>
-                                <td class="align-middle">{{ $siswa->kelas }}</td>
-                                <td class="d-flex">
-                                    <a href="{{ route('data-siswa.edit', $siswa->id) }}" class="btn"><img src="img/icon/pen-fill.svg" class="svg-custom svg1"
-                                            alt=""></a>
-                                    <form action="{{ route('data-siswa.destroy', $siswa->id) }}" class="" method="POST" type="button" onsubmit="return confirm('Delete?'">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button class="btn"><img src="img/icon/trash-fill.svg"
-                                                class="svg-custom svg2" alt=""></button>
-                                    </form>
+                                <td class="align-middle">{{ $guru->nig }}</td>
+                                <td class="align-middle">{{ $guru->namalengkap }}</td>
+                                <td class="align-middle">{{ $guru->matapelajaran }}</td>
+                                <td class="px-0 py-0">
+                                    <div class="d-flex justify-content-center">
+                                        <a href="{{ route('data-guru.show', $guru->id) }}" class="btn">
+                                            <i class="bi bi-bar-chart-fill svg3" style="font-size: 1.3rem;"></i>
+                                        </a>
+                                        <a href="{{ route('data-guru.edit', $guru->id) }}" class="btn">
+                                            <i class="bi bi-pen-fill svg1" style="font-size: 1.3rem;"></i>
+                                        </a>
+                                        <form action="{{ route('data-guru.destroy', $guru->id) }}" class="" method="POST" type="button" onsubmit="return confirm('Delete?'">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="btn"><i class="bi bi-trash3-fill svg2" style="font-size: 1.3rem;"></i></button>
+                                        </form>
+                                    </div>
                                 </td>
                             </tr>
                             @endforeach

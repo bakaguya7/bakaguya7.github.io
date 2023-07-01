@@ -17,9 +17,9 @@
 
         <section class="section dashboard">
             <div class="container bg-white rounded p-5">
-                <form action="{{ route('register-siswa.update', $RegisSiswa->id) }}" method="POST">
+                <form action="{{ route('register-siswa.store', $RegisSiswa->id) }}" method="POST">
                     @csrf
-                    @method('PUT')
+                    <!-- @method('PUT') -->
                     <div class="row mb-3 text-dark">
                         <div class="col">
                             <label for="name">Nomor Induk Siswa</label>
@@ -42,7 +42,7 @@
                     </div>
                     <div class="row">
                         <div class="d-grid">
-                            <button class="btn btn-warning">SUBMIT</button>
+                            <button class="btn btn-primary">SUBMIT</button>
                         </div>
                     </div>
                 </form>

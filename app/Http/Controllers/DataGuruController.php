@@ -38,9 +38,10 @@ class DataGuruController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(RegisterGuru $registerGuru)
+    public function show(String $id)
     {
-        //
+        $DataGuru = DataGuru::findOrFail($id);
+        return view('admin.data-guru.detail', compact('DataGuru'));
     }
 
     /**

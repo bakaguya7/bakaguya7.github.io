@@ -47,7 +47,7 @@
     <div class="d-flex align-items-center p-5">
       <a href="/admin" class="d-flex align-items-center">
         <img class="" src="img/lg.png" alt="" width="50px" height="50px">
-        <span class="p-2 text-white">DASHBOARD ADMIN</span>
+        <span class="p-2 text-white">DASHBOARD GURU</span>
       </a>
     </div>
     {{-- end logo --}}
@@ -82,24 +82,7 @@
           <span>Register Siswa dan Guru</span>
         </a>
       </li> -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav2" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-menu-button-wide"></i>
-            <span>Data Siswa dan Guru</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="components-nav2" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="/data-siswa">
-              <i class="bi bi-circle"></i><span>Data Siswa</span>
-            </a>
-          </li>
-          <li>
-            <a href="/data-guru">
-              <i class="bi bi-circle"></i><span>Data Guru</span>
-            </a>
-          </li>
-        </ul>
-      </li>
+
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
             <i class="bi bi-person"></i>
@@ -118,25 +101,25 @@
           </li>
         </ul>
       </li>
+
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav3" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-cash-stack"></i>
-            <span>Tagihan dan Gaji</span><i class="bi bi-chevron-down ms-auto"></i>
+        <a class="nav-link collapsed" data-bs-target="#components-nav2" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i>
+            <span>Data Siswa dan Guru</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="components-nav3" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <ul id="components-nav2" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="/tagihan-siswa">
-              <i class="bi bi-circle"></i><span>Tagihan Siswa</span>
+            <a href="/data-siswa">
+              <i class="bi bi-circle"></i><span>Data Siswa</span>
             </a>
           </li>
           <li>
             <a href="/data-guru">
-              <i class="bi bi-circle"></i><span>Gaji Guru</span>
+              <i class="bi bi-circle"></i><span>Data Guru</span>
             </a>
           </li>
         </ul>
       </li>
-      
       <li class="nav-item">
         <a class="nav-link " href="/program-sekolah">
           <i class="bi bi-grid"></i>
@@ -264,7 +247,7 @@
 
 <!-- ======= BAGIAN PAGES ======= -->
   <main id="main" class="main">
-    @yield('admin')
+    @yield('guru')
   </main>
 <!-- End PAGES -->
 

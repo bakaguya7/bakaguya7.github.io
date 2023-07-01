@@ -23,8 +23,8 @@
     @endif -->
                 <div class="d-flex align-items-center justify-content-between mb-3">
                     <h3>Program Sekolah</h3>
-                    <a href="/program-sekolah-create" class="btn btn-primary">
-                        <img src="img/icon/plus-square-fill.svg" class="svg-custom svg0" alt="">
+                    <a href="/program-sekolah-create" class="btn">
+                        <i class="bi bi-plus-circle-fill svg4" style="font-size: 1.8rem;"></i>
                     </a>
                 </div>  
                 @if(Session::has('success'))
@@ -52,15 +52,17 @@
                                 <td class="align-middle">{{ $program->tag }}</td>
                                 <td class="align-middle">{{ $program->uploadgambar }}</td>
                                 <td class="align-middle">{{ $program->isikonten }}</td>
-                                <td class="d-flex">
-                                    <a href="{{ route('program-sekolah.edit', $program->id) }}" class="btn"><img src="img/icon/pen-fill.svg" class="svg-custom svg1"
-                                            alt=""></a>
-                                    <form action="{{ route('program-sekolah.destroy', $program->id) }}" class="" method="POST" type="button" onsubmit="return confirm('Delete?'">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button class="btn"><img src="img/icon/trash-fill.svg"
-                                                class="svg-custom svg2" alt=""></button>
-                                    </form>
+                                <td class="px-0 py-0">
+                                    <div class="d-flex justify-content-center">
+                                        <a href="{{ route('program-sekolah.edit', $program->id) }}" class="btn">
+                                            <i class="bi bi-pen-fill svg1" style="font-size: 1.3rem;"></i>
+                                        </a>
+                                        <form action="{{ route('program-sekolah.destroy', $program->id) }}" class="" method="POST" type="button" onsubmit="return confirm('Delete?'">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="btn"><i class="bi bi-trash3-fill svg2" style="font-size: 1.3rem;"></i></button>
+                                        </form>
+                                    </div>
                                 </td>
                             </tr>
                             @endforeach

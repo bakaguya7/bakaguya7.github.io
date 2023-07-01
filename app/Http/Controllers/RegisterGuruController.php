@@ -7,6 +7,8 @@ use App\Models\RegisterGuru;
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreRegisterGuruRequest;
 use App\Http\Requests\UpdateRegisterGuruRequest;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class RegisterGuruController extends Controller
 {
