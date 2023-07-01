@@ -280,7 +280,7 @@
                     <div class="section-header p-4">
                         <h1 class="title">MAGANG</h1>
                     </div>
-
+                    
                     <div class="row g-3 g-lg-5">
                         <div class="col-md-4 ">
                             <div class="card" style="width: 18rem;">

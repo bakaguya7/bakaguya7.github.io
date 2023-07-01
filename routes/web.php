@@ -126,25 +126,25 @@ Route::get('/', function () {
 
 //############################################################
 // Route Dashboard
-// Route::get('/dashboard', function () {
-//     return view('home.dashboard', [
-//         "title" => "Dashboard Admin"
-//     ]);
-// });
+Route::get('/dashboard', function () {
+    return view('home.dashboard', [
+        "title" => "Dashboard Admin"
+    ]);
+});
 
 // // Route Dashboard Guru
-// Route::get('/dashboard-guru', function () {
-//     return view('home.dashboard-guru', [
-//         "title" => "Dashboard Guru"
-//     ]);
-// });
+Route::get('/dashboard-guru', function () {
+    return view('home.dashboard-guru', [
+        "title" => "Dashboard Guru"
+    ]);
+});
 
 // // Route Dashboard siswa
-// Route::get('/dashboard-siswa', function () {
-//     return view('home.dashboard-siswa', [
-//         "title" => "Dashboard Siswa"
-//     ]);
-// });
+Route::get('/dashboard-siswa', function () {
+    return view('home.dashboard-siswa', [
+        "title" => "Dashboard Siswa"
+    ]);
+});
 
 
 // //############################################################

@@ -32,7 +32,7 @@
                     <div class="row mb-3 text-dark">
                         <div class="col">
                             <label for="uploadgambar">Upload Gambar</label>
-                            <input type="date" name="uploadgambar" class="form-control" placeholder="Upload Gambar">
+                            <input type="file" name="uploadgambar" class="form-control" placeholder="Upload Gambar">
                         </div>
                         <div class="col">
                             <label for="isikonten">Isi Konten</label>
