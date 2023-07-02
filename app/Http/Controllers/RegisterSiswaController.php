@@ -18,13 +18,12 @@ class RegisterSiswaController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $email = RegisterSiswa::where('email' );
         $DataSiswa = DataSiswa::orderBy('created_at', 'DESC')->get();
         $RegisSiswa = RegisterSiswa::orderBy('created_at', 'DESC')->get();
         // $RegisSiswa = RegisterSiswa::orderBy('created_at', 'DESC')->get();
-        return view('admin.register-siswa.list', compact('DataSiswa', 'RegisSiswa', 'email'));
+        return view('admin.register-siswa.list', compact('DataSiswa', 'RegisSiswa'));
     }
 
     /**

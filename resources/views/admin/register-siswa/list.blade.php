@@ -53,20 +53,6 @@
                                         </a>
                                     </div>
                                 </td>
-                                <!-- @if(isset($DataSiswa))
-                                    <td class="align-middle">
-                                            <p>AKTIF</p>
-                                    </td>
-                                    <td class="d-flex justify-content-center px-0 py-0">
-                                        <form action="{{ route('register-siswa.destroy', $siswa->id) }}" class="" method="POST" type="button" onsubmit="return confirm('Delete?'">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button class="btn"><i class="bi bi-trash3-fill svg-custom svg2"></i></button>
-                                        </form>
-                                    </td>
-                                @else -->
-                                    
-                                <!-- @endif -->
                                 
                             </tr>
                             
