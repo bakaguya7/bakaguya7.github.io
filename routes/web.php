@@ -9,6 +9,9 @@ use App\Http\Controllers\ProgramSekolahController;
 use App\Http\Controllers\TagihanSiswaController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\MateriController;
+use App\Http\Controllers\JadwalController;
+use App\Http\Controllers\PresensiController;
+use App\Http\Controllers\GajiController;
 use App\Models\Materi;
 use App\Models\Profil;
 
@@ -166,11 +169,11 @@ Route::post('/materi-store', [MateriController::class, 'store']);
 
 
 // Jadwal Mengajar //////////////////////////////////////
-Route::resource('/profil', ProfilController::class);
+Route::resource('/jadwal', ProfilController::class);
 
-Route::get('/profil-create', function () {
-    return view('guru.profil.create', [
-        "title" => "Create Profil Guru"
+Route::get('/jadwal-create', function () {
+    return view('guru.jadwal.create', [
+        "title" => "Create Jadwal Guru"
     ]);
 });
 
@@ -180,15 +183,15 @@ Route::get('/jadwal', function () {
     ]);
 });
 
-Route::post('/profil-store', [ProfilController::class, 'store']);
+Route::post('/jadwal-store', [JadwalController::class, 'store']);
 
 
 // Data Presensi /////////////////////////////////////
-Route::resource('/profil', ProfilController::class);
+Route::resource('/presensi', ProfilController::class);
 
-Route::get('/profil-create', function () {
-    return view('guru.profil.create', [
-        "title" => "Create Profil Guru"
+Route::get('/presensi-create', function () {
+    return view('guru.presensi.create', [
+        "title" => "Create Presensi Guru"
     ]);
 });
 
@@ -198,15 +201,15 @@ Route::get('/presensi', function () {
     ]);
 });
 
-Route::post('/profil-store', [ProfilController::class, 'store']);
+Route::post('/presensi-store', [PresensiController::class, 'store']);
 
 
 // Riwayat & Gaji ///////////////////////////////////
-Route::resource('/profil', ProfilController::class);
+Route::resource('/gaji', ProfilController::class);
 
-Route::get('/profil-create', function () {
-    return view('guru.profil.create', [
-        "title" => "Create Profil Guru"
+Route::get('/gaji-create', function () {
+    return view('guru.gaji.create', [
+        "title" => "Create Gaji Guru"
     ]);
 });
 
@@ -216,7 +219,7 @@ Route::get('/riwayat-gaji', function () {
     ]);
 });
 
-Route::post('/profil-store', [ProfilController::class, 'store']);
+Route::post('/gaji-store', [GajiController::class, 'store']);
 
 
 
