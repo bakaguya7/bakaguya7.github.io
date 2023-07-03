@@ -43,14 +43,6 @@
     </div>
     {{-- end logo --}}
 
-    <nav class="header-nav ms-auto">
-      <div class="search-bar">
-        <form class="search-form d-flex" method="POST" action="#">
-          <input type="text" name="query" placeholder="Search" title="Enter search keyword">
-          <button type="submit" title="Search"><i class="bi bi-search"></i></button>
-        </form>
-      </div>
-    </nav><!-- End Icons Navigation -->
 
   </header>
 <!-- End HEADER -->
@@ -73,47 +65,29 @@
         </a>
       </li><!-- End Dashboard Nav -->
 
-    <!-- Bagian Data Siswa -->
-      {{-- <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Data Siswa") ? 'active' : 'collapsed' }}" href="/data-siswa">
-          <i class="bi bi-person"></i>
-          <span>Data Siswa</span>
+    <!-- Bagian Profil -->
+      <li class="nav-item">
+        <a class="nav-link {{ ( $title === "Profil Siswa") ? 'active' : 'collapsed' }}" href="/profil_sis">
+          <i class="bi bi-person-circle"></i>
+          <span>Profil</span>
         </a>
-      </li> --}}
-    <!-- END Data Siswa -->
+      </li>
+    <!-- END Profil -->
 
     <!-- Bagian MATERI -->
       <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Materi") ? 'active' : 'collapsed' }}" href="/materi">
+        <a class="nav-link {{ ( $title === "Materi Siswa") ? 'active' : 'collapsed' }}" href="/materi_sis">
           <i class="bi bi-book"></i>
           <span>Materi</span>
         </a>
       </li>
     <!-- END Materi -->
 
-    <!-- Bagian Nilai -->
-      <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Nilai") ? 'active' : 'collapsed' }}" href="/nilai">
-          <i class="bi bi-clipboard-data-fill"></i>
-          <span>Nilai</span>
-        </a>
-      </li>
-    <!-- END Nilai -->
-
-    <!-- Bagian Data Wali -->
-      {{-- <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Profil Sekolah") ? 'active' : 'collapsed' }}" href="/profile">
-          <i class="bi bi-people"></i>
-          <span>Data Wali</span>
-        </a>
-      </li> --}}
-    <!-- END Data Wali -->
-
     <!-- Bagian Pembayaran -->
       <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Profil Sekolah") ? 'active' : 'collapsed' }}" href="/profile">
+        <a class="nav-link {{ ( $title === "Tagihan") ? 'active' : 'collapsed' }}" href="/tagihan">
           <i class="bi bi-cash-coin"></i>
-          <span>Pembayaran</span>
+          <span>Tagihan</span>
         </a>
       </li>
     <!-- END Pembayaran -->
@@ -122,7 +96,7 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="/login-guru">
           <i class="bi bi-box-arrow-in-right"></i>
-          <span>Login</span>
+          <span>Log Out</span>
         </a>
       </li>
     
@@ -134,7 +108,7 @@
 
 <!-- ======= BAGIAN PAGES ======= -->
   <main id="main" class="main">
-    @yield('main')
+    @yield('siswa')
   </main>
 <!-- End PAGES -->
 
