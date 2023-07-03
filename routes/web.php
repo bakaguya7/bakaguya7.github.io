@@ -11,12 +11,8 @@ use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\MateriController;
 use App\Http\Controllers\JadwalController;
 use App\Http\Controllers\PresensiController;
-<<<<<<< HEAD
-use App\Http\Controllers\GajiGuruController;
-=======
 use App\Http\Controllers\GajiController;
 use App\Models\Jadwal;
->>>>>>> dde503636df890f142045b3bc6acf0f005bcd792
 use App\Models\Materi;
 use App\Models\Profil;
 
