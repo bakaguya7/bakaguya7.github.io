@@ -12,9 +12,7 @@ use App\Http\Controllers\MateriController;
 use App\Http\Controllers\JadwalController;
 use App\Http\Controllers\PresensiController;
 use App\Http\Controllers\GajiController;
-use App\Models\Jadwal;
-use App\Models\Materi;
-use App\Models\Profil;
+use App\Http\Controllers\JadwalMengajarController;
 
 // new route admin
 Route::get('/admin', function () {
@@ -103,6 +101,17 @@ Route::get('/gaji-guru-create', function () {
 
 Route::post('/gaji-guru-store', [GajiGuruController::class, 'store']);
 
+// jadwal mengajar
+Route::resource('/jadwal-mengajar', JadwalMengajarController::class);
+
+Route::get('/jadwal-mengajar-create', function () {
+    return view('admin.jadwal-mengajar.create', [
+        "title" => "Create Jadwal Mengajar"
+    ]);
+});
+
+Route::post('/jadwal-mengajar-store', [JadwalMengajarController::class, 'store']);
+
 
 Route::get('/login-guru', [RegisterGuruController::class, 'login'])->name('login');
 Route::post('/login-guru', [RegisterGuruController::class, 'loginPost'])->name('login');
@@ -162,21 +171,21 @@ Route::post('/profil-store', [ProfilController::class, 'store']);
 
 
 // Data Materi ///////////////////////////////////////
-Route::resource('/materi', MateriController::class);
+Route::resource('/data-materi', MateriController::class);
 
-Route::get('/materi-create', function () {
+Route::get('/data-materi-create', function () {
     return view('guru.materi.create', [
         "title" => "Create Materi Guru"
     ]);
 });
 
-Route::get('/materi', function () {
+Route::get('/data-materi', function () {
     return view('guru.materi.list', [
         "title" => "Materi"
     ]);
 });
 
-Route::post('/materi-store', [MateriController::class, 'store']);
+Route::post('/data-materi-store', [MateriController::class, 'store']);
 
 
 // Jadwal Mengajar //////////////////////////////////////

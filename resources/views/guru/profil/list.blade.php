@@ -16,48 +16,46 @@
 
         <section class="section dashboard">
             <div class="container bg-white rounded p-5">
-            <!-- @if(Session::has('success'))
-        <div class="alert alert-success" role="alert">
-            {{ Session::get('success') }}
-        </div>
-    @endif -->
-
                 <div class="isi profil">
                     <div class="row justify-content-center ">
-                        <img class="img-max" src="img/lg.png" alt="" width="200px" height="200px">
+                        <img class="img-min" src="img/lg.png" alt="">
                     </div>
-                    <h1 class="text-center">Nama Guru</h1>
-                </div>  
-                <div class="d-flex align-items-center justify-content-between mb-3">
-                    <a href="/data-guru-create" class="btn ">
-                        <i class="bi bi-plus-circle-fill svg4" style="font-size: 1.8rem;"></i>
-                    </a>
+                    <h3 class="text-center">?</h3>
                 </div>
-
-                @if(Session::has('success'))
-                    <div class="alert alert-success" role="alert">
-                        {{ Session::get('success') }}
-                    </div>
-                @endif
-                <table class="table table-hover">
-                    <thead class="table-primary">
-                        <tr>
-                            <th class="col-custom">NO</th>
-                            <th>NO INDUK GURU</th>
-                            <th>NAMA LENGKAP</th>
-                            <th>MATA PELAJARAN</th> 
-                            <th>FITUR</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-    
-                    
+                <table class="table table-hover mt-5">
+                    <tbody class="">
                          <tr>
-                            <h1>hallo</h1>
+                            <td class="col-custom">NOMOR INDUK GURU</td>
+                            <td class="col-custom">:</td>
+                            <td>?</td>
+                         </tr>
+                         <tr>
+                            <td class="col-custom">NAMA LENGKAP</td>
+                            <td class="col-custom">:</td>
+                            <td>?</td>
+                         </tr>
+                         <tr>
+                            <td class="col-custom">PENDIDIKAN</td>
+                            <td class="col-custom">:</td>
+                            <td>?</td>
+                         </tr>
+                         <tr>
+                            <td class="col-custom">MATA PELAJARAN</td>
+                            <td class="col-custom">:</td>
+                            <td>?</td>
+                         </tr>
+                         <tr>
+                            <td class="col-custom">ALAMAT</td>
+                            <td class="col-custom">:</td>
+                            <td>?</td>
+                         </tr>
+                         <tr>
+                            <td class="col-custom">NOMOR TELEPON</td>
+                            <td class="col-custom">:</td>
+                            <td>?</td>
                          </tr>
                     </tbody>
                 </table>
-                
             </div>
         </section>
 </main>

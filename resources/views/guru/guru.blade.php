@@ -75,7 +75,7 @@
 
     <!-- Bagian Data Materi -->
       <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Materi") ? 'active' : 'collapsed' }} " href="/materi">
+        <a class="nav-link {{ ( $title === "Materi") ? 'active' : 'collapsed' }} " href="/data-materi">
           <i class="bi bi-journal-text"></i>
           <span>Data Materi</span>
         </a>

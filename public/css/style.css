@@ -210,6 +210,13 @@ table.table td .add {
   height: 100%;
   width: 100%;
 }
+
+.img-min{
+  max-width: 150px;
+  max-height: 150px;
+  height: 100%;
+  width: 100%;
+}
 /* custom */
 
 /*--------------------------------------------------------------

@@ -3,6 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Profil;
+use App\Models\DataGuru;
+use Illuminate\Http\Request;
+use DataGuruController;
+use App\Http\Requests\StoreDataGuruRequest;
+use App\Http\Requests\UpdateDataGuruRequest;
 use App\Http\Requests\StoreProfilRequest;
 use App\Http\Requests\UpdateProfilRequest;
 
@@ -13,7 +18,8 @@ class ProfilController extends Controller
      */
     public function index()
     {
-        return view('guru.profil.list');
+        $DataGuru = DataGuru::orderBy('created_at', 'DESC')->get();
+        return view('guru.profil.list', compact('DataGuru'));
     }
 
     /**

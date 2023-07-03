@@ -9,5 +9,12 @@ class DataGuru extends Model
 {
     use HasFactory;
 
-    protected $fillable = [ 'nig', 'namalengkap', 'pendidikan', 'matapelajaran', 'alamat', 'notelp', ];
+    protected $fillable = [ 
+        'nig', 
+        'namalengkap', 
+        'pendidikan', 
+        'matapelajaran', 
+        'alamat', 
+        'notelp', 
+    ];
 }

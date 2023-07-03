@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\RegisterSiswa;
-use App\Models\DataSiswa;
 
 use Illuminate\Http\Request;
 use DataSiswaController;

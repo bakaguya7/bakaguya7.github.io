@@ -145,9 +145,16 @@
           </li>
         </ul>
       </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/jadwal-mengajar">
+          <i class="bi bi-calendar-date-fill"></i>
+          <span>Jadwal Mengajar</span>
+        </a>
+      </li>
       
       <li class="nav-item">
-        <a class="nav-link " href="/program-sekolah">
+        <a class="nav-link collapsed" href="/program-sekolah">
           <i class="bi bi-grid"></i>
           <span>Program Sekolah</span>
         </a>

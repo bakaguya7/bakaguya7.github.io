@@ -4,11 +4,11 @@
 @section('admin')
 <main id="main" class="main">
     <div class="pagetitle">
-        <h1>Tagihan Siswa</h1>
+        <h1>Jadwal Mengajar</h1>
             <nav>
                 <ol class="breadcrumb">
                     <!-- <li class="breadcrumb-item">ADMIN</li> -->
-                    <li class="breadcrumb-item active">Tagihan Siswa</li>
+                    <li class="breadcrumb-item active">Jadwal Mengajar</li>
                 </ol>
             </nav>
         </div>
@@ -22,8 +22,8 @@
         </div>
     @endif -->
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                    <h3>Tagihan Siswa</h3>
-                    <a href="/tagihan-siswa-create" class="btn">
+                    <h3>Jadwal Mengajar</h3>
+                    <a href="/jadwal-mengajar-create" class="btn">
                         <i class="bi bi-plus-circle-fill svg4" style="font-size: 1.8rem;"></i>
                     </a>
                 </div>  
@@ -36,33 +36,33 @@
                     <thead class="table-primary">
                         <tr>
                             <th class="col-custom">NO</th>
-                            <th class="col-custom">NIS</th>
-                            <th>NAMA LENGKAP</th>
-                            <th>REKENING</th> 
-                            <th>KETERANGAN</th> 
-                            <th>JUMLAH</th> 
+                            <th>TANGGAL</th>
+                            <th>JAM</th>
+                            <th>MAPEL</th>
+                            <th>KELAS</th>
+                            <th>NAMA GURU</th>
                             <th>FITUR</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @if($Tagihan->count() > 0)
-                            @foreach($Tagihan as $siswa)
+                        @if($Jadwal->count() > 0)
+                            @foreach($Jadwal as $guru)
                             <tr>
                                 <td class="align-middle col-custom">{{ $loop->iteration }}</td>
-                                <td class="align-middle col-custom">{{ $siswa->nis }}</td>
-                                <td class="align-middle">{{ $siswa->namasiswa }}</td>
-                                <td class="align-middle">{{ $siswa->norek }}</td>
-                                <td class="align-middle">{{ $siswa->keterangan }}</td>
-                                <td class="align-middle">{{ $siswa->jumlah }}</td>
+                                <td class="align-middle">{{ $guru->tgl }}</td>
+                                <td class="align-middle">{{ $guru->jam }}</td>
+                                <td class="align-middle">{{ $guru->mapel }}</td>
+                                <td class="align-middle">{{ $guru->kelas }}</td>
+                                <td class="align-middle">{{ $guru->namaguru }}</td>
                                 <td class="px-0 py-0">
                                     <div class="d-flex justify-content-center">
-                                        <a href="{{ route('tagihan-siswa.edit', $siswa->id) }}" class="btn">
-                                            <i class="bi bi-pen-fill svg-custom svg1" style="font-size: 1.3rem;"></i>
+                                        <a href="{{ route('jadwal-mengajar.edit', $guru->id) }}" class="btn">
+                                            <i class="bi bi-pen-fill svg1" style="font-size: 1.3rem;"></i>
                                         </a>
-                                        <form action="{{ route('tagihan-siswa.destroy', $siswa->id) }}" class="" method="POST" type="button" onsubmit="return confirm('Delete?'">
+                                        <form action="{{ route('jadwal-mengajar.destroy', $guru->id) }}" class="" method="POST" type="button" onsubmit="return confirm('Delete?'">
                                             @csrf
                                             @method('DELETE')
-                                            <button class="btn"><i class="bi bi-trash3-fill svg-custom svg2" style="font-size: 1.3rem;"></i></button>
+                                            <button class="btn"><i class="bi bi-trash3-fill svg2" style="font-size: 1.3rem;"></i></button>
                                         </form>
                                     </div>
                                 </td>
