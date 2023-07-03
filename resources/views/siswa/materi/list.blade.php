@@ -1,14 +1,14 @@
-@extends('guru.guru')
+@extends('siswa.siswa')
 
 <!-- ======= BAGIAN PAGES ======= -->
-@section('guru')
+@section('siswa')
 <main id="main" class="main">
     <div class="pagetitle">
-        <h1>PROFIL GURU</h1>
+        <h1>MATERI</h1>
             <nav>
                 <ol class="breadcrumb">
                     <!-- <li class="breadcrumb-item">ADMIN</li> -->
-                    <li class="breadcrumb-item active">Profil Guru</li>
+                    <li class="breadcrumb-item active">Materi Pelajaran</li>
                 </ol>
             </nav>
         </div>
@@ -21,19 +21,12 @@
             {{ Session::get('success') }}
         </div>
     @endif -->
-
-                <div class="isi profil">
-                    <div class="row justify-content-center ">
-                        <img class="img-max" src="img/lg.png" alt="" width="200px" height="200px">
-                    </div>
-                    <h1 class="text-center">Nama Guru</h1>
-                </div>  
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                    <a href="/data-guru-create" class="btn ">
+                    <h3>Materi</h3>
+                    <a href="/data-guru-create" class="btn">
                         <i class="bi bi-plus-circle-fill svg4" style="font-size: 1.8rem;"></i>
                     </a>
-                </div>
-
+                </div>  
                 @if(Session::has('success'))
                     <div class="alert alert-success" role="alert">
                         {{ Session::get('success') }}
@@ -50,7 +43,6 @@
                         </tr>
                     </thead>
                     <tbody>
-    
                     
                          <tr>
                             <h1>hallo</h1>

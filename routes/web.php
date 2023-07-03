@@ -12,6 +12,7 @@ use App\Http\Controllers\MateriController;
 use App\Http\Controllers\JadwalController;
 use App\Http\Controllers\PresensiController;
 use App\Http\Controllers\GajiController;
+use App\Models\Jadwal;
 use App\Models\Materi;
 use App\Models\Profil;
 
@@ -123,7 +124,7 @@ Route::post('/login-guru', [RegisterGuruController::class, 'loginPost'])->name('
 //     // ...
 // });
 
-//#################################################################
+//##########################################################################################################
 //DASHBOARD GURU
 //
 Route::get('/guru', function () {
@@ -132,7 +133,7 @@ Route::get('/guru', function () {
     ]);
 });
 
-// Profil /////////////////////////////////////
+// Profil guru /////////////////////////////////////
 Route::resource('/profil', ProfilController::class);
 
 Route::get('/profil-create', function () {
@@ -151,7 +152,7 @@ Route::post('/profil-store', [ProfilController::class, 'store']);
 
 
 // Data Materi ///////////////////////////////////////
-Route::resource('/materi', ProfilController::class);
+Route::resource('/materi', MateriController::class);
 
 Route::get('/materi-create', function () {
     return view('guru.materi.create', [
@@ -169,7 +170,7 @@ Route::post('/materi-store', [MateriController::class, 'store']);
 
 
 // Jadwal Mengajar //////////////////////////////////////
-Route::resource('/jadwal', ProfilController::class);
+Route::resource('/jadwal', JadwalController::class);
 
 Route::get('/jadwal-create', function () {
     return view('guru.jadwal.create', [
@@ -187,7 +188,7 @@ Route::post('/jadwal-store', [JadwalController::class, 'store']);
 
 
 // Data Presensi /////////////////////////////////////
-Route::resource('/presensi', ProfilController::class);
+Route::resource('/presensi', PresensiController::class);
 
 Route::get('/presensi-create', function () {
     return view('guru.presensi.create', [
@@ -205,7 +206,7 @@ Route::post('/presensi-store', [PresensiController::class, 'store']);
 
 
 // Riwayat & Gaji ///////////////////////////////////
-Route::resource('/gaji', ProfilController::class);
+Route::resource('/gaji', GajiController::class);
 
 Route::get('/gaji-create', function () {
     return view('guru.gaji.create', [
@@ -225,7 +226,7 @@ Route::post('/gaji-store', [GajiController::class, 'store']);
 
 
 
-//###############################################################
+//############################################################################################################
 //DASHBOARD SISWA
 //
 Route::get('/siswa', function () {
@@ -234,12 +235,61 @@ Route::get('/siswa', function () {
     ]);
 });
 
-// Route Dashboard siswa
-Route::get('/dashboard', function () {
-    return view('siswa.dashboard', [
-        "title" => "Dashboard Siswa"
+// Profil siswa /////////////////////////////////////
+Route::resource('/profil_sis', ProfilController::class);
+
+Route::get('/profil-create', function () {
+    return view('siswa.profil.create', [
+        "title" => "Create Profil Siswa"
     ]);
 });
+
+Route::get('/profil_sis', function () {
+    return view('siswa.profil.list', [
+        "title" => "Profil Siswa"
+    ]);
+});
+
+Route::post('/profil-store', [ProfilController::class, 'store']);
+
+
+// Materi /////////////////////////////////////
+Route::resource('/materi_sis', ProfilController::class);
+
+Route::get('/materi-create', function () {
+    return view('siswa.materi.create', [
+        "title" => "Create Materi Siswa"
+    ]);
+});
+
+Route::get('/materi_sis', function () {
+    return view('siswa.materi.list', [
+        "title" => "Materi Siswa"
+    ]);
+});
+
+Route::post('/materi-store', [ProfilController::class, 'store']);
+
+// Tagihan /////////////////////////////////////
+Route::resource('/tagihan', ProfilController::class);
+
+Route::get('/tagihan-create', function () {
+    return view('siswa.tagihan.create', [
+        "title" => "Create Tagihan Siswa"
+    ]);
+});
+
+Route::get('/tagihan', function () {
+    return view('siswa.tagihan.list', [
+        "title" => "Tagihan"
+    ]);
+});
+
+Route::post('/tagihan-store', [ProfilController::class, 'store']);
+
+
+
+
 
 
 
