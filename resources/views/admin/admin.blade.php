@@ -90,8 +90,6 @@
           <span>Register Siswa dan Guru</span>
         </a>
       </li> -->
-<<<<<<< HEAD
-      
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
@@ -112,8 +110,6 @@
         </ul>
       </li>
 
-=======
->>>>>>> fae285f99335f6785ad4db47a4eecd2f23011fd8
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav2" data-bs-toggle="collapse" href="#">
           <i class="bi bi-menu-button-wide"></i>
