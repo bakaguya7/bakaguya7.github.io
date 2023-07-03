@@ -63,8 +63,8 @@
                 LOGIN
               </button>
               <ul class="dropdown-menu login" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="/dashboard-guru">Login Sebagai Guru</a></li>
-                <li><a class="dropdown-item" href="/loginsiswa">Login Sebagai Siswa</a></li>
+                <li><a class="dropdown-item" href="/guru">Login Sebagai Guru</a></li>
+                <li><a class="dropdown-item" href="/siswa">Login Sebagai Siswa</a></li>
               </ul>
             </li>
             <li class="nav-item">
