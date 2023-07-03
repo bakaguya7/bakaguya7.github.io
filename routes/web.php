@@ -7,13 +7,19 @@ use App\Http\Controllers\DataSiswaController;
 use App\Http\Controllers\DataGuruController;
 use App\Http\Controllers\ProgramSekolahController;
 use App\Http\Controllers\TagihanSiswaController;
+use App\Http\Controllers\ProfilController;
+use App\Http\Controllers\MateriController;
+use App\Models\Materi;
+use App\Models\Profil;
 
-// new route
+// new route admin
 Route::get('/admin', function () {
     return view('admin.dashboard', [
         "title" => "Dashboard Admin"
     ]);
 });
+
+// Register Siswa
 
 Route::resource('/register-siswa', RegisterSiswaController::class);
 
@@ -36,8 +42,6 @@ Route::get('/register-guru-create', function () {
 });
 
 Route::post('/register-guru-store', [RegisterGuruController::class, 'store']);
-
-
 
 // data-siswa
 Route::resource('/data-siswa', DataSiswaController::class);
@@ -115,6 +119,126 @@ Route::post('/login-guru', [RegisterGuruController::class, 'loginPost'])->name('
 
 //     // ...
 // });
+
+//#################################################################
+//DASHBOARD GURU
+//
+Route::get('/guru', function () {
+    return view('guru.dashboard', [
+        "title" => "Dashboard Guru"
+    ]);
+});
+
+// Profil /////////////////////////////////////
+Route::resource('/profil', ProfilController::class);
+
+Route::get('/profil-create', function () {
+    return view('guru.profil.create', [
+        "title" => "Create Profil Guru"
+    ]);
+});
+
+Route::get('/profil', function () {
+    return view('guru.profil.list', [
+        "title" => "Profil"
+    ]);
+});
+
+Route::post('/profil-store', [ProfilController::class, 'store']);
+
+
+// Data Materi ///////////////////////////////////////
+Route::resource('/materi', ProfilController::class);
+
+Route::get('/materi-create', function () {
+    return view('guru.materi.create', [
+        "title" => "Create Materi Guru"
+    ]);
+});
+
+Route::get('/materi', function () {
+    return view('guru.materi.list', [
+        "title" => "Materi"
+    ]);
+});
+
+Route::post('/materi-store', [MateriController::class, 'store']);
+
+
+// Jadwal Mengajar //////////////////////////////////////
+Route::resource('/profil', ProfilController::class);
+
+Route::get('/profil-create', function () {
+    return view('guru.profil.create', [
+        "title" => "Create Profil Guru"
+    ]);
+});
+
+Route::get('/jadwal', function () {
+    return view('guru.jadwal.list', [
+        "title" => "Jadwal"
+    ]);
+});
+
+Route::post('/profil-store', [ProfilController::class, 'store']);
+
+
+// Data Presensi /////////////////////////////////////
+Route::resource('/profil', ProfilController::class);
+
+Route::get('/profil-create', function () {
+    return view('guru.profil.create', [
+        "title" => "Create Profil Guru"
+    ]);
+});
+
+Route::get('/presensi', function () {
+    return view('guru.presensi.list', [
+        "title" => "Presensi"
+    ]);
+});
+
+Route::post('/profil-store', [ProfilController::class, 'store']);
+
+
+// Riwayat & Gaji ///////////////////////////////////
+Route::resource('/profil', ProfilController::class);
+
+Route::get('/profil-create', function () {
+    return view('guru.profil.create', [
+        "title" => "Create Profil Guru"
+    ]);
+});
+
+Route::get('/riwayat-gaji', function () {
+    return view('guru.gaji.list', [
+        "title" => "Riwayat & Gaji"
+    ]);
+});
+
+Route::post('/profil-store', [ProfilController::class, 'store']);
+
+
+
+
+
+//###############################################################
+//DASHBOARD SISWA
+//
+Route::get('/siswa', function () {
+    return view('siswa.dashboard', [
+        "title" => "Dashboard Siswa"
+    ]);
+});
+
+// Route Dashboard siswa
+Route::get('/dashboard', function () {
+    return view('siswa.dashboard', [
+        "title" => "Dashboard Siswa"
+    ]);
+});
+
+
 
 //############################################################
 // Route HOME

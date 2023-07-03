@@ -36,12 +36,21 @@
 
     {{-- logo --}}
     <div class="d-flex align-items-center p-5">
-      <a href="/dashboard-guru" class="d-flex logo align-items-center">
+      <a href="/dashboard-siswa" class="d-flex logo align-items-center">
         <img src="img/lg.png" alt="">
-        <span class="judul d-none d-lg-block p-2">DASHBOARD GURU</span>
+        <span class="judul d-none d-lg-block p-2">DASHBOARD SISWA</span>
       </a>
     </div>
     {{-- end logo --}}
+
+    <nav class="header-nav ms-auto">
+      <div class="search-bar">
+        <form class="search-form d-flex" method="POST" action="#">
+          <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+          <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+        </form>
+      </div>
+    </nav><!-- End Icons Navigation -->
 
   </header>
 <!-- End HEADER -->
@@ -58,72 +67,74 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Dashboard Guru") ? 'active' : 'collapsed' }}" href="/guru">
+        <a class="nav-link {{ ( $title === "Dashboard Siswa") ? 'active' : 'collapsed' }} " href="/siswa">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
 
-    <!-- Bagian Data Guru -->
+    <!-- Bagian Data Siswa -->
+      {{-- <li class="nav-item">
+        <a class="nav-link {{ ( $title === "Data Siswa") ? 'active' : 'collapsed' }}" href="/data-siswa">
+          <i class="bi bi-person"></i>
+          <span>Data Siswa</span>
+        </a>
+      </li> --}}
+    <!-- END Data Siswa -->
+
+    <!-- Bagian MATERI -->
       <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Profil") ? 'active' : 'collapsed' }}" href="/profil">
-          <i class="bi bi-person-circle"></i>
-          <span>Profil</span>
+        <a class="nav-link {{ ( $title === "Materi") ? 'active' : 'collapsed' }}" href="/materi">
+          <i class="bi bi-book"></i>
+          <span>Materi</span>
         </a>
       </li>
-    <!-- END Data Guru -->
+    <!-- END Materi -->
 
-    <!-- Bagian Data Materi -->
+    <!-- Bagian Nilai -->
       <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Materi") ? 'active' : 'collapsed' }} " href="/materi">
-          <i class="bi bi-journal-text"></i>
-          <span>Data Materi</span>
+        <a class="nav-link {{ ( $title === "Nilai") ? 'active' : 'collapsed' }}" href="/nilai">
+          <i class="bi bi-clipboard-data-fill"></i>
+          <span>Nilai</span>
         </a>
       </li>
-    <!-- END Data Materi -->
+    <!-- END Nilai -->
 
-    <!-- Bagian Data Jadwal -->
-      <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Jadwal") ? 'active' : 'collapsed' }}" href="/jadwal">
-          <i class="bi bi-calendar-week"></i>
-          <span>Jadwal Mengajar</span>
+    <!-- Bagian Data Wali -->
+      {{-- <li class="nav-item">
+        <a class="nav-link {{ ( $title === "Profil Sekolah") ? 'active' : 'collapsed' }}" href="/profile">
+          <i class="bi bi-people"></i>
+          <span>Data Wali</span>
         </a>
-      </li>
-    <!-- END Data Jadwal -->
+      </li> --}}
+    <!-- END Data Wali -->
 
-    <!-- Bagian Presensi -->
+    <!-- Bagian Pembayaran -->
       <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Presensi") ? 'active' : 'collapsed' }} " href="/presensi">
-          <i class="bi bi-clipboard-check"></i>
-          <span>Data Presensi</span>
-        </a>
-      </li>
-    <!-- END Presensi -->
-
-    <!-- Bagian Data Gaji -->
-      <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Riwayat & Gaji") ? 'active' : 'collapsed' }} " href="/riwayat-gaji">
+        <a class="nav-link {{ ( $title === "Profil Sekolah") ? 'active' : 'collapsed' }}" href="/profile">
           <i class="bi bi-cash-coin"></i>
-          <span>Riwayat & Gaji</span>
+          <span>Pembayaran</span>
         </a>
       </li>
-    <!-- END Data Gaji -->
-      
+    <!-- END Pembayaran -->
+
     <!-- Bagian Login -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="/login-guru">
           <i class="bi bi-box-arrow-in-right"></i>
-          <span>Log out</span>
+          <span>Login</span>
         </a>
       </li>
+    
     <!-- END Login -->
+
     </ul>
   </aside>
 <!-- End SIDEBAR-->
 
 <!-- ======= BAGIAN PAGES ======= -->
   <main id="main" class="main">
-    @yield('guru')
+    @yield('main')
   </main>
 <!-- End PAGES -->
 
