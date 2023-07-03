@@ -18,12 +18,11 @@ class RegisterSiswaController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(Request $request)
+    public function index()
     {
-        $DataSiswa = DataSiswa::orderBy('created_at', 'DESC')->get();
         $RegisSiswa = RegisterSiswa::orderBy('created_at', 'DESC')->get();
         // $RegisSiswa = RegisterSiswa::orderBy('created_at', 'DESC')->get();
-        return view('admin.register-siswa.list', compact('DataSiswa', 'RegisSiswa'));
+        return view('admin.register-siswa.list', compact('RegisSiswa'));
     }
 
     /**
@@ -59,9 +58,7 @@ class RegisterSiswaController extends Controller
      */
     public function edit(string $id)
     {
-        //$book = Book::findOrFail($id);
-        // return view('pages.book.edit', compact('book'));
-        $RegisSiswa = DataSiswa::findOrFail($id);
+        $RegisSiswa = RegisterSiswa::findOrFail($id);
         return view('admin.register-siswa.edit', compact('RegisSiswa'));
     }
 

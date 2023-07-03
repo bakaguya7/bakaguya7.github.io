@@ -23,6 +23,9 @@
     @endif -->
                 <div class="d-flex align-items-center justify-content-between mb-3">
                     <h3>Register Siswa</h3>
+                    <a href="/register-siswa-create" class="btn">
+                        <i class="bi bi-plus-circle-fill svg4" style="font-size: 1.8rem;"></i>
+                    </a>
                 </div>  
                 @if(Session::has('success'))
                     <div class="alert alert-success" role="alert">
@@ -33,37 +36,44 @@
                     <thead class="table-primary">
                         <tr>
                             <th class="col-custom">NO</th>
-                            <th class="col-custom">NIS</th>
+                            <th>NO INDUK SISWA</th>
                             <th>NAMA LENGKAP</th>
-                            <th class="">AKTIFKAN AKUN</th>
+                            <th>EMAIL</th> 
+                            <th>PASSWORD</th>
+                            <th>FITUR</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @if($DataSiswa->count() > 0)
-                            @foreach($DataSiswa as $siswa)
+                        @if($RegisSiswa->count() > 0)
+                            @foreach($RegisSiswa as $siswa)
                             <tr>
                                 <td class="align-middle col-custom">{{ $loop->iteration }}</td>
-                                <td class="align-middle col-custom">{{ $siswa->nis }}</td>
+                                <td class="align-middle">{{ $siswa->nis }}</td>
                                 <td class="align-middle">{{ $siswa->nama }}</td>
-                                
-                                <td class="d-flex justify-content-center px-0 py-0">
+                                <td class="align-middle">{{ $siswa->email }}</td>
+                                <td class="align-middle">{{ $siswa->password }}</td>
+                                <td class="px-0 py-0">
                                     <div class="d-flex justify-content-center">
                                         <a href="{{ route('register-siswa.edit', $siswa->id) }}" class="btn">
-                                            <i class="bi bi-check-circle-fill svg4" style="font-size: 1.3rem;"></i>
+                                            <i class="bi bi-pen-fill svg-custom svg1" style="font-size: 1.3rem;"></i>
                                         </a>
+                                        <form action="{{ route('register-siswa.destroy', $siswa->id) }}" class="" method="POST" type="button" onsubmit="return confirm('Delete?'">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="btn"><i class="bi bi-trash3-fill svg-custom svg2" style="font-size: 1.3rem;"></i></button>
+                                        </form>
                                     </div>
                                 </td>
-                                
                             </tr>
-                            
                             @endforeach
                         @else
                         <tr>
-                            <td colspan="5" class="text-center">Book not found</td>
+                            <td colspan="5" class="text-center">DATA KOSONG</td>
                         </tr>
                         @endif
                     </tbody>
                 </table>
+                
             </div>
         </section>
 </main>
