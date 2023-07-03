@@ -23,8 +23,8 @@
     @endif -->
                 <div class="d-flex align-items-center justify-content-between mb-3">
                     <h3>Data Siswa</h3>
-                    <a href="/data-siswa-create" class="btn btn-primary">
-                        <img src="img/icon/plus-square-fill.svg" class="svg-custom svg0" alt="">
+                    <a href="/data-siswa-create" class="btn">
+                        <i class="bi bi-plus-circle-fill svg4" style="font-size: 1.8rem;"></i>
                     </a>
                 </div>  
                 @if(Session::has('success'))
@@ -50,15 +50,20 @@
                                 <td class="align-middle">{{ $siswa->nis }}</td>
                                 <td class="align-middle">{{ $siswa->nama }}</td>
                                 <td class="align-middle">{{ $siswa->kelas }}</td>
-                                <td class="d-flex">
-                                    <a href="{{ route('data-siswa.edit', $siswa->id) }}" class="btn"><img src="img/icon/pen-fill.svg" class="svg-custom svg1"
-                                            alt=""></a>
-                                    <form action="{{ route('data-siswa.destroy', $siswa->id) }}" class="" method="POST" type="button" onsubmit="return confirm('Delete?'">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button class="btn"><img src="img/icon/trash-fill.svg"
-                                                class="svg-custom svg2" alt=""></button>
-                                    </form>
+                                <td class="px-0 py-0">
+                                    <div class="d-flex justify-content-center">
+                                        <a href="{{ route('data-siswa.show', $siswa->id) }}" class="btn">
+                                            <i class="bi bi-bar-chart-fill svg3" style="font-size: 1.3rem;"></i>
+                                        </a>
+                                        <a href="{{ route('data-siswa.edit', $siswa->id) }}" class="btn">
+                                            <i class="bi bi-pen-fill svg-custom svg1" style="font-size: 1.3rem;"></i>
+                                        </a>
+                                        <form action="{{ route('data-siswa.destroy', $siswa->id) }}" class="" method="POST" type="button" onsubmit="return confirm('Delete?'">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="btn"><i class="bi bi-trash3-fill svg-custom svg2" style="font-size: 1.3rem;"></i></button>
+                                        </form>
+                                    </div>
                                 </td>
                             </tr>
                             @endforeach

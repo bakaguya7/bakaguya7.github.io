@@ -3,8 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\RegisterSiswa;
+use App\Models\DataSiswa;
 
 use Illuminate\Http\Request;
+use DataSiswaController;
+use App\Http\Requests\StoreDataSiswaRequest;
+use App\Http\Requests\UpdateDataSiswaRequest;
+
 use App\Http\Requests\StoreRegisterSiswaRequest;
 use App\Http\Requests\UpdateRegisterSiswaRequest;
 
@@ -13,18 +18,21 @@ class RegisterSiswaController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
+        $DataSiswa = DataSiswa::orderBy('created_at', 'DESC')->get();
         $RegisSiswa = RegisterSiswa::orderBy('created_at', 'DESC')->get();
-        return view('admin.register-siswa.list', compact('RegisSiswa'));
+        // $RegisSiswa = RegisterSiswa::orderBy('created_at', 'DESC')->get();
+        return view('admin.register-siswa.list', compact('DataSiswa', 'RegisSiswa'));
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    // public function create()
+    // public function create(DataSiswa $id)
     // {
-    //     return view('admin.register-siswa.create');
+    //     $DataSiswa = DataSiswa::findOrFail($id);
+    //     return view('admin.register-siswa.create', compact('DataSiswa'));
     // }
 
     /**
@@ -53,7 +61,7 @@ class RegisterSiswaController extends Controller
     {
         //$book = Book::findOrFail($id);
         // return view('pages.book.edit', compact('book'));
-        $RegisSiswa = RegisterSiswa::findOrFail($id);
+        $RegisSiswa = DataSiswa::findOrFail($id);
         return view('admin.register-siswa.edit', compact('RegisSiswa'));
     }
 

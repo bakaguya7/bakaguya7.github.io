@@ -38,9 +38,10 @@ class DataSiswaController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(RegisterGuru $registerGuru)
+    public function show(String $id)
     {
-        //
+        $DataSiswa = DataSiswa::findOrFail($id);
+        return view('admin.data-siswa.detail', compact('DataSiswa'));
     }
 
     /**

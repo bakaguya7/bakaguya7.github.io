@@ -21,28 +21,28 @@
                     @csrf
                     <div class="row mb-3 text-dark">
                         <div class="col">
-                            <label for="nig">NIG</label>
-                            <input type="text" name="nig" class="form-control" placeholder="Nomor Induk Siswa">
+                            <label for="nig">Nomor Induk Guru</label>
+                            <input type="text" name="nig" class="form-control" placeholder="Nomor Induk Guru">
                         </div>
                         <div class="col">
                             <label for="nama">Nama Lengkap</label>
-                            <input type="text" name="nama" class="form-control" placeholder="Nama Lengkap">
+                            <input type="text" name="namalengkap" class="form-control" placeholder="Nama Lengkap">
                         </div>
                     </div>
                     <div class="row mb-3 text-dark">
                         <div class="col">
-                            <label for="tgllahir">Tanggal Lahir</label>
-                            <input type="date" name="tgllahir" class="form-control" placeholder="Tanggal Lahir">
+                            <label for="tgllahir">Pendidikan</label>
+                            <input type="date" name="pendidikan" class="form-control" placeholder="Pendidikan">
                         </div>
                         <div class="col">
-                            <label for="kelas">Kelas</label>
-                            <input type="text" name="kelas" class="form-control" placeholder="Kelas">
+                            <label for="kelas">Mata Pelajaran</label>
+                            <input type="text" name="matapelajaran" class="form-control" placeholder="Mata Pelajaran">
                         </div>
                     </div>
                     <div class="row mb-3 text-dark">
                         <div class="col">
-                            <label for="notelp">Asal Sekolah</label>
-                            <input type="text" name="asalsekolah" class="form-control" placeholder="Asal Sekolah">
+                            <label for="notelp">Alamat</label>
+                            <input type="text" name="alamat" class="form-control" placeholder="Alamat">
                         </div>
                         <div class="col">
                             <label for="notelp">No. Telepon</label>
