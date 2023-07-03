@@ -11,7 +11,7 @@ use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\MateriController;
 use App\Http\Controllers\JadwalController;
 use App\Http\Controllers\PresensiController;
-use App\Http\Controllers\GajiController;
+use App\Http\Controllers\GajiGuruController;
 use App\Models\Materi;
 use App\Models\Profil;
 
@@ -91,6 +91,16 @@ Route::get('/tagihan-siswa-create', function () {
 
 Route::post('/tagihan-siswa-store', [TagihanSiswaController::class, 'store']);
 
+// gaji guru
+Route::resource('/gaji-guru', GajiGuruController::class);
+
+Route::get('/gaji-guru-create', function () {
+    return view('admin.gaji-guru.create', [
+        "title" => "Create Gaji Guru"
+    ]);
+});
+
+Route::post('/gaji-guru-store', [GajiGuruController::class, 'store']);
 
 
 Route::get('/login-guru', [RegisterGuruController::class, 'login'])->name('login');

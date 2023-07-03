@@ -139,7 +139,7 @@
             </a>
           </li>
           <li>
-            <a href="/data-guru">
+            <a href="/gaji-guru">
               <i class="bi bi-circle"></i><span>Gaji Guru</span>
             </a>
           </li>
