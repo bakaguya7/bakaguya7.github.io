@@ -68,7 +68,7 @@
                             @endforeach
                         @else
                         <tr>
-                            <td colspan="5" class="text-center">Book not found</td>
+                            <td colspan="5" class="text-center">DATA KOSONG</td>
                         </tr>
                         @endif
                     </tbody>

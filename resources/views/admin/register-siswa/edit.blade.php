@@ -17,12 +17,12 @@
 
         <section class="section dashboard">
             <div class="container bg-white rounded p-5">
-                <form action="{{ route('register-siswa.store', $RegisSiswa->id) }}" method="POST">
+                <form action="{{ route('register-siswa.update', $RegisSiswa->id) }}" method="POST">
                     @csrf
-                    <!-- @method('PUT') -->
+                    @method('PUT')
                     <div class="row mb-3 text-dark">
                         <div class="col">
-                            <label for="name">Nomor Induk Siswa</label>
+                            <label for="nis">NIS</label>
                             <input type="text" name="nis" class="form-control" value="{{ $RegisSiswa->nis }}" placeholder="Nomor Induk Siswa">
                         </div>
                         <div class="col">
@@ -33,11 +33,11 @@
                     <div class="row mb-3 text-dark">
                         <div class="col">
                             <label for="email">Email</label>
-                            <input type="email" name="email" class="form-control" value="{{ $RegisSiswa->email }}" placeholder="siswa@gmail.com">
+                            <input type="email" name="email" class="form-control" value="{{ $RegisSiswa->email }}" placeholder="Tanggal Lahir">
                         </div>
                         <div class="col">
-                            <label for="nama">Password</label>
-                            <input type="password" name="password" class="form-control" value="{{ $RegisSiswa->password }}" placeholder="Password">
+                            <label for="password">Password</label>
+                            <input type="text" name="password" class="form-control" value="{{ $RegisSiswa->password }}" placeholder="Password">
                         </div>
                     </div>
                     <div class="row">

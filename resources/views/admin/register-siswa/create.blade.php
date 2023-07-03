@@ -5,11 +5,11 @@
 
 <main id="main" class="main">
     <div class="pagetitle">
-        <h1>Tagihan Siswa</h1>
+        <h1>Register Siswa dan Guru</h1>
             <nav>
                 <ol class="breadcrumb">
                     <!-- <li class="breadcrumb-item">ADMIN</li> -->
-                    <li class="breadcrumb-item active">Tagihan Siswa</li>
+                    <li class="breadcrumb-item active">Register Siswa dan Guru</li>
                 </ol>
             </nav>
         </div>
@@ -17,7 +17,7 @@
 
         <section class="section dashboard">
             <div class="container bg-white rounded p-5">
-                <form action="/tagihan-siswa-store" method="POST">
+                <form action="/register-siswa-store" method="POST">
                     @csrf
                     <div class="row mb-3 text-dark">
                         <div class="col">
@@ -25,24 +25,18 @@
                             <input type="text" name="nis" class="form-control" placeholder="Nomor Induk Siswa">
                         </div>
                         <div class="col">
-                            <label for="namasiswa">Nama Lengkap</label>
-                            <input type="text" name="namasiswa" class="form-control" placeholder="Nama Lengkap">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" name="nama" class="form-control" placeholder="Nama Lengkap">
                         </div>
                     </div>
                     <div class="row mb-3 text-dark">
                         <div class="col">
-                            <label for="norek">Nomor Rekening</label>
-                            <input type="text" name="norek" class="form-control" placeholder="Nomor Rekening">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" class="form-control" placeholder="siswa@gmail.com">
                         </div>
                         <div class="col">
-                            <label for="keterangan">Keterangan</label>
-                            <input type="text" name="keterangan" class="form-control" placeholder="Keterangan">
-                        </div>
-                    </div>
-                    <div class="row mb-3 text-dark">
-                        <div class="col">
-                            <label for="jumlah">Jumlah</label>
-                            <input type="text" name="jumlah" class="form-control" placeholder="jumlah">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" class="form-control" placeholder="Password">
                         </div>
                     </div>
                     <div class="row">
