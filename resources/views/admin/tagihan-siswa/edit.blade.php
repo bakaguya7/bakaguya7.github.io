@@ -17,37 +17,33 @@
 
         <section class="section dashboard">
             <div class="container bg-white rounded p-5">
-                <form action="{{ route('data-siswa.update', $DataSiswa->id) }}" method="POST">
+                <form action="{{ route('tagihan-siswa.update', $Tagihan->id) }}" method="POST">
                     @csrf
                     @method('PUT')
                     <div class="row mb-3 text-dark">
                         <div class="col">
                             <label for="nis">NIS</label>
-                            <input type="text" name="nis" class="form-control" value="{{ $DataSiswa->nis }}" placeholder="Nomor Induk Siswa">
+                            <input type="text" name="nis" class="form-control" value="{{ $Tagihan->nis }}" placeholder="Nomor Induk Siswa">
                         </div>
                         <div class="col">
-                            <label for="nama">Nama Lengkap</label>
-                            <input type="text" name="nama" class="form-control" value="{{ $DataSiswa->nama }}" placeholder="Nama Lengkap">
-                        </div>
-                    </div>
-                    <div class="row mb-3 text-dark">
-                        <div class="col">
-                            <label for="tgllahir">Tanggal Lahir</label>
-                            <input type="date" name="tgllahir" class="form-control" value="{{ $DataSiswa->tgllahir }}" placeholder="Tanggal Lahir">
-                        </div>
-                        <div class="col">
-                            <label for="kelas">Kelas</label>
-                            <input type="text" name="kelas" class="form-control" value="{{ $DataSiswa->kelas }}" placeholder="Kelas">
+                            <label for="namasiswa">Nama Lengkap</label>
+                            <input type="text" name="namasiswa" class="form-control" value="{{ $Tagihan->namasiswa }}" placeholder="Nama Lengkap">
                         </div>
                     </div>
                     <div class="row mb-3 text-dark">
                         <div class="col">
-                            <label for="notelp">Asal Sekolah</label>
-                            <input type="text" name="asalsekolah" class="form-control" value="{{ $DataSiswa->asalsekolah }}" placeholder="Asal Sekolah">
+                            <label for="norek">Nomor Rekening</label>
+                            <input type="text" name="norek" class="form-control" value="{{ $Tagihan->norek }}" placeholder="Nomor Rekening">
                         </div>
                         <div class="col">
-                            <label for="notelp">No. Telepon</label>
-                            <input type="text" name="notelp" class="form-control" value="{{ $DataSiswa->notelp }}" placeholder="No. Telepon">
+                            <label for="keterangan">Keterangan</label>
+                            <input type="text" name="keterangan" class="form-control" value="{{ $Tagihan->keterangan }}" placeholder="Keterangan">
+                        </div>
+                    </div>
+                    <div class="row mb-3 text-dark">
+                        <div class="col">
+                            <label for="jumlah">Jumlah</label>
+                            <input type="text" name="jumlah" class="form-control" value="{{ $Tagihan->jumlah }}" placeholder="jumlah">
                         </div>
                     </div>
                     <div class="row">

@@ -17,7 +17,7 @@
 
         <section class="section dashboard">
             <div class="container bg-white rounded p-5">
-                <form action="/data-siswa-store" method="POST">
+                <form action="/tagihan-siswa-store" method="POST">
                     @csrf
                     <div class="row mb-3 text-dark">
                         <div class="col">
@@ -25,28 +25,24 @@
                             <input type="text" name="nis" class="form-control" placeholder="Nomor Induk Siswa">
                         </div>
                         <div class="col">
-                            <label for="nama">Nama Lengkap</label>
-                            <input type="text" name="nama" class="form-control" placeholder="Nama Lengkap">
+                            <label for="namasiswa">Nama Lengkap</label>
+                            <input type="text" name="namasiswa" class="form-control" placeholder="Nama Lengkap">
                         </div>
                     </div>
                     <div class="row mb-3 text-dark">
                         <div class="col">
-                            <label for="tgllahir">Tanggal Lahir</label>
-                            <input type="date" name="tgllahir" class="form-control" placeholder="Tanggal Lahir">
+                            <label for="norek">Nomor Rekening</label>
+                            <input type="text" name="norek" class="form-control" placeholder="Nomor Rekening">
                         </div>
                         <div class="col">
-                            <label for="kelas">Kelas</label>
-                            <input type="text" name="kelas" class="form-control" placeholder="Kelas">
+                            <label for="keterangan">Keterangan</label>
+                            <input type="text" name="keterangan" class="form-control" placeholder="Keterangan">
                         </div>
                     </div>
                     <div class="row mb-3 text-dark">
                         <div class="col">
-                            <label for="notelp">Asal Sekolah</label>
-                            <input type="text" name="asalsekolah" class="form-control" placeholder="Asal Sekolah">
-                        </div>
-                        <div class="col">
-                            <label for="notelp">No. Telepon</label>
-                            <input type="text" name="notelp" class="form-control" placeholder="No. Telepon">
+                            <label for="jumlah">Jumlah</label>
+                            <input type="text" name="jumlah" class="form-control" placeholder="jumlah">
                         </div>
                     </div>
                     <div class="row">

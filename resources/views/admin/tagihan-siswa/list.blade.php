@@ -23,7 +23,7 @@
     @endif -->
                 <div class="d-flex align-items-center justify-content-between mb-3">
                     <h3>Data Siswa</h3>
-                    <a href="/data-siswa-create" class="btn">
+                    <a href="/tagihan-siswa-create" class="btn">
                         <i class="bi bi-plus-circle-fill svg4" style="font-size: 1.8rem;"></i>
                     </a>
                 </div>  
@@ -36,27 +36,30 @@
                     <thead class="table-primary">
                         <tr>
                             <th class="col-custom">NO</th>
-                            <th>NO INDUK SISWA</th>
+                            <th class="col-custom">NIS</th>
                             <th>NAMA LENGKAP</th>
-                            <th>KELAS</th> 
+                            <th>REKENING</th> 
+                            <th>KETERANGAN</th> 
+                            <th>JUMLAH</th> 
                             <th>FITUR</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @if($Tagihan->count() > 0)
+                            @foreach($Tagihan as $siswa)
                             <tr>
-                                <td class="align-middle col-custom">i</td>
-                                <td class="align-middle">i</td>
-                                <td class="align-middle">i</td>
-                                <td class="align-middle">i</td>
+                                <td class="align-middle col-custom">{{ $loop->iteration }}</td>
+                                <td class="align-middle col-custom">{{ $siswa->nis }}</td>
+                                <td class="align-middle">{{ $siswa->namasiswa }}</td>
+                                <td class="align-middle">{{ $siswa->norek }}</td>
+                                <td class="align-middle">{{ $siswa->keterangan }}</td>
+                                <td class="align-middle">{{ $siswa->jumlah }}</td>
                                 <td class="px-0 py-0">
                                     <div class="d-flex justify-content-center">
-                                        <a href="#" class="btn">
-                                            <i class="bi bi-bar-chart-fill svg3" style="font-size: 1.3rem;"></i>
-                                        </a>
-                                        <a href="#" class="btn">
+                                        <a href="{{ route('tagihan-siswa.edit', $siswa->id) }}" class="btn">
                                             <i class="bi bi-pen-fill svg-custom svg1" style="font-size: 1.3rem;"></i>
                                         </a>
-                                        <form action="#" class="" method="POST" type="button" onsubmit="return confirm('Delete?'">
+                                        <form action="{{ route('tagihan-siswa.destroy', $siswa->id) }}" class="" method="POST" type="button" onsubmit="return confirm('Delete?'">
                                             @csrf
                                             @method('DELETE')
                                             <button class="btn"><i class="bi bi-trash3-fill svg-custom svg2" style="font-size: 1.3rem;"></i></button>
@@ -64,6 +67,12 @@
                                     </div>
                                 </td>
                             </tr>
+                            @endforeach
+                        @else
+                        <tr>
+                            <td colspan="5" class="text-center">DATA KOSONG</td>
+                        </tr>
+                        @endif
                     </tbody>
                 </table>
                 
