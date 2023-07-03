@@ -22,7 +22,7 @@
         </div>
     @endif -->
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                    <h3>Data Guru</h3>
+                    <h3>Profil Guru</h3>
                     <a href="/data-guru-create" class="btn">
                         <i class="bi bi-plus-circle-fill svg4" style="font-size: 1.8rem;"></i>
                     </a>
