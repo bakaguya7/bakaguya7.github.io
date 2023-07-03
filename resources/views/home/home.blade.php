@@ -106,7 +106,6 @@
         </section>
     <!-- End JURUSAN -->
     <!-- PROGRAM SEKOLAH -->
-    
         <div class="program">
             {{-- <div class="jumbotron jumbotron-fluid">
                 <section id="hero-animated" class="hero-animated d-flex align-items-center">
@@ -136,6 +135,62 @@
                         <p></p>
                         <p></p>
                         <h1 class="title">PRAKTIKUM</h1>
+
+                        <div class="row g-5 g-sm-1">
+
+                            <div class="col-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                              <div class="service-item">
+                                <div class="img">
+                                  <img src="img/sma_bck.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="details position-relative">
+                                  <a href="#" class="stretched-link">
+                                    <h3>BIOLOGI</h3>
+                                  </a>
+                                </div>
+                              </div>
+                            </div><!-- End Service Item -->
+                  
+                            <div class="col-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                                <div class="service-item">
+                                  <div class="img">
+                                    <img src="img/sma_bck.jpg" class="img-fluid" alt="">
+                                  </div>
+                                  <div class="details position-relative">
+                                    <a href="#" class="stretched-link">
+                                      <h3>BIOLOGI</h3>
+                                    </a>
+                                  </div>
+                                </div>
+                            </div><!-- End Service Item -->
+
+                            <div class="col-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                                <div class="service-item">
+                                  <div class="img">
+                                    <img src="img/sma_bck.jpg" class="img-fluid" alt="">
+                                  </div>
+                                  <div class="details position-relative">
+                                    <a href="#" class="stretched-link">
+                                      <h3>BIOLOGI</h3>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div><!-- End Service Item -->
+                    
+                              <div class="col-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                                  <div class="service-item">
+                                    <div class="img">
+                                      <img src="img/sma_bck.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="details position-relative">
+                                      <a href="#" class="stretched-link">
+                                        <h3>BIOLOGI</h3>
+                                      </a>
+                                    </div>
+                                  </div>
+                              </div><!-- End Service Item -->
+                  
+                          </div>
                     </div>
                 </div>
             </section>
@@ -162,6 +217,42 @@
                         <p></p>
                         <p></p>
                         <h1 class="title">KUNJUNGAN INDUSTRI</h1>
+
+                        <div class="row">
+                            <div class="col col-md-6">
+                                <div class="card mb-2" >
+                                    <div class="row g-3">
+                                    <div class="col-md-4">
+                                        <img src="img/sma_bck.jpg" class="img-fluid rounded-start" alt="..." height="1000px">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-md-6">
+                                <div class="card mb-3" >
+                                    <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="..." class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </section>
@@ -280,11 +371,10 @@
                     <div class="section-header p-4">
                         <h1 class="title">MAGANG</h1>
                     </div>
-                    
-                    <div class="row g-3 g-lg-5">
+                    <div class="row g-1 g-lg-5">
                         <div class="col-md-4 ">
                             <div class="card" style="width: 18rem;">
-                                <img src="..." class="card-img-top" alt="...">
+                                <img src="img/sma_bck.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -295,7 +385,7 @@
 
                         <div class="col-md-4">
                             <div class="card" style="width: 18rem;">
-                                <img src="..." class="card-img-top" alt="...">
+                                <img src="img/sma_bck.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -306,7 +396,7 @@
 
                         <div class="col-md-4">
                             <div class="card" style="width: 18rem;">
-                                <img src="..." class="card-img-top" alt="...">
+                                <img src="img/sma_bck.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

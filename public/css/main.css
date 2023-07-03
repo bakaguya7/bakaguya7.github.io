@@ -257,12 +257,58 @@
   ====================== */
   .praktikum .container {
     width: 100vw;
-    height: 100vh;
+    height: 135vh;
   }
   
   .praktikum{
   
   }
+
+  /*----------------
+# Services Section
+------------------*/
+.praktikum .row {
+ padding-bottom: -20px;
+}
+
+.praktikum .img {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.praktikum .img img {
+  transition: 0.6s;
+}
+
+.praktikum .details {
+  padding: 50px 30px;
+  margin: -100px 30px 0 30px;
+  transition: all ease-in-out 0.3s;
+  background: rgb(from  white r g b);
+  position: relative;
+  background: rgba(white, 0.9);
+
+  border-radius: 8px;
+  box-shadow: 0px 0 25px rgba(var(--color-black-rgb), 0.1);
+}
+
+
+.praktikum .details h3 {
+  color: white;
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+  transition: ease-in-out 0.3s;
+}
+
+.praktikum .service-item:hover .details h3 {
+  color: var(--color-primary);
+}
+
+.praktikum .service-item:hover .img img {
+  transform: scale(1.2);
+}
+
   
   
   
@@ -392,6 +438,10 @@
   .magang .container {
     width: 100vw;
     height: 100vh;
+  }
+
+  .magang .row{
+    margin-top: -70px;
   }
   
   
