@@ -20,39 +20,34 @@
                     <div class="row justify-content-center ">
                         <img class="img-min" src="img/lg.png" alt="">
                     </div>
-                    <h3 class="text-center">?</h3>
+                    <h3 class="text-center">{{ $DataGuru->namalengkap }}</h3>
                 </div>
                 <table class="table table-hover mt-5">
                     <tbody class="">
                          <tr>
                             <td class="col-custom">NOMOR INDUK GURU</td>
                             <td class="col-custom">:</td>
-                            <td>?</td>
-                         </tr>
-                         <tr>
-                            <td class="col-custom">NAMA LENGKAP</td>
-                            <td class="col-custom">:</td>
-                            <td>?</td>
+                            <td>{{ $data->nig }}</td>
                          </tr>
                          <tr>
                             <td class="col-custom">PENDIDIKAN</td>
                             <td class="col-custom">:</td>
-                            <td>?</td>
+                            <td>{{ $data->pendidikan }}</td>
                          </tr>
                          <tr>
                             <td class="col-custom">MATA PELAJARAN</td>
                             <td class="col-custom">:</td>
-                            <td>?</td>
+                            <td>{{ $data->matapelajaran }}</td>
                          </tr>
                          <tr>
                             <td class="col-custom">ALAMAT</td>
                             <td class="col-custom">:</td>
-                            <td>?</td>
+                            <td>{{ $data->alamat }}</td>
                          </tr>
                          <tr>
                             <td class="col-custom">NOMOR TELEPON</td>
                             <td class="col-custom">:</td>
-                            <td>?</td>
+                            <td>{{ $data->notelp }}</td>
                          </tr>
                     </tbody>
                 </table>

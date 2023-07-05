@@ -11,7 +11,7 @@ use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\MateriController;
 use App\Http\Controllers\JadwalController;
 use App\Http\Controllers\PresensiController;
-use App\Http\Controllers\GajiController;
+use App\Http\Controllers\GajiGuruController;
 use App\Http\Controllers\JadwalMengajarController;
 
 // new route admin
@@ -153,13 +153,15 @@ Route::get('/guru', function () {
 });
 
 // Profil guru /////////////////////////////////////
-Route::resource('/profil', ProfilController::class);
+// Route::resource('/profil', ProfilController::class);
 
-Route::get('/profil-create', function () {
-    return view('guru.profil.create', [
-        "title" => "Create Profil Guru"
-    ]);
-});
+Route::resource('/profil', DataGuruController::class);
+
+// Route::get('/profil-create', function () {
+//     return view('guru.profil.create', [
+//         "title" => "Create Profil Guru"
+//     ]);
+// });
 
 Route::get('/profil', function () {
     return view('guru.profil.list', [
@@ -167,7 +169,7 @@ Route::get('/profil', function () {
     ]);
 });
 
-Route::post('/profil-store', [ProfilController::class, 'store']);
+// Route::post('/profil-store', [ProfilController::class, 'store']);
 
 
 // Data Materi ///////////////////////////////////////
