@@ -5,38 +5,29 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>E-School</title>
+  <title>E-School </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
+  <!-- icons title-->
   <link href="img/lg.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
 {{-- bootstrap --}}
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 <!-- CSS Files -->
 
-  <!-- Vendor CSS Files -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Vendor CSS ICONS  Files -->
   <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="vendor/quill/quill.snow.css" rel="stylesheet">
-  <link href="vendor/quill/quill.bubble.css" rel="stylesheet">
-  <link href="vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="vendor/simple-datatables/style.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
   <!-- Template Main CSS File -->
- <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 <!-- END CSS Files -->
+
 </head>
 
 <body>
@@ -54,15 +45,6 @@
       </a>
     </div>
     {{-- end logo --}}
-
-    <!-- <nav class="header-nav ms-auto">
-      <div class="search-bar">
-        <form class="search-form d-flex" method="POST" action="#">
-          <input type="text" name="query" placeholder="Search" title="Enter search keyword">
-          <button type="submit" title="Search"><i class="bi bi-search"></i></button>
-        </form>
-      </div>
-    </nav>End Icons Navigation -->
 
   </header>
 <!-- End HEADER -->
@@ -94,6 +76,7 @@
         </a>
       </li> -->
 
+      {{-- Data siswa dan guru --}}
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav2" data-bs-toggle="collapse" href="#">
           <i class="bi bi-menu-button-wide"></i>
@@ -112,6 +95,8 @@
           </li>
         </ul>
       </li>
+
+      {{-- register siswa dan guru --}}
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
             <i class="bi bi-person"></i>
@@ -130,6 +115,8 @@
           </li>
         </ul>
       </li>
+
+      {{-- Tagihan dan gaji --}}
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav3" data-bs-toggle="collapse" href="#">
           <i class="bi bi-cash-stack"></i>
@@ -295,19 +282,11 @@
   </footer>
 <!-- End FOOTER -->
 
-<!-- Vendor JS Files -->
-  <script src="vendor/apexcharts/apexcharts.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/chart.js/chart.umd.js"></script>
-  <script src="vendor/echarts/echarts.min.js"></script>
-  <script src="vendor/quill/quill.min.js"></script>
-  <script src="vendor/simple-datatables/simple-datatables.js"></script>
-  <script src="vendor/tinymce/tinymce.min.js"></script>
-  <script src="vendor/php-email-form/validate.js"></script>
-<!-- END Vendor JS Files -->
-
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
+<<<<<<< HEAD
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+=======
+>>>>>>> 1a32d56694d11bcfc97c9d3567cfae0d4e279a72
 </body>
 </html>

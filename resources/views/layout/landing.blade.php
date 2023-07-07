@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>E-School | {{ $title }}</title>
+  <title>E-School </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -67,7 +67,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Dashboard") ? 'active' : 'collapsed' }} " href="/dashboard">
+        <a class="nav-link collapsed" href="/dashboard">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
@@ -76,28 +76,28 @@
       <!-- Bagian Data Guru -->
         <li class="nav-item">
           <a class="nav-link 
-          {{ ( $title === "Data Guru" || $title === "Jadwal" || $title === "Riwayat & Gaji" || $title === "Data Mapel") ? 'active' : 'collapsed' }} " 
+          collapsed " 
           data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
             <i class="bi bi-menu-button-wide"></i><span>Data Guru</span><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul id="components-nav" class="nav-content collapse dropdown-custom" data-bs-parent="#sidebar-nav">
             <li>
-              <a href="/data-guru" class="{{ ( $title === "Data Guru") ? 'active' : '' }}">  
+              <a href="/data-guru" >  
                 <i class="bi bi-circle"></i><span>Data Guru</span>
               </a>
             </li>
             <li>
-              <a href="/jadwal" class="{{ ( $title === "Jadwal") ? 'active' : '' }}">
+              <a href="/jadwal" >
                 <i class="bi bi-circle"></i><span>Data Jadwal</span>
               </a>
             </li>
             <li>
-              <a href="/riwayat-gaji" class="{{ ( $title === "Riwayat & Gaji") ? 'active' : '' }}">
+              <a href="/riwayat-gaji" >
                 <i class="bi bi-circle"></i><span>Data Riwayat dan Gaji </span>
               </a>
             </li>
             <li>
-              <a href="/mapel" class="{{ ( $title === "Data Mapel") ? 'active' : '' }}">
+              <a href="/mapel" >
                 <i class="bi bi-circle"></i><span>Data mapel</span>
               </a>
             </li>
@@ -107,18 +107,18 @@
       
       <!-- Bagian Data Siswa -->
         <li class="nav-item">
-          <a class="nav-link {{ ( $title === "Data Siswa" || $title === "Data Wali Siswa" || $title === "Pembayaran" || $title === "Data Kelas") ? 'active' : 'collapsed' }}" 
+          <a class="nav-link collapsed" 
           data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
             <i class="bi bi-journal-text"></i><span>Data Siswa</span><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul id="forms-nav" class="nav-content collapse dropdown-custom" data-bs-parent="#sidebar-nav">
             <li>
-              <a href="/data-siswa" class="{{ ( $title === "Data Siswa") ? 'active' : '' }}">
+              <a href="/data-siswa" >
                 <i class="bi bi-circle"></i><span>Data Siswa</span>
               </a>
             </li>
             <li>
-              <a href="/data-wali-siswa" class="{{ ( $title === "Data Wali Siswa") ? 'active' : '' }}">
+              <a href="/data-wali-siswa" >
                 <i class="bi bi-circle"></i><span>Data Wali Siswa</span>
               </a>
             </li>
@@ -128,43 +128,43 @@
             
       <!-- Bagian Program Sekolah -->
         <li class="nav-item">
-          <a class="nav-link {{ ( $title === "Pengembangan" || $title === "Program Praktikum" || $title === "Program Lomba" || $title === "Kunjungan Industri" ||  $title === "Program Ekskul" ||  $title === "Kerja Sama" ||  $title === "Program Magang") ? 'active' : 'collapsed' }}" 
+          <a class="nav-link collapsed" 
           data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
             <i class="bi bi-bar-chart"></i><span>Program Sekolah</span><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul id="charts-nav" class="nav-content collapse dropdown-custom" data-bs-parent="#sidebar-nav">
             <li>
-              <a href="/pengembangan" class="{{ ( $title === "Pengembangan") ? 'active' : '' }}">
+              <a href="/pengembangan" >
                 <i class="bi bi-circle"></i><span>Pengembangan</span>
               </a>
             </li>
             <li>
-              <a href="/program-praktikum" class="{{ ( $title === "Program Praktikum") ? 'active' : '' }}">
+              <a href="/program-praktikum" >
                 <i class="bi bi-circle"></i><span>Program Praktikum</span>
               </a>
             </li>
             <li>
-              <a href="/program-lomba" class="{{ ( $title === "Program Lomba") ? 'active' : '' }}">
+              <a href="/program-lomba" >
                 <i class="bi bi-circle"></i><span>Program Lomba</span>
               </a>
             </li>
             <li>
-              <a href="/kunjungan-industri" class="{{ ( $title === "Kunjungan Industri") ? 'active' : '' }}">
+              <a href="/kunjungan-industri" >
                 <i class="bi bi-circle"></i><span>Kunjungan Industri</span>
               </a>
             </li>
             <li>
-              <a href="/program-ekskul" class="{{ ( $title === "Program Ekskul") ? 'active' : '' }}">
+              <a href="/program-ekskul" >
                 <i class="bi bi-circle"></i><span>Program Ekskul</span>
               </a>
             </li>
             <li>
-              <a href="/kerja-sama" class="{{ ( $title === "Kerja Sama") ? 'active' : '' }}">
+              <a href="/kerja-sama" >
                 <i class="bi bi-circle"></i><span>Program Kerja Sama</span>
               </a>
             </li>
             <li>
-              <a href="/program-magang" class="{{ ( $title === "Program Magang") ? 'active' : '' }}">
+              <a href="/program-magang" >
                 <i class="bi bi-circle"></i><span>Program Magang</span>
               </a>
             </li>
@@ -174,7 +174,7 @@
 
       <!-- Bagian Profil Sekolah -->
       <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Profil Sekolah") ? 'active' : 'collapsed' }}" href="/profile">
+        <a class="nav-link collapsed" href="/profile">
           <i class="bi bi-person"></i>
           <span>Profile Sekolah</span>
         </a>
