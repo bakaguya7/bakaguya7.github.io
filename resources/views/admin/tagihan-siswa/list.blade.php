@@ -23,7 +23,7 @@
     @endif -->
                 <div class="d-flex align-items-center justify-content-between mb-3">
                     <h3>Tagihan Siswa</h3>
-                    <a href="/tagihan-siswa-create" class="btn">
+                    <a href="{{ route('tagihan-siswa.create') }}" class="btn">
                         <i class="bi bi-plus-circle-fill svg4" style="font-size: 1.8rem;"></i>
                     </a>
                 </div>  
@@ -36,7 +36,6 @@
                     <thead class="table-primary">
                         <tr>
                             <th class="col-custom">NO</th>
-                            <th class="col-custom">NIS</th>
                             <th>NAMA LENGKAP</th>
                             <th>REKENING</th> 
                             <th>KETERANGAN</th> 
@@ -49,7 +48,6 @@
                             @foreach($Tagihan as $siswa)
                             <tr>
                                 <td class="align-middle col-custom">{{ $loop->iteration }}</td>
-                                <td class="align-middle col-custom">{{ $siswa->nis }}</td>
                                 <td class="align-middle">{{ $siswa->namasiswa }}</td>
                                 <td class="align-middle">{{ $siswa->norek }}</td>
                                 <td class="align-middle">{{ $siswa->keterangan }}</td>

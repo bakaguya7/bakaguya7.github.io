@@ -52,24 +52,24 @@
               </div>
               
               <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                <form action="/login/siswa" method="POST">
+                <form action="{{ route('login-siswa') }}" method="POST">
                   @csrf
                   <!-- Username input -->
                   <div class="form-outline mb-4">
                     <label class="form-label" for="email">Email</label>
-                    <input type="text" id="email" class="form-control form-control-lg"
+                    <input type="text" name="email" id="email" class="form-control form-control-lg"
                       placeholder="Masukkan email anda" />
                   </div>
 
                   <!-- Password input -->
                   <div class="form-outline mb-3">
                     <label class="form-label" for="password">Password</label>
-                    <input type="password" id="password" class="form-control form-control-lg"
+                    <input type="password" name="password" id="password" class="form-control form-control-lg"
                       placeholder="Enter password" />
                   </div>
 
                   <div class="text-center text-lg-start mt-4 pt-2">
-                    <button name="submit" type="submit" class="btn btn-lg">Login</button>
+                  <input type="submit" class="btn btn-primary" value="Login">
                   </div>
 
                 </form>

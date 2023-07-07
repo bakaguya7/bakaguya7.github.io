@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\JadwalMengajar;
+use App\Models\DataGuru;
+
 use Illuminate\Http\Request;
+use App\Http\Requests\StoreDataGuruRequest;
+use App\Http\Requests\UpdateDataGuruRequest;
 use App\Http\Requests\StoreJadwalMengajarRequest;
 use App\Http\Requests\UpdateJadwalMengajarRequest;
 
@@ -18,10 +22,11 @@ class JadwalMengajarController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    // public function create()
-    // {
-    //     return view('admin.register-siswa.create');
-    // }
+    public function create()
+    {
+        $DataGuru = DataGuru::orderBy('created_at', 'DESC')->get();
+        return view('admin.jadwal-mengajar.create', compact('DataGuru'));
+    }
 
     /**
      * Store a newly created resource in storage.

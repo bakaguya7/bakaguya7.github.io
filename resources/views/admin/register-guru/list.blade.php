@@ -23,7 +23,7 @@
     @endif -->
                 <div class="d-flex align-items-center justify-content-between mb-3">
                     <h3>Register Guru</h3>
-                    <a href="/register-guru-create" class="btn">
+                    <a href="{{ route('register-guru.create') }}" class="btn">
                     <i class="bi bi-plus-circle-fill svg4" style="font-size: 1.8rem;"></i>
                     </a>
                 </div>  
@@ -36,7 +36,6 @@
                     <thead class="table-primary">
                         <tr>
                             <th class="col-custom">NO</th>
-                            <th>NO INDUK GURU</th>
                             <th>NAMA LENGKAP</th>
                             <th>EMAIL</th>
                             <th>PASSWORD</th> 
@@ -48,10 +47,9 @@
                             @foreach($RegisGuru as $guru)
                             <tr>
                                 <td class="align-middle col-custom">{{ $loop->iteration }}</td>
-                                <td class="align-middle">{{ $guru->nig }}</td>
                                 <td class="align-middle">{{ $guru->nama }}</td>
                                 <td class="align-middle">{{ $guru->email }}</td>
-                                <td class="align-middle">*****</td>
+                                <td class="align-middle">{{ $guru->password }}</td>
                                 <td class="px-0 py-0">
                                     <div class="d-flex justify-content-center">
                                         <a href="{{ route('register-guru.edit', $guru->id) }}" class="btn">

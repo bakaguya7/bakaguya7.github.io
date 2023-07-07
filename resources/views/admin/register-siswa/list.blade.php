@@ -23,7 +23,7 @@
     @endif -->
                 <div class="d-flex align-items-center justify-content-between mb-3">
                     <h3>Register Siswa</h3>
-                    <a href="/register-siswa-create" class="btn">
+                    <a href="{{ route('register-siswa.create') }}" class="btn">
                         <i class="bi bi-plus-circle-fill svg4" style="font-size: 1.8rem;"></i>
                     </a>
                 </div>  
@@ -36,7 +36,6 @@
                     <thead class="table-primary">
                         <tr>
                             <th class="col-custom">NO</th>
-                            <th>NO INDUK SISWA</th>
                             <th>NAMA LENGKAP</th>
                             <th>EMAIL</th> 
                             <th>PASSWORD</th>
@@ -48,7 +47,6 @@
                             @foreach($RegisSiswa as $siswa)
                             <tr>
                                 <td class="align-middle col-custom">{{ $loop->iteration }}</td>
-                                <td class="align-middle">{{ $siswa->nis }}</td>
                                 <td class="align-middle">{{ $siswa->nama }}</td>
                                 <td class="align-middle">{{ $siswa->email }}</td>
                                 <td class="align-middle">{{ $siswa->password }}</td>

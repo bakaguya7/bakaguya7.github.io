@@ -22,10 +22,6 @@
                     @method('PUT')
                     <div class="row mb-3 text-dark">
                         <div class="col">
-                            <label for="name">Nomor Induk Guru</label>
-                            <input type="text" name="nig" class="form-control" value="{{ $RegisGuru->nig }}" placeholder="Nomor Induk Siswa">
-                        </div>
-                        <div class="col">
                             <label for="nama">Nama Lengkap</label>
                             <input type="text" name="nama" class="form-control" value="{{ $RegisGuru->nama }}" placeholder="Nama Lengkap">
                         </div>

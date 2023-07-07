@@ -20,14 +20,12 @@
                 <form action="/register-siswa-store" method="POST">
                     @csrf
                     <div class="row mb-3 text-dark">
-                        <div class="col">
-                            <label for="nis">NIS</label>
-                            <input type="text" name="nis" class="form-control" placeholder="Nomor Induk Siswa">
-                        </div>
-                        <div class="col">
-                            <label for="nama">Nama Lengkap</label>
-                            <input type="text" name="nama" class="form-control" placeholder="Nama Lengkap">
-                        </div>
+                        <label for="nama">Nama Siswa</label>
+                        <select class="form-control" name="nama">
+                            @foreach($DataSiswa as $data)
+                                <option value="{!! $data->nama !!}">{{ $data->nama }}</option>
+                            @endforeach
+                        </select>
                     </div>
                     <div class="row mb-3 text-dark">
                         <div class="col">
