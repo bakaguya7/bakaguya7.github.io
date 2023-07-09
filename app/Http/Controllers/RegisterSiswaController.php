@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\RegisterSiswa;
+use App\Models\DataSiswa;
 
 use Illuminate\Http\Request;
-use DataSiswaController;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use App\Http\Requests\StoreDataSiswaRequest;
 use App\Http\Requests\UpdateDataSiswaRequest;
-
 use App\Http\Requests\StoreRegisterSiswaRequest;
 use App\Http\Requests\UpdateRegisterSiswaRequest;
 
@@ -27,21 +28,52 @@ class RegisterSiswaController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    // public function create(DataSiswa $id)
-    // {
-    //     $DataSiswa = DataSiswa::findOrFail($id);
-    //     return view('admin.register-siswa.create', compact('DataSiswa'));
-    // }
+    public function create()
+    {
+        $DataSiswa = DataSiswa::orderBy('created_at', 'DESC')->get();
+        return view('admin.register-siswa.create', compact('DataSiswa'));
+    }
 
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
+        $user = new RegisterSiswa();
+
+        $user->nama = $request->nama;
+        $user->email = $request->email;
+        $user->password = Hash::make($request->password);
+
+        $user->save();
         // dd($request->all());
-        RegisterSiswa::create($request->all());
+        // RegisterSiswa::create($request->all());
 
         return redirect()->route('register-siswa.index')->with('success', 'AKUN SISWA BERHASIL DITAMBAHKAN');
+    }
+
+    public function login(){
+        return view('siswa.login');
+    }
+
+    public function loginpost(Request $request){
+        dd($request->all());
+        // $credetials = [
+        //     'email' => $request->email,
+        //     'password' => $request->password
+        // ];
+
+        // if(Auth::attempt($credetials)){
+        //     return redirect('/siswa')->with('success', 'Login successfully');
+        // }
+
+        // return back()->with('error', 'email or password incorrect');
+    }
+
+    public function logout(){
+        Auth::logout();
+
+        return redirect()->route('login');
     }
 
     /**

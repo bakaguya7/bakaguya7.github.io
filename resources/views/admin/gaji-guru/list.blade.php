@@ -23,7 +23,7 @@
     @endif -->
                 <div class="d-flex align-items-center justify-content-between mb-3">
                     <h3>Gaji Guru</h3>
-                    <a href="/gaji-guru-create" class="btn">
+                    <a href="{{ route('gaji-guru.create') }}" class="btn">
                         <i class="bi bi-plus-circle-fill svg4" style="font-size: 1.8rem;"></i>
                     </a>
                 </div>  
@@ -36,8 +36,7 @@
                     <thead class="table-primary">
                         <tr>
                             <th class="col-custom">NO</th>
-                            <th class="col-custom">NIG</th>
-                            <th>NAMA LENGKAP</th>
+                            <th class="col-custom">NAMA</th>
                             <th>NOMINAL</th> 
                             <th>KETERANGAN</th>
                             <th>FITUR</th>
@@ -48,8 +47,7 @@
                             @foreach($GajiGuru as $guru)
                             <tr>
                                 <td class="align-middle col-custom">{{ $loop->iteration }}</td>
-                                <td class="align-middle col-custom">{{ $guru->nig }}</td>
-                                <td class="align-middle">{{ $guru->nama }}</td>
+                                <td class="align-middle col-custom">{{ $guru->nama }}</td>
                                 <td class="align-middle">{{ $guru->nominal }}</td>
                                 <td class="align-middle">{{ $guru->keterangan }}</td>
                                 <td class="px-0 py-0">

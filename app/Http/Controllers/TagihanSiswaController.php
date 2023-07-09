@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\TagihanSiswa;
+use App\Models\DataSiswa;
+
 use Illuminate\Http\Request;
+use App\Http\Requests\StoreDataSiswaRequest;
+use App\Http\Requests\UpdateDataSiswaRequest;
 use App\Http\Requests\StoreTagihanSiswaRequest;
 use App\Http\Requests\UpdateTagihanSiswaRequest;
 
@@ -18,10 +22,11 @@ class TagihanSiswaController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    // public function create()
-    // {
-    //     return view('admin.register-siswa.create');
-    // }
+    public function create()
+    {
+        $DataSiswa = DataSiswa::orderBy('created_at', 'DESC')->get();
+        return view('admin.tagihan-siswa.create', compact('DataSiswa'));
+    }
 
     /**
      * Store a newly created resource in storage.

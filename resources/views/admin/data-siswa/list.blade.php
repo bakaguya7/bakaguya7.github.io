@@ -23,7 +23,7 @@
     @endif -->
                 <div class="d-flex align-items-center justify-content-between mb-3">
                     <h3>Data Siswa</h3>
-                    <a href="/data-siswa-create" class="btn">
+                    <a href="{{ route('data-siswa.create') }}" class="btn">
                         <i class="bi bi-plus-circle-fill svg4" style="font-size: 1.8rem;"></i>
                     </a>
                 </div>  

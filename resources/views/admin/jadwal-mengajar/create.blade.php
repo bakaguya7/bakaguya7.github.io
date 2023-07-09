@@ -42,7 +42,11 @@
                     <div class="row mb-3 text-dark">
                         <div class="col">
                             <label for="namaguru">Nama Guru</label>
-                            <input type="text" name="namaguru" class="form-control" placeholder="Nama Guru">
+                            <select class="form-control" name="namaguru">
+                                @foreach($DataGuru as $data)
+                                    <option value="{!! $data->namalengkap !!}">{{ $data->namalengkap }}</option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
                     <div class="row">

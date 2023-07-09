@@ -21,12 +21,12 @@
                     @csrf
                     <div class="row mb-3 text-dark">
                         <div class="col">
-                            <label for="nis">NIS</label>
-                            <input type="text" name="nis" class="form-control" placeholder="Nomor Induk Siswa">
-                        </div>
-                        <div class="col">
                             <label for="namasiswa">Nama Lengkap</label>
-                            <input type="text" name="namasiswa" class="form-control" placeholder="Nama Lengkap">
+                            <select class="form-control" name="namasiswa">
+                                @foreach($DataSiswa as $data)
+                                    <option value="{!! $data->nama !!}">{{ $data->nama }}</option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
                     <div class="row mb-3 text-dark">
@@ -55,5 +55,4 @@
             </div>
         </section>
 </main>
-
-@endsection 
+@endsection

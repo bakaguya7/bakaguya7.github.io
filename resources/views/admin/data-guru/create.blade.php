@@ -31,8 +31,8 @@
                     </div>
                     <div class="row mb-3 text-dark">
                         <div class="col">
-                            <label for="tgllahir">Pendidikan</label>
-                            <input type="date" name="pendidikan" class="form-control" placeholder="Pendidikan">
+                            <label for="pendidikan">Pendidikan</label>
+                            <input type="text" name="pendidikan" class="form-control" placeholder="Pendidikan">
                         </div>
                         <div class="col">
                             <label for="kelas">Mata Pelajaran</label>

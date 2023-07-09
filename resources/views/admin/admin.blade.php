@@ -21,6 +21,9 @@
   <!-- Vendor CSS ICONS  Files -->
   <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="css/style.css">
 <!-- END CSS Files -->
@@ -281,5 +284,9 @@
 
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
+<<<<<<< HEAD
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+=======
+>>>>>>> 1a32d56694d11bcfc97c9d3567cfae0d4e279a72
 </body>
 </html>

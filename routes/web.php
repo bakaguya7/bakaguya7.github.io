@@ -14,8 +14,14 @@ use App\Http\Controllers\PresensiController;
 use App\Http\Controllers\GajiGuruController;
 use App\Http\Controllers\JadwalMengajarController;
 
+<<<<<<< HEAD
 ////////////////////////////////////////////////////////////////////////////////
 // ### DASHBOARD ADMIN
+=======
+Auth::routes();
+
+Route::get('ajax-autocomplete-search', [TagihanSiswaController::class,'selectSearch']);
+>>>>>>> 4e795cf8e58a6b76b2031b156b8b4438deaea708
 
 // new route admin
 Route::get('/admin', function () {
@@ -40,22 +46,22 @@ Route::post('/register-siswa-store', [RegisterSiswaController::class, 'store']);
 
 Route::resource('/register-guru', RegisterGuruController::class);
 
-Route::get('/register-guru-create', function () {
-    return view('admin.register-guru.create', [
-        "title" => "Create Register Guru"
-    ]);
-});
+// Route::get('/register-guru-create', function () {
+//     return view('admin.register-guru.create', [
+//         "title" => "Create Register Guru"
+//     ]);
+// });
 
 Route::post('/register-guru-store', [RegisterGuruController::class, 'store']);
 
 // data-siswa ///////////////////////////////
 Route::resource('/data-siswa', DataSiswaController::class);
 
-Route::get('/data-siswa-create', function () {
-    return view('admin.data-siswa.create', [
-        "title" => "Create Data Siswa"
-    ]);
-});
+// Route::get('/data-siswa-create', function () {
+//     return view('admin.data-siswa.create', [
+//         "title" => "Create Data Siswa"
+//     ]);
+// });
 
 
 
@@ -82,11 +88,11 @@ Route::post('/program-sekolah-store', [ProgramSekolahController::class, 'store']
 // Data Guru
 Route::resource('/data-guru', DataGuruController::class);
 
-Route::get('/data-guru-create', function () {
-    return view('admin.data-guru.create', [
-        "title" => "Create Data Guru"
-    ]);
-});
+// Route::get('/data-guru-create', function () {
+//     return view('admin.data-guru.create', [
+//         "title" => "Create Data Guru"
+//     ]);
+// });
 
 
 
@@ -125,10 +131,15 @@ Route::get('/jadwal-mengajar-create', function () {
 
 Route::post('/jadwal-mengajar-store', [JadwalMengajarController::class, 'store']);
 
+Route::group(['middleware' => 'guest'], function(){
+    Route::get('/login-siswa', 'App\Http\Controllers\RegisterSiswaController@login')->name('login-siswa');
+    Route::post('/login-siswa', 'App\Http\Controllers\RegisterSiswaController@loginpost')->name('login-siswa');
+});
 
-Route::get('/login-guru', [RegisterGuruController::class, 'login'])->name('login');
-Route::post('/login-guru', [RegisterGuruController::class, 'loginPost'])->name('login');
-
+Route::group(['middleware' => 'auth'], function(){
+    Route::get('/siswa', [HomeController::class, 'index']);
+    Route::delete('/logout', [AuthController::class, 'logout'])->name('logout');
+});
 // Route::get('/register-siswa-edit', function(){
 //     return view('admin.register-siswa.edit', [
 //         "title" => "Edit Register Siswa"
@@ -595,3 +606,11 @@ Route::get('/program-magang', function () {
 // Route::get('/login', [SessionController::class, 'index']);
 // // Route::post('/login/siswa', [SessionController::class, 'login']);
 // Route::post('/login/siswa', [SessionController::class, 'login']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
