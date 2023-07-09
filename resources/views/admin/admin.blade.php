@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>E-School </title>
+  <title>E-School | {{ $title }}</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -84,12 +84,12 @@
         </a>
         <ul id="components-nav2" class="nav-content collapse dropdown-custom " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="/data-siswa">
+            <a href="/data-siswa" >
               <i class="bi bi-circle"></i><span>Data Siswa</span>
             </a>
           </li>
           <li>
-            <a href="/data-guru">
+            <a href="/data-guru" ">
               <i class="bi bi-circle"></i><span>Data Guru</span>
             </a>
           </li>
@@ -144,7 +144,7 @@
       </li>
       
       <li class="nav-item">
-        <a class="nav-link collapsed" href="/program-sekolah">
+        <a class="nav-link {{ ( $title === "Program Sekolah") ? 'active' : 'collapsed' }}" href="/program-sekolah">
           <i class="bi bi-grid"></i>
           <span>Program Sekolah</span>
         </a>
@@ -152,116 +152,116 @@
       
 
       <!-- Bagian Data Guru -->
-      <!-- <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-menu-button-wide"></i><span>Data Guru</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="/data-guru">
-              <i class="bi bi-circle"></i><span>Data Guru</span>
-            </a>
-          </li>
-          <li>
-            <a href="/jadwal">
-              <i class="bi bi-circle"></i><span>Data Jadwal</span>
-            </a>
-          </li>
-          <li>
-            <a href="/riwayat-gaji">
-              <i class="bi bi-circle"></i><span>Data Riwayat dan Gaji </span>
-            </a>
-          </li>
-          <li>
-            <a href="/mapel">
-              <i class="bi bi-circle"></i><span>Data Mapel</span>
-            </a>
-          </li>
-        </ul>
-      </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+            <i class="bi bi-menu-button-wide"></i><span>Data Guru</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="/data-guru">
+                <i class="bi bi-circle"></i><span>Data Guru</span>
+              </a>
+            </li>
+            <li>
+              <a href="/jadwal">
+                <i class="bi bi-circle"></i><span>Data Jadwal</span>
+              </a>
+            </li>
+            <li>
+              <a href="/riwayat-gaji">
+                <i class="bi bi-circle"></i><span>Data Riwayat dan Gaji </span>
+              </a>
+            </li>
+            <li>
+              <a href="/mapel">
+                <i class="bi bi-circle"></i><span>Data Mapel</span>
+              </a>
+            </li>
+          </ul>
+        </li>
        -->
       <!-- Bagian Data Siswa -->
-      <!-- <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-journal-text"></i><span>Data Siswa</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="/data-siswa">
-              <i class="bi bi-circle"></i><span>Data Siswa</span>
-            </a>
-          </li>
-          <li>
-            <a href="/wali-siswa">
-              <i class="bi bi-circle"></i><span>Data Wali Siswa</span>
-            </a>
-          </li>
-          <li>
-            <a href="/pembayaran">
-              <i class="bi bi-circle"></i><span>Data Pembayaran</span>
-            </a>
-          </li>
-          <li>
-            <a href="/data-kelas">
-              <i class="bi bi-circle"></i><span>Data Kelas</span>
-            </a>
-          </li>
-        </ul>
-      </li> -->
+        <!-- <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+            <i class="bi bi-journal-text"></i><span>Data Siswa</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="/data-siswa">
+                <i class="bi bi-circle"></i><span>Data Siswa</span>
+              </a>
+            </li>
+            <li>
+              <a href="/wali-siswa">
+                <i class="bi bi-circle"></i><span>Data Wali Siswa</span>
+              </a>
+            </li>
+            <li>
+              <a href="/pembayaran">
+                <i class="bi bi-circle"></i><span>Data Pembayaran</span>
+              </a>
+            </li>
+            <li>
+              <a href="/data-kelas">
+                <i class="bi bi-circle"></i><span>Data Kelas</span>
+              </a>
+            </li>
+          </ul>
+        </li> -->
             
       <!-- Bagian Program Sekolah -->
-      <!-- <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-bar-chart"></i><span>Program Sekolah</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="/pembangunan">
-              <i class="bi bi-circle"></i><span>Pembangunan</span>
-            </a>
-          </li>
-          <li>
-            <a href="/program-praktikum">
-              <i class="bi bi-circle"></i><span>Program Praktikum</span>
-            </a>
-          </li>
-          <li>
-            <a href="/program-lomba">
-              <i class="bi bi-circle"></i><span>Program Lomba</span>
-            </a>
-          </li>
-          <li>
-            <a href="/kunjungan-industri">
-              <i class="bi bi-circle"></i><span>Kunjungan Industri</span>
-            </a>
-          </li>
-          <li>
-            <a href="/program-ekskul">
-              <i class="bi bi-circle"></i><span>Program Ekskul</span>
-            </a>
-          </li>
-          <li>
-            <a href="/kerja-sama">
-              <i class="bi bi-circle"></i><span>Program Kerja Sama</span>
-            </a>
-          </li>
-          <li>
-            <a href="/program-magang">
-              <i class="bi bi-circle"></i><span>Program Magang</span>
-            </a>
-          </li>
-        </ul>
-      </li> -->
+        <!-- <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+            <i class="bi bi-bar-chart"></i><span>Program Sekolah</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="/pembangunan">
+                <i class="bi bi-circle"></i><span>Pembangunan</span>
+              </a>
+            </li>
+            <li>
+              <a href="/program-praktikum">
+                <i class="bi bi-circle"></i><span>Program Praktikum</span>
+              </a>
+            </li>
+            <li>
+              <a href="/program-lomba">
+                <i class="bi bi-circle"></i><span>Program Lomba</span>
+              </a>
+            </li>
+            <li>
+              <a href="/kunjungan-industri">
+                <i class="bi bi-circle"></i><span>Kunjungan Industri</span>
+              </a>
+            </li>
+            <li>
+              <a href="/program-ekskul">
+                <i class="bi bi-circle"></i><span>Program Ekskul</span>
+              </a>
+            </li>
+            <li>
+              <a href="/kerja-sama">
+                <i class="bi bi-circle"></i><span>Program Kerja Sama</span>
+              </a>
+            </li>
+            <li>
+              <a href="/program-magang">
+                <i class="bi bi-circle"></i><span>Program Magang</span>
+              </a>
+            </li>
+          </ul>
+        </li> -->
 
       
 
       <!-- Bagian Login -->
-      <!-- <li class="nav-item">
-        <a class="nav-link collapsed" href="/login">
-          <i class="bi bi-box-arrow-in-right"></i>
-          <span>Login</span>
-        </a>
-      </li> -->
+        <!-- <li class="nav-item">
+          <a class="nav-link collapsed" href="/login">
+            <i class="bi bi-box-arrow-in-right"></i>
+            <span>Login</span>
+          </a>
+        </li> -->
 
     </ul>
 

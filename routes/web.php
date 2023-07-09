@@ -14,9 +14,14 @@ use App\Http\Controllers\PresensiController;
 use App\Http\Controllers\GajiGuruController;
 use App\Http\Controllers\JadwalMengajarController;
 
+<<<<<<< HEAD
+////////////////////////////////////////////////////////////////////////////////
+// ### DASHBOARD ADMIN
+=======
 Auth::routes();
 
 Route::get('ajax-autocomplete-search', [TagihanSiswaController::class,'selectSearch']);
+>>>>>>> 4e795cf8e58a6b76b2031b156b8b4438deaea708
 
 // new route admin
 Route::get('/admin', function () {
@@ -49,7 +54,7 @@ Route::resource('/register-guru', RegisterGuruController::class);
 
 Route::post('/register-guru-store', [RegisterGuruController::class, 'store']);
 
-// data-siswa
+// data-siswa ///////////////////////////////
 Route::resource('/data-siswa', DataSiswaController::class);
 
 // Route::get('/data-siswa-create', function () {
@@ -57,6 +62,8 @@ Route::resource('/data-siswa', DataSiswaController::class);
 //         "title" => "Create Data Siswa"
 //     ]);
 // });
+
+
 
 Route::post('/data-siswa-store', [DataSiswaController::class, 'store']);
 
@@ -70,6 +77,12 @@ Route::get('/program-sekolah-create', function () {
     ]);
 });
 
+Route::get('/program-sekolah', function () {
+    return view('admin.program-sekolah.list', [
+        "title" => "Program Sekolah"
+    ]);
+});
+
 Route::post('/program-sekolah-store', [ProgramSekolahController::class, 'store']);
 
 // Data Guru
@@ -80,6 +93,8 @@ Route::resource('/data-guru', DataGuruController::class);
 //         "title" => "Create Data Guru"
 //     ]);
 // });
+
+
 
 Route::post('/data-guru-store', [DataGuruController::class, 'store']);
 
@@ -439,63 +454,63 @@ Route::get('/dashboard-siswa', function () {
 // });
 
 
-// //############################################################
-// // Route PROGRAM SEKOLAH
-// // ----------------------------------------------------
-// // Pembangunan
-// Route::get('/pengembangan', function () {
-//     return view('program.pengembangan', [
-//         "title" => "Pengembangan"
-//     ]);
-// });
+//############################################################
+// Route PROGRAM SEKOLAH
+// ----------------------------------------------------
+// Pembangunan
+Route::get('/pengembangan', function () {
+    return view('program.pengembangan', [
+        "title" => "Pengembangan"
+    ]);
+});
 
-// // ----------------------------------------------------
-// // Program Praktikum
-// Route::get('/program-praktikum', function () {
-//     return view('program.program-praktikum', [
-//         "title" => "Program Praktikum"
-//     ]);
-// });
+// ----------------------------------------------------
+// Program Praktikum
+Route::get('/program-praktikum', function () {
+    return view('program.program-praktikum', [
+        "title" => "Program Praktikum"
+    ]);
+});
 
-// // ----------------------------------------------------
-// // Program Lomba
-// Route::get('/program-lomba', function () {
-//     return view('program.program-lomba', [
-//         "title" => "Program Lomba"
-//     ]);
-// });
+// ----------------------------------------------------
+// Program Lomba
+Route::get('/program-lomba', function () {
+    return view('program.program-lomba', [
+        "title" => "Program Lomba"
+    ]);
+});
 
-// // ----------------------------------------------------
-// // Kunjungan Industri
-// Route::get('/kunjungan-industri', function () {
-//     return view('program.kunjungan-industri', [
-//         "title" => "Kunjungan Industri"
-//     ]);
-// });
+// ----------------------------------------------------
+// Kunjungan Industri
+Route::get('/kunjungan-industri', function () {
+    return view('program.kunjungan-industri', [
+        "title" => "Kunjungan Industri"
+    ]);
+});
 
-// // ----------------------------------------------------
-// // Program Ekskul
-// Route::get('/program-ekskul', function () {
-//     return view('program.program-ekskul', [
-//         "title" => "Program Ekskul"
-//     ]);
-// });
+// ----------------------------------------------------
+// Program Ekskul
+Route::get('/program-ekskul', function () {
+    return view('program.program-ekskul', [
+        "title" => "Program Ekskul"
+    ]);
+});
 
-// // ----------------------------------------------------
-// // Program Kerja Sama
-// Route::get('/kerja-sama', function () {
-//     return view('program.kerja-sama', [
-//         "title" => "Kerja Sama"
-//     ]);
-// });
+// ----------------------------------------------------
+// Program Kerja Sama
+Route::get('/kerja-sama', function () {
+    return view('program.kerja-sama', [
+        "title" => "Kerja Sama"
+    ]);
+});
 
-// // ----------------------------------------------------
-// // Program Magang
-// Route::get('/program-magang', function () {
-//     return view('program.program-magang', [
-//         "title" => "Program Magang"
-//     ]);
-// });
+// ----------------------------------------------------
+// Program Magang
+Route::get('/program-magang', function () {
+    return view('program.program-magang', [
+        "title" => "Program Magang"
+    ]);
+});
 
 
 // //############################################################
