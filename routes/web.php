@@ -116,10 +116,9 @@ Route::get('/jadwal-mengajar-create', function () {
 
 Route::post('/jadwal-mengajar-store', [JadwalMengajarController::class, 'store']);
 
-Route::group(['middleware' => 'guest'], function(){
-    Route::get('/login-siswa', 'App\Http\Controllers\RegisterSiswaController@login')->name('login-siswa');
+Route::get('/login-siswa', 'App\Http\Controllers\RegisterSiswaController@login')->name('login-siswa');
     Route::post('/login-siswa', 'App\Http\Controllers\RegisterSiswaController@loginpost')->name('login-siswa');
-});
+
 
 Route::group(['middleware' => 'auth'], function(){
     Route::get('/siswa', [HomeController::class, 'index']);
@@ -591,6 +590,10 @@ Route::get('/dashboard-siswa', function () {
 // Route::get('/login', [SessionController::class, 'index']);
 // // Route::post('/login/siswa', [SessionController::class, 'login']);
 // Route::post('/login/siswa', [SessionController::class, 'login']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
 
