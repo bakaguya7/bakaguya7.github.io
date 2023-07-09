@@ -14,14 +14,12 @@ use App\Http\Controllers\PresensiController;
 use App\Http\Controllers\GajiGuruController;
 use App\Http\Controllers\JadwalMengajarController;
 
-<<<<<<< HEAD
 ////////////////////////////////////////////////////////////////////////////////
 // ### DASHBOARD ADMIN
-=======
+
 Auth::routes();
 
 Route::get('ajax-autocomplete-search', [TagihanSiswaController::class,'selectSearch']);
->>>>>>> 4e795cf8e58a6b76b2031b156b8b4438deaea708
 
 // new route admin
 Route::get('/admin', function () {
