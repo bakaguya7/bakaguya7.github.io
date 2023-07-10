@@ -69,7 +69,7 @@
             <div class="container">
                 <div class="card">
                     <div class="frmt">
-                        <img src="img/sma_bck.jpg" alt="">
+                        <img src="img/jurusan/mipa.jpeg" alt="">
                         <h2>MIPA</h2> 
                     </div>
                     <div class="isi">                       
@@ -81,7 +81,7 @@
 
                 <div class="card">
                     <div class="frmt">
-                        <img src="img/sma_bck.jpg" alt="">
+                        <img src="img/jurusan/ips.png" alt="">
                         <h2>IPS</h2> 
                     </div>
                     <div class="isi">                       
@@ -93,7 +93,7 @@
 
                 <div class="card">
                     <div class="frmt">
-                        <img src="img/sma_bck.jpg" alt="">
+                        <img src="img/jurusan/sastra.jpg" alt="">
                         <h2>SASTRA</h2> 
                     </div>
                     <div class="isi">
@@ -123,6 +123,56 @@
                         <p></p>
                         <h1 class="title">PEMBANGUNAN</h1>
                     </div>
+                    <!-- Carousel wrapper -->
+                        <div id="carouselExampleDark" class="carousel carousel-light slide" data-mdb-ride="carousel">
+                            <!-- Indicators -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              </div>
+                            <!-- Inner -->
+                            <div class="carousel-inner">
+                            <!-- Single item -->
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                    <img src="img/pembangunan/one.jpeg" class="d-block w-100" />
+                                    <div class="carousel-caption d-none d-md-block">
+                                    <h5>Tahun .....</h5>
+                                    {{-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> --}}
+                                    </div>
+                                </div>
+                            
+                                <!-- Single item -->
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="img/pembangunan/two.jpg" class="d-block w-100" />
+                                    <div class="carousel-caption d-none d-md-block">
+                                    <h5>Tahun ...</h5>
+                                    {{-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> --}}
+                                    </div>
+                                </div>
+                            
+                                <!-- Single item -->
+                                <div class="carousel-item">
+                                    <img src="img/pembangunan/tree.jpg" class="d-block w-100" />
+                                    <div class="carousel-caption d-none d-md-block">
+                                    <h5>SMA Sekarang</h5>
+                                    {{-- <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> --}}
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Inner -->
+                        
+                            <!-- Controls -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                        </div>
+                        <!-- Carousel wrapper -->
                 </div>
             </section>
         <!-- End PEMBANGUNAN -->
@@ -141,7 +191,7 @@
                             <div class="col-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                               <div class="service-item">
                                 <div class="img">
-                                  <img src="img/sma_bck.jpg" class="img-fluid" alt="">
+                                  <img src="img/praktikum/biologi.jpg" class="img-fluid" alt="">
                                 </div>
                                 <div class="details position-relative">
                                   <a href="#" class="stretched-link">
@@ -154,11 +204,11 @@
                             <div class="col-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                                 <div class="service-item">
                                   <div class="img">
-                                    <img src="img/sma_bck.jpg" class="img-fluid" alt="">
+                                    <img src="img/praktikum/kimia.jpg" class="img-fluid" alt="">
                                   </div>
                                   <div class="details position-relative">
                                     <a href="#" class="stretched-link">
-                                      <h3>BIOLOGI</h3>
+                                      <h3>KIMIA</h3>
                                     </a>
                                   </div>
                                 </div>
@@ -167,11 +217,11 @@
                             <div class="col-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                                 <div class="service-item">
                                   <div class="img">
-                                    <img src="img/sma_bck.jpg" class="img-fluid" alt="">
+                                    <img src="img/praktikum/fisika.jpeg" class="img-fluid" alt="" height="100px">
                                   </div>
                                   <div class="details position-relative">
                                     <a href="#" class="stretched-link">
-                                      <h3>BIOLOGI</h3>
+                                      <h3>FISIKA</h3>
                                     </a>
                                   </div>
                                 </div>
@@ -180,11 +230,11 @@
                               <div class="col-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                                   <div class="service-item">
                                     <div class="img">
-                                      <img src="img/sma_bck.jpg" class="img-fluid" alt="">
+                                      <img src="img/praktikum/geo.jpg" class="img-fluid" alt="">
                                     </div>
                                     <div class="details position-relative">
                                       <a href="#" class="stretched-link">
-                                        <h3>BIOLOGI</h3>
+                                        <h3>GEOGRAFI</h3>
                                       </a>
                                     </div>
                                   </div>
@@ -218,40 +268,66 @@
                         <p></p>
                         <h1 class="title">KUNJUNGAN INDUSTRI</h1>
 
-                        <div class="row">
-                            <div class="col col-md-6">
-                                <div class="card mb-2" >
-                                    <div class="row g-3">
-                                    <div class="col-md-4">
-                                        <img src="img/sma_bck.jpg" class="img-fluid rounded-start" alt="..." height="1000px">
+                        <div class="card">
+                            <div class="card-item " >
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img src="img/sma_bck.jpg" class="img-fluid rounded-start" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                     </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-md-6">
-                                <div class="card mb-3" >
-                                    <div class="row g-0">
-                                    <div class="col-md-4">
-                                        <img src="..." class="img-fluid rounded-start" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                        </div>
-                                    </div>
-                                    </div>
+                                  </div>
                                 </div>
                             </div>
 
+                            <div class="card-item " >
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img src="img/sma_bck.jpg" class="img-fluid rounded-start" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="card-item " >
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img src="img/sma_bck.jpg" class="img-fluid rounded-start" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="card-item " >
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img src="img/sma_bck.jpg" class="img-fluid rounded-start" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -265,50 +341,50 @@
                         <h1 class="title">EKSTRAKURIKULER</h1>
                     </div>
                     <div class="ekskul">
-                        <div class="row g-3 g-lg-5">
+                        <div class="row g-3 g-lg-5" data-aos="zoom-in" data-aos-delay="200">
                             <div class="col-sm-4">
                                 <a class="btn eks1" href="">
-                                    <h2 class="card-title ">Pramuka</h2>
+                                    <h2 class="card-title ">PRAMUKA</h2>
                                 </a>
                             </div>
-                            <div class="col col-sm-4">
+                            <div class="col col-sm-4" data-aos="zoom-in" data-aos-delay="200">
                                 <a class="btn eks2" href="">
-                                    <h2 class="card-title ">Karya Ilmiah</h2>
+                                    <h2 class="card-title ">KARYA ILMIAH</h2>
                                 </a>
                             </div>  
-                            <div class="col col-sm-4">
+                            <div class="col col-sm-4" data-aos="zoom-in" data-aos-delay="200">
                                 <a class="btn eks3" href="">
-                                    <h2 class="card-title ">Kesenian</h2>
+                                    <h2 class="card-title ">KESENIAN</h2>
                                 </a>
                             </div>  
-                            <div class="col col-sm-4">
+                            <div class="col col-sm-4" data-aos="zoom-in" data-aos-delay="200">
                                 <a class="btn eks4" href="">
-                                    <h2 class="card-title">Keolahragaan</h2>
+                                    <h2 class="card-title">BASKET</h2>
                                 </a>
                             </div>
-                            <div class="col col-sm-4">
+                            <div class="col col-sm-4" data-aos="zoom-in" data-aos-delay="200">
                                 <a class="btn eks5" href="">
-                                    <h2 class="card-title">Keagamaan</h2>
+                                    <h2 class="card-title">SEPAK BOLA</h2>
                                 </a>
                             </div>  
-                            <div class="col col-sm-4">
+                            <div class="col col-sm-4" data-aos="zoom-in" data-aos-delay="200">
                                 <a class="btn eks6" href="">
-                                    <h2 class="card-title">Entrepreneur</h2>
+                                    <h2 class="card-title">TENIS MEJA</h2>
                                 </a>
                             </div> 
-                            <div class="col col-sm-4">
-                                <a class="btn eks4" href="">
-                                    <h2 class="card-title">Keolahragaan</h2>
+                            <div class="col col-sm-4" data-aos="zoom-in" data-aos-delay="200">
+                                <a class="btn eks7" href="">
+                                    <h2 class="card-title">BULU TANGKIS</h2>
                                 </a>
                             </div>
-                            <div class="col col-sm-4">
-                                <a class="btn eks5" href="">
-                                    <h2 class="card-title">Keagamaan</h2>
+                            <div class="col col-sm-4" data-aos="zoom-in" data-aos-delay="200">
+                                <a class="btn eks8" href="">
+                                    <h2 class="card-title">TATA RIAS</h2>
                                 </a>
                             </div>  
-                            <div class="col col-sm-4">
-                                <a class="btn eks6" href="">
-                                    <h2 class="card-title">Entrepreneur</h2>
+                            <div class="col col-sm-4" data-aos="zoom-in" data-aos-delay="200">
+                                <a class="btn eks9" href="">
+                                    <h2 class="card-title">KEAGAMAAN</h2>
                                 </a>
                             </div>  
                         </div>
@@ -323,44 +399,67 @@
                     <div class="section-header p-4">
                         <h1 class="title">KERJA SAMA</h1>
                     </div>
-                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <div class="card">
+                        <div class="card-item " >
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="img/kerja_sama/astra.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-up"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                            </div>
                         </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="img/sma_bck.jpg" class="d-block " alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>First slide label</h5>
-                              <p>Some representative placeholder content for the first slide.</p>
+
+                        <div class="card-item " >
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="img/sma_bck.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-up"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
                             </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="img/sma_bck.jpg" class="d-block " alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Second slide label</h5>
-                              <p>Some representative placeholder content for the second slide.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="img/sma_bck.jpg" class="d-block " alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Third slide label</h5>
-                              <p>Some representative placeholder content for the third slide.</p>
-                            </div>
-                          </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
+
+                        <div class="card-item " >
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="img/sma_bck.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-up"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card-item " >
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="img/sma_bck.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-up"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         <!-- End KERJA SAMA -->
@@ -378,7 +477,6 @@
                                 <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
                                 </div>
                             </div>
                         </div>
@@ -389,7 +487,6 @@
                                 <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
                                 </div>
                             </div>
                         </div>
@@ -400,11 +497,40 @@
                                 <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
                                 </div>
                             </div>
                         </div>
 
+                        <div class="col-md-4 ">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/sma_bck.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/sma_bck.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/sma_bck.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </section>

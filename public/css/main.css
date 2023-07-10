@@ -99,6 +99,11 @@
   .jumbotron {
     padding-top: 80px;
     background-color: #dacdee;
+    position: relative;
+    width: relative;
+    display: flex;
+    justify-content: center;
+  
   }
   
   
@@ -145,9 +150,9 @@
   } */
   
   .jurusan {
-    margin: 0;
-    padding: 0;
     background-color: #dacdee;
+    min-height: 100vh;
+    height: auto 100vh;
     font-family: poppins;
     justify-content: center;
     align-items: center;
@@ -155,29 +160,29 @@
   
   .jurusan .container {
     position: relative;
-    width: relative;
-    /* height: 350px; */
+    width: auto;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 10px;
-    padding-bottom: 20px;
+
   }
   
   .jurusan .container .card {
     position: relative;
-    max-width: 300px;
+    width: 300px;
     height: 210px;
     background-color: #fff;
     margin-top: 30px;
     margin-bottom: 60px;
-    margin-right: 10px;
+    margin-right: 50px;
     padding: 20px 15px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     transition: 0.3s ease-in-out;
+
   }
   
   .jurusan .container .card:hover {
@@ -196,7 +201,8 @@
   }
   
   .jurusan .container .card .frmt img {
-    max-width: 100%;
+    width: 100%;
+    height: 30vh;
     border-radius: 4px;
   }
   
@@ -211,7 +217,7 @@
     position: relative;
     margin-top: -140px;
     padding: 10px 15px;
-    text-align: center;
+    justify-content: center;
     color: #111;
     visibility: hidden;
     opacity: o;
@@ -224,6 +230,7 @@
     opacity: 1;
     transition: 0.3s ease-in-out;
     margin-top: -40px;
+    height: max-content;
   
   }
   
@@ -240,15 +247,52 @@
   /*==================== 
     PEMBANGUNAN
   ====================== */
+  .pembangunan {
+    background-color: #fcfcfc;
+    overflow: hidden;
+  }
   .pembangunan .container {
+    position: relative;
+    background-color:  transparent;
     width: 100vw;
     height: 100vh;
-    
+  }
+
+  .pembangunan .container .carousel {
+    position: relative;
   }
   
-  .pembangunan {
-  
+  .pembangunan .container .carousel-inner{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: -20px;
+    width: 1030px;
+    height: 360px;
+    transition: 0.1ms ease-in ;
+    box-shadow: 0 10px 30px #3c3c3c;
   }
+
+.pembangunan .container .carousel-item {
+  width: 1030px;
+  height: 360px;
+}
+
+.img{
+  width: 1030px;
+  height: 360px;
+}
+
+  .pembangunan .container .carousel-inner .carousel-caption{
+    color: #ffffff;
+    position: absolute;
+ 
+  }
+
+  .tales {
+    width: 100%;
+  }
+  
   
   
   
@@ -269,11 +313,21 @@
 ------------------*/
 .praktikum .row {
  padding-bottom: -20px;
+
+}
+.praktikum .service-item {
+ margin-inline: 10px;
+
 }
 
 .praktikum .img {
-  border-radius: 8px;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: #bdbcbc;
   overflow: hidden;
+  width: 480px;
+  height: 280px;
 }
 
 .praktikum .img img {
@@ -325,9 +379,47 @@
   /*==================== 
     KUNJUNGAN INDUSTRI
   ====================== */
+  .kunjungan {
+    position: relative;
+    background-color: #f7f7f7;
+  }
   .kunjungan .container {
-    width: 100vw;
-    height: 100vh;
+    position: relative;
+    width: 120vw;
+    height: max-content;
+    padding: auto;
+    align-items: center;
+    display: flex;
+  }
+
+  .kunjungan .container .card {
+    background-color: #f7f7f7;
+    position: relative;
+    display: flex;
+    max-height: max-content;
+    align-items: center;
+    width: 1050px;
+    margin: auto;
+    margin-left: -25px;
+  }
+
+  .kunjungan .container .card .card-item {
+    background-color: #ffffff;
+    margin: 15px;
+    min-height: 200px;
+    max-height: max-content;
+    border-radius: 10px;
+  }
+  
+.kunjungan .container .card .card-item .row {
+  margin-top: 15px;
+  margin-left: 1px;
+  margin-right: 10px
+}
+
+  .kunjungan .container .card .card-body {
+    text-align: left;
+    margin-left: -20px;
   }
   
   
@@ -344,18 +436,23 @@
     width: 100vw;
     height: 100vh;
   }
+
   
   .ekstrakurikuler .container .btn {
   margin-top: -30px;
-  width: 280px;
-  height: 80px;
-  background-size: 280px 80px;
+  width: 310px;
+  height: 95px;
+  background-size: 310px 95px;
   text-align: center;
   color: #fff;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in;
   }
   
+.ekstrakurikuler .btn:hover {
+    transform: scale(1.2);
+}
+
   .ekstrakurikuler .container .btn:hover, .btn:focus, .btn.active {
   opacity: 80%;
   color: #fffefe;}
@@ -365,11 +462,11 @@
     }
   
   .ekstrakurikuler .container .btn .card-title {
-  margin-top: 10px;
+  margin-top: 20px;
   }
   
   .ekstrakurikuler .container .ekskul {
-    margin-top: 30px;
+    margin-top: 10px;
   }
   
   .ekstrakurikuler .container .ekskul .col{
@@ -377,73 +474,114 @@
   }
   
   .ekstrakurikuler .container .eks1 {
-  background-image: url("/img/pramuka.jpg");
+  background-image: url("/img/ekskul/pramuka.jpg");
   }
   
   .ekstrakurikuler .container .eks2 {
-    background-image: url("/img/pramuka.jpg");
+    background-image: url("/img/ekskul/karya.jpg");
   }
   
   .ekstrakurikuler .container .eks3 {
-    background-image: url("/img/pramuka.jpg");
+    background-image: url("/img/ekskul/kesenian.jpg");
   }
   
   .ekstrakurikuler .container .eks4 {
-    background-image: url("/img/pramuka.jpg");
+    background-image: url("/img/ekskul/basket.jpg");
   }
   
   .ekstrakurikuler .container .eks5 {
-    background-image: url("/img/pramuka.jpg");
+    background-image: url("/img/ekskul/sepak-bola.jpg");
   }
   
   .ekstrakurikuler .container .eks6 {
-  background-image: url("/img/pramuka.jpg");
+  background-image: url("/img/ekskul/pingpong.jpeg");
   }
   
+  .ekstrakurikuler .container .eks7 {
+    background-image: url("/img/ekskul/bultang.jpg");
+  }
+
+  .ekstrakurikuler .container .eks8 {
+    background-image: url("/img/ekskul/tata-rias.jpeg");
+  }
   
+  .ekstrakurikuler .container .eks9 {
+    background-image: url("/img/ekskul/keagamaan.jpg");
+  }
   /*====================
     KERJA SAMA
   ======================*/
   .kerja_sama {
-    background-color: #d6d6d6;
+    position: relative;
+    background-color: #f7f7f7;
   }
   .kerja_sama .container {
-    position: relative;
-    background-color:  transparent;
-    width: 100vw;
-      height: 100vh;
-  }
-  
-  .kerja_sama .container .carousel-inner{
-    display: flex;
-    position: relative;
+    width: 120vw;
+    height: max-content;
+    padding: auto;
     align-items: center;
-    margin-top: -20px;
-    width: 1030px;
-    height: 360px;
-    transition: 0.1ms ease-in ;
-    box-shadow: 0 10px 30px #3c3c3c;
-    bo
+  }
+
+  .kerja_sama .container .card {
+
+    align-items: center;
+    width: 1100px;
+    margin: auto;
+    margin-left: -25px;
+    border-radius: 10px;
+ 
+    
+  }
+
+  .kerja_sama .container .card .card-item {
+    background-color: #ffffff;
+    margin: 15px;
+    max-height: max-content;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 10px 5px 10px rgba(153, 139, 139, 0.3);
+    border: 1px solid rgb(241, 241, 241);
   }
   
-  .tales {
-    width: 100%;
+.kerja_sama .container .card .card-item .row {
+  margin-top: 10px;
+  margin-left: 1px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+  .kerja_sama .container .card .card-body {
+    text-align: left;
+    margin-left: -20px;
   }
   
+  .kerja_sama .container .card .card-up{
+    text-align: left;
+    position: relative;
+  }
   
   
   /*==================== 
     MAGANG
   ====================== */
+  .magang {
+    position: relative;
+    max-height: max-content;
+  }
   .magang .container {
     width: 100vw;
-    height: 100vh;
   }
 
   .magang .row{
     margin-top: -70px;
   }
   
+
+  .magang .card {
+    box-shadow: 10px 5px 10px rgba(153, 139, 139, 0.3);
+    border: 1px solid rgb(241, 241, 241);
+    max-height: max-content;
+  }
   
   
   
