@@ -57,17 +57,17 @@ class RegisterSiswaController extends Controller
     }
 
     public function loginpost(Request $request){
-        dd($request->all());
-        // $credetials = [
-        //     'email' => $request->email,
-        //     'password' => $request->password
-        // ];
+        // dd($request->all());
+        $credetials = [
+            'email' => $request->email,
+            'password' => $request->password
+        ];
 
-        // if(Auth::attempt($credetials)){
-        //     return redirect('/siswa')->with('success', 'Login successfully');
-        // }
+        if(Auth::attempt($credetials)){
+            return redirect('/siswa')->with('success', 'Login successfully');
+        }
 
-        // return back()->with('error', 'email or password incorrect');
+        return back()->with('error', 'email or password incorrect');
     }
 
     public function logout(){
