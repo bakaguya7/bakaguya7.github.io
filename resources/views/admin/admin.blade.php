@@ -5,7 +5,11 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+<<<<<<< HEAD
+  <title>E-School</title>
+=======
   <title>E-School </title>
+>>>>>>> 940b3da6547f9d02a52a5d313eb51b62f3355a18
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -89,7 +93,7 @@
             </a>
           </li>
           <li>
-            <a href="/data-guru" ">
+            <a href="/data-guru" >
               <i class="bi bi-circle"></i><span>Data Guru</span>
             </a>
           </li>
@@ -144,7 +148,11 @@
       </li>
       
       <li class="nav-item">
+<<<<<<< HEAD
+        <a class="nav-link" href="/program-sekolah">
+=======
         <a class="nav-link collapsed" href="/program-sekolah">
+>>>>>>> 940b3da6547f9d02a52a5d313eb51b62f3355a18
           <i class="bi bi-grid"></i>
           <span>Program Sekolah</span>
         </a>

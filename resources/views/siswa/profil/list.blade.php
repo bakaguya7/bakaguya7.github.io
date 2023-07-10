@@ -5,59 +5,66 @@
 <main id="main" class="main">
     <div class="pagetitle">
         <h1>PROFIL SISWA</h1>
-            <nav>
+            <!-- <nav>
                 <ol class="breadcrumb">
-                    <!-- <li class="breadcrumb-item">ADMIN</li> -->
-                    <li class="breadcrumb-item active">Profil Siswa</li>
+                    <li class="breadcrumb-item active">Profil Guru</li>
                 </ol>
-            </nav>
+            </nav> -->
         </div>
         <!-- End Page Title -->
 
         <section class="section dashboard">
             <div class="container bg-white rounded p-5">
-            <!-- @if(Session::has('success'))
-        <div class="alert alert-success" role="alert">
-            {{ Session::get('success') }}
-        </div>
-    @endif -->
-
+                @if($Data->count() > 0)
                 <div class="isi profil">
-                    <div class="row justify-content-center ">
-                        <img class="img-max" src="img/lg.png" alt="" width="200px" height="200px">
+                    <div class="row justify-content-center text-center">
+                        <i class="bi bi-person-circle" style="font-size: 4rem;"></i>
+                        <!-- <img class="img-min" src="img/lg.png" alt=""> -->
                     </div>
-                    <h1 class="text-center">Nama Siswa</h1>
-                </div>  
-                <div class="d-flex align-items-center justify-content-between mb-3">
-                    <a href="/data-guru-create" class="btn ">
-                        <i class="bi bi-plus-circle-fill svg4" style="font-size: 1.8rem;"></i>
-                    </a>
+                    <h3 class="text-center">
+                        {{ $DataSiswa->nama }}
+                    </h3>
                 </div>
-
-                @if(Session::has('success'))
-                    <div class="alert alert-success" role="alert">
-                        {{ Session::get('success') }}
-                    </div>
-                @endif
-                <table class="table table-hover">
-                    <thead class="table-primary">
+                <table class="table table-hover mt-5">
+                    <tbody class="">
                         <tr>
-                            <th class="col-custom">NO</th>
-                            <th>NO INDUK GURU</th>
-                            <th>NAMA LENGKAP</th>
-                            <th>MATA PELAJARAN</th> 
-                            <th>FITUR</th>
+                            <td class="col-custom">NOMOR INDUK SISWA</td>
+                            <td class="col-custom">:</td>
+                            <td>{{ $DataSiswa->nis }}</td>
                         </tr>
-                    </thead>
-                    <tbody>
-    
-                    
-                         <tr>
-                            <h1>hallo</h1>
-                         </tr>
+                        <tr>
+                            <td class="col-custom">TANGGAL LAHIR</td>
+                            <td class="col-custom">:</td>
+                            <td>{{ $DataSiswa->tgllahir }}</td>
+                        </tr>
+                        <tr>
+                            <td class="col-custom">KELAS</td>
+                            <td class="col-custom">:</td>
+                            <td>{{ $DataSiswa->kelas }}</td>
+                        </tr>
+                        <tr>
+                            <td class="col-custom">NOMOR TELEPON</td>
+                            <td class="col-custom">:</td>
+                            <td>{{ $DataSiswa->notelp }}</td>
+                        </tr>
+                        <tr>
+                            <td class="col-custom">ASAL SEKOLAH</td>
+                            <td class="col-custom">:</td>
+                            <td>{{ $DataSiswa->asalsekolah }}</td>
+                        </tr>
                     </tbody>
                 </table>
-                
+                @else
+                <div class="isi profil">
+                    <div class="row justify-content-center text-center">
+                        <i class="bi bi-person-circle" style="font-size: 4rem;"></i>
+                        <!-- <img class="img-min" src="img/lg.png" alt=""> -->
+                    </div>
+                    <h3 class="text-center">
+                        PROFIL SISWA
+                    </h3>
+                </div>
+                @endif
             </div>
         </section>
 </main>

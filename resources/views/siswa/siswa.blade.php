@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>E-School | {{ $title }}</title>
+  <title>E-School</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -59,7 +59,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Dashboard Siswa") ? 'active' : 'collapsed' }} " href="/siswa">
+        <a class="nav-link " href="/siswa">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
@@ -67,7 +67,7 @@
 
     <!-- Bagian Profil -->
       <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Profil Siswa") ? 'active' : 'collapsed' }}" href="/profil_sis">
+        <a class="nav-link" href="/profil">
           <i class="bi bi-person-circle"></i>
           <span>Profil</span>
         </a>
@@ -75,17 +75,12 @@
     <!-- END Profil -->
 
     <!-- Bagian MATERI -->
-      <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Materi Siswa") ? 'active' : 'collapsed' }}" href="/materi_sis">
-          <i class="bi bi-book"></i>
-          <span>Materi</span>
-        </a>
-      </li>
+
     <!-- END Materi -->
 
     <!-- Bagian Pembayaran -->
       <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Tagihan") ? 'active' : 'collapsed' }}" href="/tagihan">
+        <a class="nav-link " href="/tagihan">
           <i class="bi bi-cash-coin"></i>
           <span>Tagihan</span>
         </a>
@@ -94,7 +89,7 @@
 
     <!-- Bagian Login -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="/login-guru">
+        <a class="nav-link collapsed" href="/">
           <i class="bi bi-box-arrow-in-right"></i>
           <span>Log Out</span>
         </a>

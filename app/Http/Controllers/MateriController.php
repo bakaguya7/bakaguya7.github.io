@@ -8,12 +8,10 @@ use App\Http\Requests\UpdateMateriRequest;
 
 class MateriController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
-        return view('guru.materi.list');
+        $DataMateri = Materi::orderBy('created_at', 'DESC')->get();
+        return view('guru.materi.list', compact('DataMateri'));
     }
 
     /**
@@ -21,46 +19,57 @@ class MateriController extends Controller
      */
     public function create()
     {
-        //
+        return view('guru.materi.create');
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreMateriRequest $request)
+    public function store(Request $request)
     {
-        //
+        // dd($request->all());
+        Materi::create($request->all());
+
+        return redirect()->route('data-materi.index')->with('success', 'DATA MATERI BERHASIL DITAMBAHKAN');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Materi $materi)
+    public function show(String $id)
     {
-        //
+        $DataMateri = Materi::findOrFail($id);
+        return view('guru.materi.detail', compact('DataMateri'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Materi $materi)
+    public function edit(string $id)
     {
-        //
+        $DataMateri = Materi::findOrFail($id);
+        return view('guru.materi.edit', compact('DataMateri'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateMateriRequest $request, Materi $materi)
+    public function update(Request $request, string $id)
     {
-        //
+        $DataMateri = Materi::findOrFail($id);
+        $DataMateri->update($request->all());
+
+        return redirect()->route('data-materi.index')->with('success', 'DATA MATERI BERHASIL DIPERBAHARUI');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Materi $materi)
+    public function destroy(string $id)
     {
-        //
+        $DataMateri = Materi::findOrFail($id);
+        $DataMateri->delete();
+
+        return redirect()->route('data-materi.index')->with('success', 'DATA MATERI BERHASIL DIHAPUS');
     }
 }

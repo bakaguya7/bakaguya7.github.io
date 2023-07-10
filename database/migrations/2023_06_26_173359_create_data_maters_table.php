@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('data_materi', function (Blueprint $table) {
+        Schema::create('data_maters', function (Blueprint $table) {
             $table->id();
             $table->string('kelas');
             $table->string('matapelajaran');
