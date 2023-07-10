@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>E-School | {{ $title }}</title>
+  <title>E-School </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -144,7 +144,7 @@
       </li>
       
       <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Program Sekolah") ? 'active' : 'collapsed' }}" href="/program-sekolah">
+        <a class="nav-link collapsed" href="/program-sekolah">
           <i class="bi bi-grid"></i>
           <span>Program Sekolah</span>
         </a>
@@ -284,9 +284,5 @@
 
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
-<<<<<<< HEAD
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-=======
->>>>>>> 1a32d56694d11bcfc97c9d3567cfae0d4e279a72
 </body>
 </html>
