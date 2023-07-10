@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>E-School | {{ $title }}</title>
+  <title>E-School</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -58,7 +58,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Dashboard Guru") ? 'active' : 'collapsed' }}" href="/guru">
+        <a class="nav-link collapsed" href="/guru">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
@@ -66,43 +66,25 @@
 
     <!-- Bagian Data Guru -->
       <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Profil") ? 'active' : 'collapsed' }}" href="/profil">
+        <a class="nav-link collapsed" href="/profil-guru">
           <i class="bi bi-person-circle"></i>
           <span>Profil</span>
         </a>
       </li>
     <!-- END Data Guru -->
 
-    <!-- Bagian Data Materi -->
-      <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Materi") ? 'active' : 'collapsed' }} " href="/data-materi">
-          <i class="bi bi-journal-text"></i>
-          <span>Data Materi</span>
-        </a>
-      </li>
-    <!-- END Data Materi -->
-
     <!-- Bagian Data Jadwal -->
       <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Jadwal") ? 'active' : 'collapsed' }}" href="/jadwal">
+        <a class="nav-link collapsed" href="/jadwal">
           <i class="bi bi-calendar-week"></i>
           <span>Jadwal Mengajar</span>
         </a>
       </li>
     <!-- END Data Jadwal -->
 
-    <!-- Bagian Presensi -->
-      <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Presensi") ? 'active' : 'collapsed' }} " href="/presensi">
-          <i class="bi bi-clipboard-check"></i>
-          <span>Data Presensi</span>
-        </a>
-      </li>
-    <!-- END Presensi -->
-
     <!-- Bagian Data Gaji -->
       <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Riwayat & Gaji") ? 'active' : 'collapsed' }} " href="/riwayat-gaji">
+        <a class="nav-link collapsed" href="/guru-gaji">
           <i class="bi bi-cash-coin"></i>
           <span>Riwayat & Gaji</span>
         </a>
@@ -111,7 +93,7 @@
       
     <!-- Bagian Login -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="/login-guru">
+        <a class="nav-link collapsed" href="/">
           <i class="bi bi-box-arrow-in-right"></i>
           <span>Log out</span>
         </a>

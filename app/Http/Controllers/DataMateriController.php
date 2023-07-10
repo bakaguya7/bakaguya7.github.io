@@ -12,7 +12,7 @@ class DataMateriController extends Controller
     public function index()
     {
         $DataMateri = DataMateri::orderBy('created_at', 'DESC')->get();
-        return view('guru.data-materi.list', compact('DataMateri'));
+        return view('guru.materi.list', compact('DataMateri'));
     }
 
     /**

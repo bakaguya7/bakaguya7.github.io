@@ -4,49 +4,42 @@
 @section('guru')
 <main id="main" class="main">
     <div class="pagetitle">
-        <h1>RIWAYAT & GAJI</h1>
-            <nav>
+        <h1>Riwayat Gaji</h1>
+            <!-- <nav>
                 <ol class="breadcrumb">
-                    <!-- <li class="breadcrumb-item">ADMIN</li> -->
-                    <li class="breadcrumb-item active">Riwayat & Gaji</li>
+                    <li class="breadcrumb-item active">Tagihan Siswa</li>
                 </ol>
-            </nav>
+            </nav> -->
         </div>
         <!-- End Page Title -->
 
         <section class="section dashboard">
             <div class="container bg-white rounded p-5">
-            <!-- @if(Session::has('success'))
-        <div class="alert alert-success" role="alert">
-            {{ Session::get('success') }}
-        </div>
-    @endif -->
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                    <h3>Riwayat & Gaji</h3>
-                    <a href="/data-guru-create" class="btn">
-                        <i class="bi bi-plus-circle-fill svg4" style="font-size: 1.8rem;"></i>
-                    </a>
-                </div>  
-                @if(Session::has('success'))
-                    <div class="alert alert-success" role="alert">
-                        {{ Session::get('success') }}
-                    </div>
-                @endif
                 <table class="table table-hover">
                     <thead class="table-primary">
                         <tr>
                             <th class="col-custom">NO</th>
-                            <th>NO INDUK GURU</th>
-                            <th>NAMA LENGKAP</th>
-                            <th>MATA PELAJARAN</th> 
-                            <th>FITUR</th>
+                            <th>NAMA</th> 
+                            <th>NOMINAL</th> 
+                            <th>KETERANGAN</th>
                         </tr>
                     </thead>
                     <tbody>
-                    
-                         <tr>
-                            <h1>hallo</h1>
-                         </tr>
+                        @if($Gaji->count() > 0)
+                            @foreach($Gaji as $gaji)
+                            <tr>
+                                <td class="align-middle col-custom">{{ $loop->iteration }}</td>
+                                <td class="align-middle">{{ $gaji->nama }}</td>
+                                <td class="align-middle">{{ $gaji->nominal }}</td>
+                                <td class="align-middle">{{ $gaji->keterangan }}</td>
+                            </tr>
+                            @endforeach
+                        @else
+                        <tr>
+                            <td colspan="4" class="text-center">DATA KOSONG</td>
+                        </tr>
+                        @endif
                     </tbody>
                 </table>
                 

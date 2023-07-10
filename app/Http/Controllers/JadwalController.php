@@ -5,6 +5,11 @@ namespace App\Http\Controllers;
 use App\Models\Jadwal;
 use App\Http\Requests\StoreJadwalRequest;
 use App\Http\Requests\UpdateJadwalRequest;
+use App\Models\JadwalMengajar;
+
+use Illuminate\Http\Request;
+use App\Http\Requests\StoreJadwalMengajarRequest;
+use App\Http\Requests\UpdateJadwalMengajarRequest;
 
 class JadwalController extends Controller
 {
@@ -13,7 +18,8 @@ class JadwalController extends Controller
      */
     public function index()
     {
-        return view('guru.jadwal.list');
+        $Jadwal = JadwalMengajar::where('namaguru', 'Meguminisa')->get();
+        return view('guru.jadwal.list', compact('Jadwal'));
     }
 
     /**

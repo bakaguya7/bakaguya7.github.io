@@ -19,6 +19,11 @@ class GajiGuruController extends Controller
         return view('admin.gaji-guru.list', compact('GajiGuru'));
     }
 
+    public function gaji(){
+        $Gaji = GajiGuru::where('nama', 'Meguminisa')->get();
+        return view('guru.gaji.list', compact('Gaji'));
+    }
+
     /**
      * Show the form for creating a new resource.
      */

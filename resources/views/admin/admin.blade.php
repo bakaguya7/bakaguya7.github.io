@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>E-School | {{ $title }}</title>
+  <title>E-School</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -89,7 +89,7 @@
             </a>
           </li>
           <li>
-            <a href="/data-guru" ">
+            <a href="/data-guru" >
               <i class="bi bi-circle"></i><span>Data Guru</span>
             </a>
           </li>
@@ -144,7 +144,7 @@
       </li>
       
       <li class="nav-item">
-        <a class="nav-link {{ ( $title === "Program Sekolah") ? 'active' : 'collapsed' }}" href="/program-sekolah">
+        <a class="nav-link" href="/program-sekolah">
           <i class="bi bi-grid"></i>
           <span>Program Sekolah</span>
         </a>
