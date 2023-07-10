@@ -15,9 +15,18 @@ use App\Http\Controllers\GajiGuruController;
 use App\Http\Controllers\JadwalMengajarController;
 use App\Http\Controllers\Tagihan;
 
+
 ////////////////////////////////////////////////////////////////////////////////
 // ### DASHBOARD ADMIN
 
+<<<<<<< HEAD
+=======
+Auth::routes();
+
+Route::get('ajax-autocomplete-search', [TagihanSiswaController::class, 'selectSearch']);
+
+
+>>>>>>> 940b3da6547f9d02a52a5d313eb51b62f3355a18
 // new route admin
 Route::get('/admin', function () {
     return view('admin.dashboard', [
@@ -72,11 +81,7 @@ Route::get('/program-sekolah-create', function () {
     ]);
 });
 
-Route::get('/program-sekolah', function () {
-    return view('admin.program-sekolah.list', [
-        "title" => "Program Sekolah"
-    ]);
-});
+
 
 Route::post('/program-sekolah-store', [ProgramSekolahController::class, 'store']);
 
@@ -126,11 +131,22 @@ Route::get('/jadwal-mengajar-create', function () {
 
 Route::post('/jadwal-mengajar-store', [JadwalMengajarController::class, 'store']);
 
+<<<<<<< HEAD
 
 Route::get('/login-siswa', function () {
     return view('siswa.login', [
         "title" => "Login Siswa"
     ]);
+=======
+Route::group(['middleware' => 'guest'], function () {
+    Route::get('/login-siswa', 'App\Http\Controllers\RegisterSiswaController@login')->name('login-siswa');
+    Route::post('/login-siswa', 'App\Http\Controllers\RegisterSiswaController@loginpost')->name('login-siswa');
+});
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/siswa', [HomeController::class, 'index']);
+    Route::delete('/logout', [AuthController::class, 'logout'])->name('logout');
+>>>>>>> 940b3da6547f9d02a52a5d313eb51b62f3355a18
 });
 
 Route::get('/login-guru', function () {
@@ -627,3 +643,10 @@ Route::get('/program-magang', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+<<<<<<< HEAD
+=======
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+>>>>>>> 940b3da6547f9d02a52a5d313eb51b62f3355a18
