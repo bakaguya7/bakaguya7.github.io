@@ -24,10 +24,6 @@ Auth::routes();
 
 Route::get('ajax-autocomplete-search', [TagihanSiswaController::class, 'selectSearch']);
 
-<<<<<<< HEAD
-
-=======
->>>>>>> dcf271ecbe4d8f251ff6ea11785fef7080601d78
 // new route admin
 Route::get('/admin', function () {
     return view('admin.dashboard', [
@@ -142,7 +138,7 @@ Route::get('/jadwal-mengajar-create', function () {
 
 Route::post('/jadwal-mengajar-store', [JadwalMengajarController::class, 'store']);
 
-<<<<<<< HEAD
+
 Route::get('/login-siswa', function () {
     return view('siswa.login', [
         "title" => "Login Siswa"
@@ -153,7 +149,6 @@ Route::get('/login-siswa', function () {
 //     Route::post('/login-siswa', 'App\Http\Controllers\RegisterSiswaController@loginpost')->name('login-siswa');
 // });
 
-=======
 
 
 // Route::get('/login-siswa', function () {
@@ -167,7 +162,7 @@ Route::get('/login-siswa', function () {
 //     Route::post('/login-siswa', 'App\Http\Controllers\RegisterSiswaController@loginpost')->name('login-siswa');
 // });
 
->>>>>>> dcf271ecbe4d8f251ff6ea11785fef7080601d78
+
 // Route::group(['middleware' => 'auth'], function () {
 //     Route::get('/siswa', [HomeController::class, 'index']);
 //     Route::delete('/logout', [AuthController::class, 'logout'])->name('logout');
