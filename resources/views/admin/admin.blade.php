@@ -148,8 +148,12 @@
       </li>
       
       <li class="nav-item">
-        <a class="nav-link collapsed" href="/school-program">
-          <i class="bi bi-calendar-date-fill"></i>
+<<<<<<< HEAD
+        <a class="nav-link" href="/program-sekolah">
+=======
+        <a class="nav-link collapsed" href="/program-sekolah">
+>>>>>>> 940b3da6547f9d02a52a5d313eb51b62f3355a18
+          <i class="bi bi-grid"></i>
           <span>Program Sekolah</span>
         </a>
       </li>

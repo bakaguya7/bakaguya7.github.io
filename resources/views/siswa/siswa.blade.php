@@ -59,7 +59,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link " href="/siswa">
+        <a class="nav-link collapsed" href="/siswa">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
@@ -67,7 +67,7 @@
 
     <!-- Bagian Profil -->
       <li class="nav-item">
-        <a class="nav-link" href="/profil">
+        <a class="nav-link collapsed" href="/profil">
           <i class="bi bi-person-circle"></i>
           <span>Profil</span>
         </a>
@@ -80,7 +80,7 @@
 
     <!-- Bagian Pembayaran -->
       <li class="nav-item">
-        <a class="nav-link " href="/tagihan">
+        <a class="nav-link collapsed" href="/tagihan">
           <i class="bi bi-cash-coin"></i>
           <span>Tagihan</span>
         </a>

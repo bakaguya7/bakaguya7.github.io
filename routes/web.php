@@ -24,7 +24,10 @@ Auth::routes();
 
 Route::get('ajax-autocomplete-search', [TagihanSiswaController::class, 'selectSearch']);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> dcf271ecbe4d8f251ff6ea11785fef7080601d78
 // new route admin
 Route::get('/admin', function () {
     return view('admin.dashboard', [
@@ -65,13 +68,11 @@ Route::post('/register-guru-store', [RegisterGuruController::class, 'store']);
 // data-siswa ///////////////////////////////
 Route::resource('/data-siswa', DataSiswaController::class);
 
-// Route::get('/data-siswa-create', function () {
-//     return view('admin.data-siswa.create', [
-//         "title" => "Create Data Siswa"
-//     ]);
-// });
-
-
+Route::get('/data-siswa-create', function () {
+    return view('admin.data-siswa.create', [
+        "title" => "Create Data Siswa"
+    ]);
+});
 
 Route::post('/data-siswa-store', [DataSiswaController::class, 'store']);
 
@@ -85,9 +86,15 @@ Route::get('/school-program-create', function () {
     ]);
 });
 
-
+// Route::get('/program-sekolah.', function () {
+//     return view('admin.program-sekolah.list', [
+//         "title" => "Create Program Sekolah"
+//     ]);
+// });
 
 Route::post('/school-program-store', [SchoolProgramController::class, 'store']);
+
+
 
 // Data Guru
 Route::resource('/data-guru', DataGuruController::class);
@@ -135,6 +142,7 @@ Route::get('/jadwal-mengajar-create', function () {
 
 Route::post('/jadwal-mengajar-store', [JadwalMengajarController::class, 'store']);
 
+<<<<<<< HEAD
 Route::get('/login-siswa', function () {
     return view('siswa.login', [
         "title" => "Login Siswa"
@@ -145,6 +153,21 @@ Route::get('/login-siswa', function () {
 //     Route::post('/login-siswa', 'App\Http\Controllers\RegisterSiswaController@loginpost')->name('login-siswa');
 // });
 
+=======
+
+
+// Route::get('/login-siswa', function () {
+//     return view('siswa.login', [
+//         "title" => "Login Siswa"
+//     ]);
+// });
+
+// Route::group(['middleware' => 'guest'], function () {
+//     Route::get('/login-siswa', 'App\Http\Controllers\RegisterSiswaController@login')->name('login-siswa');
+//     Route::post('/login-siswa', 'App\Http\Controllers\RegisterSiswaController@loginpost')->name('login-siswa');
+// });
+
+>>>>>>> dcf271ecbe4d8f251ff6ea11785fef7080601d78
 // Route::group(['middleware' => 'auth'], function () {
 //     Route::get('/siswa', [HomeController::class, 'index']);
 //     Route::delete('/logout', [AuthController::class, 'logout'])->name('logout');
@@ -155,40 +178,46 @@ Route::get('/login-guru', function () {
         "title" => "Login Siswa"
     ]);
 });
+
+Route::get('/login-siswa', function () {
+    return view('siswa.login', [
+        "title" => "Login Siswa"
+    ]);
+});
 // Route::get('/login-siswa', 'App\Http\Controllers\RegisterSiswaController@login')->name('login-siswa');
 // Route::post('/login-siswa-auth', 'App\Http\Controllers\RegisterSiswaController@loginpost')->name('login-siswa-auth');
 
 
-// Route::group(['middleware' => 'auth'], function(){
-//     Route::get('/siswa', [HomeController::class, 'index']);
-//     Route::delete('/logout', [AuthController::class, 'logout'])->name('logout');
-// });
-// Route::get('/register-siswa-edit', function(){
-//     return view('admin.register-siswa.edit', [
-//         "title" => "Edit Register Siswa"
-//     ]);
-// });
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/siswa', [HomeController::class, 'index']);
+    Route::delete('/logout', [AuthController::class, 'logout'])->name('logout');
+});
+Route::get('/register-siswa-edit', function () {
+    return view('admin.register-siswa.edit', [
+        "title" => "Edit Register Siswa"
+    ]);
+});
 
-// Route::post('/register-siswa-edit', [RegisterSiswaController::class, 'edit']);
+Route::post('/register-siswa-edit', [RegisterSiswaController::class, 'edit']);
 
 
 
-// Route::get('/create', function(){
-//     return view('admin.register-siswa.create-siswa',[
-//         "title" => "Register Siswa"
-//     ]);
-// });
-// Route::group(['middleware' => 'web'], function () {
-//     //
-// });
+Route::get('/create', function () {
+    return view('admin.register-siswa.create-siswa', [
+        "title" => "Register Siswa"
+    ]);
+});
+Route::group(['middleware' => 'web'], function () {
+    //
+});
 
-// Route::get('/token', function (Request $request) {
-//     $token = $request->session()->token();
+Route::get('/token', function (Request $request) {
+    $token = $request->session()->token();
 
-//     $token = csrf_token();
+    $token = csrf_token();
 
-//     // ...
-// });
+    // ...
+});
 
 //##########################################################################################################
 //DASHBOARD GURU
@@ -377,6 +406,13 @@ Route::get('/tagihan', [Tagihan::class, 'index']);
 Route::get('/', function () {
     return view('home.home', [
         "title" => "HOME"
+    ]);
+});
+
+// Route EKSTRAKURIKULER
+Route::get('/ekskul', function () {
+    return view('home.ekstra', [
+        "title" => "EKSTRAKURIKULER"
     ]);
 });
 

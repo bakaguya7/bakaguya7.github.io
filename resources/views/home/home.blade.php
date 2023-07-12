@@ -255,6 +255,67 @@
                         <p></p>
                         <h1 class="title">LOMBA - LOMBA</h1>
                     </div>
+                    <div class="row g-1 g-lg-5">
+                        <div class="col-md-4 "data-aos="zoom-in" data-aos-delay="200">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/sma_bck.jpg" class="card-img-top" alt="..." >
+                                <div class="card-body details">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/sma_bck.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/sma_bck.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 ">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/sma_bck.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/sma_bck.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/sma_bck.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         <!-- End LOMBA -->
@@ -343,7 +404,7 @@
                     <div class="ekskul">
                         <div class="row g-3 g-lg-5" data-aos="zoom-in" data-aos-delay="200">
                             <div class="col-sm-4">
-                                <a class="btn eks1" href="">
+                                <a class="btn eks1" href="/ekskul">
                                     <h2 class="card-title ">PRAMUKA</h2>
                                 </a>
                             </div>
@@ -414,6 +475,66 @@
                               </div>
                             </div>
                         </div>
+
+                        <div class="card-item " >
+                          <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="img/kerja_sama/gameloft.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-up"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="card-item " >
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="img/kerja_sama/gmedia.jpeg" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-up"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="card-item " >
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="img/kerja_sama/shopee.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-up"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="card-item " >
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="img/kerja_sama/shopee.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-up"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
 
                         <div class="card-item " >
                             <div class="row g-0">
@@ -531,7 +652,7 @@
                             </div>
                         </div>
                     </div>
-                    </div>
+                  </div>
                 </div>
             </section>
         <!-- End MAGANG -->
