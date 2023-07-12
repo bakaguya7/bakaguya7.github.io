@@ -12,7 +12,6 @@ class SchoolProgram extends Model
     protected $fillable = [
         'judul',
         'tag',
-        'uploadgambar',
         'isikonten',
     ];
 }

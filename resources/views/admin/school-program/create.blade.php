@@ -17,7 +17,7 @@
 
         <section class="section dashboard">
             <div class="container bg-white rounded p-5">
-                <form action="/school-program" method="POST">
+                <form action="/school-program-store" method="POST">
                     @csrf
                     <div class="row mb-3 text-dark">
                         <div class="col">
@@ -31,12 +31,8 @@
                     </div>
                     <div class="row mb-3 text-dark">
                         <div class="col">
-                            <label for="upload gambar">Upload Gambar</label>
-                            <input type="file" name="upload gambar" class="form-control" placeholder="Upload Gambar">
-                        </div>
-                        <div class="col">
-                            <label for="isi konten">Isi Konten</label>
-                            <input type="text" name="isi konten" class="form-control" placeholder="Isi Konten">
+                            <label for="isikonten">Isi Konten</label>
+                            <input type="text" name="isikonten" class="form-control" placeholder="Isi Konten">
                         </div>
                     </div>
                     <div class="row">
