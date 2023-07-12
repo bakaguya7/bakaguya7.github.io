@@ -135,7 +135,6 @@
   }
   
   .container {
-    background-color:none;
   }
   
   
@@ -529,6 +528,58 @@
   .ekstrakurikuler .container .eks9 {
     background-image: url("/img/ekskul/keagamaan.jpg");
   }
+
+  /* EKSKUL PAGE */
+  .ekskul {
+    position: relative;
+    background-color: #f7f7f7;
+  }
+  .ekskul .container {
+    width: 100vw;
+    height: max-content;
+    padding: auto;
+    align-items: center;
+  }
+
+  .ekskul .container .card {
+
+    align-items: center;
+    width: 1100px;
+    margin: auto;
+    margin-left: -25px;
+    border-radius: 10px;
+ 
+    
+  }
+
+  .ekskul .container .card .card-item {
+    background-color: #ffffff;
+    margin: 15px;
+    max-height: max-content;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 10px 5px 10px rgba(153, 139, 139, 0.3);
+    border: 1px solid rgb(241, 241, 241);
+  }
+  
+.ekskul .container .card .card-item .row {
+  margin-top: 10px;
+  margin-left: 1px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+  .ekskul .container .card .card-body {
+    text-align: left;
+    margin-left: -20px;
+  }
+  
+  .ekskul .container .card .card-up{
+    text-align: left;
+    position: relative;
+  }
+
+
   /*====================
     KERJA SAMA
   ======================*/
