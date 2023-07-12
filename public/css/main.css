@@ -369,11 +369,32 @@
   /*==================== 
     LOMBA - LOMBA
   ====================== */
+  .lomba {
+    position: relative;
+    max-height: max-content;
+  }
   .lomba .container {
     width: 100vw;
-    height: 100vh;
+  }
+
+  .lomba .row{
+    margin-top: -70px;
   }
   
+
+  .lomba .card {
+    box-shadow: 10px 5px 10px rgba(153, 139, 139, 0.3);
+    border: 1px solid rgb(241, 241, 241);
+    max-height: max-content;
+  }
+  
+  .lomba .card:hover .details h5 {
+    color: var(--color-primary);
+  }
+
+  .lomba .card:hover .img img{
+    transform: scale(1.2);
+  }
   
   
   /*==================== 

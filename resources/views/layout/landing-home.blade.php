@@ -37,7 +37,7 @@
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="click nav-link active" aria-current="page" href="#">HOME</a>
+              <a class="click nav-link active" aria-current="page" href="/">HOME</a>
             </li>
             <li class="nav-item">
               <a class="click nav-link collapsed" aria-current="page" href="#profil">PROFIL</a>
