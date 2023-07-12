@@ -14,23 +14,27 @@ use App\Http\Controllers\PresensiController;
 use App\Http\Controllers\GajiGuruController;
 use App\Http\Controllers\JadwalMengajarController;
 use App\Http\Controllers\Tagihan;
+use App\Http\Controllers\SchoolProgramController;
 
 
 ////////////////////////////////////////////////////////////////////////////////
 // ### DASHBOARD ADMIN
 
-<<<<<<< HEAD
-=======
 Auth::routes();
 
 Route::get('ajax-autocomplete-search', [TagihanSiswaController::class, 'selectSearch']);
 
 
->>>>>>> 940b3da6547f9d02a52a5d313eb51b62f3355a18
 // new route admin
 Route::get('/admin', function () {
     return view('admin.dashboard', [
         "title" => "Dashboard Admin"
+    ]);
+});
+
+Route::get('/login-admin', function () {
+    return view('admin.login', [
+        "title" => "Login Admin"
     ]);
 });
 
@@ -73,17 +77,17 @@ Route::post('/data-siswa-store', [DataSiswaController::class, 'store']);
 
 
 // Program Sekolah
-Route::resource('/program-sekolah', ProgramSekolahController::class);
+Route::resource('/school-program', SchoolProgramController::class);
 
-Route::get('/program-sekolah-create', function () {
-    return view('admin.program-sekolah.create', [
+Route::get('/school-program-create', function () {
+    return view('admin.school-program.create', [
         "title" => "Create Program Sekolah"
     ]);
 });
 
 
 
-Route::post('/program-sekolah-store', [ProgramSekolahController::class, 'store']);
+Route::post('/school-program-store', [SchoolProgramController::class, 'store']);
 
 // Data Guru
 Route::resource('/data-guru', DataGuruController::class);
@@ -131,23 +135,20 @@ Route::get('/jadwal-mengajar-create', function () {
 
 Route::post('/jadwal-mengajar-store', [JadwalMengajarController::class, 'store']);
 
-<<<<<<< HEAD
-
 Route::get('/login-siswa', function () {
     return view('siswa.login', [
         "title" => "Login Siswa"
     ]);
-=======
-Route::group(['middleware' => 'guest'], function () {
-    Route::get('/login-siswa', 'App\Http\Controllers\RegisterSiswaController@login')->name('login-siswa');
-    Route::post('/login-siswa', 'App\Http\Controllers\RegisterSiswaController@loginpost')->name('login-siswa');
 });
+// Route::group(['middleware' => 'guest'], function () {
+//     Route::get('/login-siswa', 'App\Http\Controllers\RegisterSiswaController@login')->name('login-siswa');
+//     Route::post('/login-siswa', 'App\Http\Controllers\RegisterSiswaController@loginpost')->name('login-siswa');
+// });
 
-Route::group(['middleware' => 'auth'], function () {
-    Route::get('/siswa', [HomeController::class, 'index']);
-    Route::delete('/logout', [AuthController::class, 'logout'])->name('logout');
->>>>>>> 940b3da6547f9d02a52a5d313eb51b62f3355a18
-});
+// Route::group(['middleware' => 'auth'], function () {
+//     Route::get('/siswa', [HomeController::class, 'index']);
+//     Route::delete('/logout', [AuthController::class, 'logout'])->name('logout');
+// });
 
 Route::get('/login-guru', function () {
     return view('guru.login', [
@@ -491,6 +492,8 @@ Route::get('/dashboard-siswa', function () {
 //############################################################
 // Route PROGRAM SEKOLAH
 // ----------------------------------------------------
+
+
 // Pembangunan
 Route::get('/pengembangan', function () {
     return view('program.pengembangan', [
@@ -643,10 +646,8 @@ Route::get('/program-magang', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-<<<<<<< HEAD
-=======
+
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
->>>>>>> 940b3da6547f9d02a52a5d313eb51b62f3355a18
