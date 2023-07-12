@@ -5,11 +5,10 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<<<<<<< HEAD
+
   <title>E-School</title>
-=======
+
   <title>E-School </title>
->>>>>>> 940b3da6547f9d02a52a5d313eb51b62f3355a18
   <meta content="" name="description">
   <meta content="" name="keywords">
 

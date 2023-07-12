@@ -82,11 +82,6 @@ Route::get('/school-program-create', function () {
     ]);
 });
 
-// Route::get('/program-sekolah.', function () {
-//     return view('admin.program-sekolah.list', [
-//         "title" => "Create Program Sekolah"
-//     ]);
-// });
 
 Route::post('/school-program-store', [SchoolProgramController::class, 'store']);
 

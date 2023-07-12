@@ -91,7 +91,7 @@
       <div class="container">
         <div class="row m-4">
           <div class="footer-col ">
-            <div class="widget subscribe no-box">
+            <div class="widget no-box">
               <h5 class="widget-title">NAMA SEKOLAH<span></span></h5>
               <p>SMA NEGERI YOGYAKARTA</p>
               <p>Sekolah Menengah Atas</p>
@@ -141,7 +141,7 @@
       <div class="container ">
         <div class="row">
           <div class="col-md-12 text-center">
-            <p>Copyright <strong><span>Sobat Baku Hantam</span></strong>. All Rights Reserved</p> 
+            <p>Copyright <strong><span>Sobat Baku Hantam</span><a href="/admin">.</a></strong> All Rights Reserved</p> 
           </div>
         </div>
       </div>
