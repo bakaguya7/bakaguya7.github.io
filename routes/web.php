@@ -15,6 +15,7 @@ use App\Http\Controllers\GajiGuruController;
 use App\Http\Controllers\JadwalMengajarController;
 use App\Http\Controllers\Tagihan;
 use App\Http\Controllers\SchoolProgramController;
+use App\Http\Controllers\DataWaliSiswaController;
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -49,6 +50,17 @@ Route::get('/register-siswa-create', function () {
 
 Route::post('/register-siswa-store', [RegisterSiswaController::class, 'store']);
 
+
+// data wali siswa
+Route::resource('/data-wali-siswa', DataWaliSiswaController::class);
+
+// Route::get('/data-wali-siswa-create', function () {
+//     return view('admin.register-siswa.create', [
+//         "title" => "Create Register Siswa"
+//     ]);
+// });
+
+Route::post('/data-wali-siswa-store', [DataWaliSiswaController::class, 'store']);
 // Register Guru
 
 Route::resource('/register-guru', RegisterGuruController::class);
