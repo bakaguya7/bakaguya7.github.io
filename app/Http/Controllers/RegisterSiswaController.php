@@ -52,31 +52,6 @@ class RegisterSiswaController extends Controller
         return redirect()->route('register-siswa.index')->with('success', 'AKUN SISWA BERHASIL DITAMBAHKAN');
     }
 
-    // public function login(){
-    //     return view('siswa.login');
-    // }
-
-    // public function loginpost(Request $request){
-        
-    //     dd($request->all());
-    //     $credetials = [
-    //         'email' => $request->email,
-    //         'password' => $request->password
-    //     ];
-
-    //     if(Auth::attempt($credetials)){
-    //         return redirect('/siswa')->with('success', 'Login successfully');
-    //     }
-
-    //     return back()->with('error', 'email or password incorrect');
-    // }
-
-    // public function logout(){
-    //     Auth::logout();
-
-    //     return redirect()->route('login');
-    // }
-
     /**
      * Display the specified resource.
      */

@@ -17,8 +17,9 @@
 
         <section class="section dashboard">
             <div class="container bg-white rounded p-5">
-                <form action="/school-program" method="POST">
+                <form action="{{ route('school-program.update', $SchoolProgram->id) }}" method="POST">
                     @csrf
+                    @method('PUT')
                     <div class="row mb-3 text-dark">
                         <div class="col">
                             <label for="judul">Judul</label>
@@ -30,10 +31,6 @@
                         </div>
                     </div>
                     <div class="row mb-3 text-dark">
-                        <div class="col">
-                            <label for="uploadgambar">Upload Gambar</label>
-                            <input type="file" name="uploadgambar" class="form-control" value="{{ $SchoolProgram->uploadgambar }}" placeholder="Upload Gambar">
-                        </div>
                         <div class="col">
                             <label for="isikonten">Isi Konten</label>
                             <input type="text" name="isikonten" class="form-control" value="{{ $SchoolProgram->isikonten }}" placeholder="Isi Konten">

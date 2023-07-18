@@ -140,6 +140,13 @@
       </li>
 
       <li class="nav-item">
+        <a class="nav-link collapsed" href="/data-wali-siswa">
+          <i class="bi bi-grid"></i>
+          <span>Data Wali Siswa</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
         <a class="nav-link collapsed" href="/jadwal-mengajar">
           <i class="bi bi-calendar-date-fill"></i>
           <span>Jadwal Mengajar</span>
