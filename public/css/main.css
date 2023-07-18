@@ -11,10 +11,10 @@
   /*=====================
     HEADER
     ===================== */
-    #navbarNavDropdown a{
+  #navbarNavDropdown a{
   
-      font-family: poppins;
-      }
+  font-family: poppins;
+  }
   
   .navbar {
     background-color: #513483;
@@ -137,6 +137,31 @@
   .container {
   }
   
+  /*==================== 
+    PROFIL
+  ====================== */
+  .profil .container {
+    text-align: justify;
+
+  }
+/* 
+  .profil .container .title {
+    text-align: center;
+  } */
+
+  .profil .container .gambar{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+  width: 700px;
+  }
+
+  .profil .container .pembangunan{
+  text-align: justify;
+  
+  }
+
+
   
   /*==================== 
     JURUSAN

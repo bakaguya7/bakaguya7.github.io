@@ -22,19 +22,18 @@
                     <p></p>
                     <p></p>
                     <p></p>
-                    <h1 class="title">PROFIL SEKOLAH</h1>
+                    <h1 class="title text-center">PROFIL SEKOLAH</h1>
                 </div>
 
-                <section class="section dashboard">
-                    <div class="profil-sekolah text-center p-3">
-                      <h2>SEJARAH SEKOLAH</h2>
-                      <img src="img/profile sekolah.jpg" alt="" width="700px">
-                      <div class="visi p-3">
-                        <h2>Visi</h2>
+                <section class="section">
+                    <div class="profil_sekolah p-3">
+                      <img src="img/profile sekolah.jpg" class="gambar">
+                      <div class="visi p-5">
+                        <h2 class="text-center">Visi</h2>
                         <p>Terwujudnya sekolah yang mampu menghasilkan keluaran yang berakar budaya bangsa, berwawasan kebangsaan dan lingkungan hidup serta bercakrawala global</p>
                       </div>
                       <div class="misi">
-                        <h2>Misi</h2>
+                        <h2 class="text-center">Misi</h2>
                         <ol>
                           <li>Mengembangkan kemampuan akademik berstandar internasional dengan menerapkan dan mengembangkan kurikulum lokal, nasional, maupun internasional,</li>
                           <li>Mengembangkan kedisiplinan, kepemimpinan serta ketakwaan melalui berbagai kegiatan kesiswaan baik dalam organisasi siswa intrasekolah ,   ekstrakurikuler, kegiatan keagamaan, maupun kegiatan lain yang berakar budaya bangsa,</li>
@@ -44,7 +43,7 @@
                       </div>
           
                       <div>
-                        <H2>PEMBANGUNAN SEKOLAH</H2>
+                        <H2 class="text-center p-4">PEMBANGUNAN SEKOLAH</H2>
                         <p class="pembangunan">Setelah perang kemerdekaan usai, dibenahilah sistem pendidikan di sekolah menegah atas, sekolah yang sudah ada adalah SMA Bagian A ( Sastra) dan SMA bagian B (Eksakta) . Sekolah ini awalnya didirikan untuk menutupi kekurangan tenaga pamong praja di negara bagian Yogyakarta pada tahun 1950. Mengingat sejak Jakarta ditetapkan menjadi Ibu Kota RIS pada tahun 1949, maka kegiatan pemerintah pusat berangsur-angsur dipindahkan dari Yogyakarta ke Jakarta, bersama-sama dengan pegawai pamong prajanya. Untuk mengatasi kekurangan atau bahkan kekosongan pegawai ini, digelar pertemuan antara tokoh-tokoh UGM dengan para pendidik yang ada, merumuskan upaya apa yang tepat dan apa yang dapat dilaksanakan, untuk mengisi kekosongan formasi pamong praja tersebut. Dari hasil rapat itu, diputuskan untuk mendirikan sebuah sekolah.
           
                           <br>Asal mula berdirinya SMA Negeri 6 Yogyakarta tidak dapat dipisahkan dengan SMA Bagian A (Sastra) yang terletak di Jalan C.Simanjuntak 2 ( dahulu jalan Jati no 1) yang pada waktu itu dipimpin bapak R. DS Hadiwidjono. Atas prakarsa bapak R.DS Hadiwidjono bersama-sama bapak Jurjanal, Prof.Ir.Harjono, Prof.Ir.Supardi dan Prof.Suhardi, S.H didirikanlah sekolah menengah umum atas negeri bagian C ( Yuridis Ekonomis) pada tanggal 17 September 1949 dan ditunjuk selaku direkturnya bapak R.DS Haqdiwidjono yang pada saat itu juga menjabat sebagai direktur SMA bagian A (Sastra) Yogyakarta.
@@ -409,12 +408,12 @@
                                 </a>
                             </div>
                             <div class="col col-sm-4" data-aos="zoom-in" data-aos-delay="200">
-                                <a class="btn eks2" href="">
+                                <a class="btn eks2" href="/ekskul">
                                     <h2 class="card-title ">KARYA ILMIAH</h2>
                                 </a>
                             </div>  
                             <div class="col col-sm-4" data-aos="zoom-in" data-aos-delay="200">
-                                <a class="btn eks3" href="">
+                                <a class="btn eks3" href="/ekslul">
                                     <h2 class="card-title ">KESENIAN</h2>
                                 </a>
                             </div>  

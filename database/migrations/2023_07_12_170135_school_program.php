@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('judul');
             $table->string('tag');
-            $table->string('uploadgambar');
+            // $table->string('uploadgambar');
             $table->string('isikonten');
             $table->timestamps();
         });
