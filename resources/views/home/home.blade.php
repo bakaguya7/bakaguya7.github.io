@@ -190,7 +190,7 @@
                                 </div>
                                 <div class="details position-relative">
                                   <a href="/praktik" class="stretched-link">
-                                    <h3></h3>
+                                    <h3>Biologi</h3>
                                   </a>
                                 </div>
                               </div>
@@ -201,7 +201,7 @@
                                     <img src="img/praktikum/kimia.jpg" class="img-fluid" alt="">
                                   </div>
                                   <div class="details position-relative">
-                                    <a href="#" class="stretched-link">
+                                    <a href="/praktik" class="stretched-link">
                                       <h3>KIMIA</h3>
                                     </a>
                                   </div>
@@ -214,7 +214,7 @@
                                     <img src="img/praktikum/fisika.jpeg" class="img-fluid" alt="" height="100px">
                                   </div>
                                   <div class="details position-relative">
-                                    <a href="#" class="stretched-link">
+                                    <a href="/praktik" class="stretched-link">
                                       <h3>FISIKA</h3>
                                     </a>
                                   </div>
@@ -227,7 +227,7 @@
                                       <img src="img/praktikum/geo.jpg" class="img-fluid" alt="">
                                     </div>
                                     <div class="details position-relative">
-                                      <a href="#" class="stretched-link">
+                                      <a href="/praktik" class="stretched-link">
                                         <h3>GEOGRAFI</h3>
                                       </a>
                                     </div>

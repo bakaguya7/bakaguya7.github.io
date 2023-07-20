@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('ekskuls', function (Blueprint $table) {
             $table->id();
             $table->string('judul');
-            $table->string('file');
+            $table->string('image');
             $table->string('keterangan');
             $table->timestamps();
         });

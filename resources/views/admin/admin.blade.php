@@ -147,23 +147,13 @@
           </a>
           <ul id="components-nav4" class="nav-content collapse " data-bs-parent="#sidebar-nav">
             <li>
-              <a href="/visi-misi">
-                <i class="bi bi-circle"></i><span>Profil</span>
+              <a href="/ekstrakurikuler">
+                <i class="bi bi-circle"></i><span>Ekskul</span>
               </a>
             </li>
             <li>
               <a href="/praktikum">
                 <i class="bi bi-circle"></i><span>Praktikum</span>
-              </a>
-            </li>
-            <li>
-              <a href="/riwayat-gaji">
-                <i class="bi bi-circle"></i><span>Data Riwayat dan Gaji </span>
-              </a>
-            </li>
-            <li>
-              <a href="/mapel">
-                <i class="bi bi-circle"></i><span>Data Mapel</span>
               </a>
             </li>
           </ul>

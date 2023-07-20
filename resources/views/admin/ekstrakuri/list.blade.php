@@ -4,56 +4,79 @@
 @section('admin')
 <main id="main" class="main">
     <div class="pagetitle">
-        <h1>Program Praktikum</h1>
+        <h1>Program EKSKUL</h1>
             <nav>
                 <ol class="breadcrumb">
                     <!-- <li class="breadcrumb-item">ADMIN</li> -->
-                    <li class="breadcrumb-item active">Program Praktikum</li>
+                    <li class="breadcrumb-item active">Program EKSKUL</li>
                 </ol>
             </nav>
         </div>
         <!-- End Page Title -->
 
-        <div class="row">
-            <div class="container">
-     
-                <h2 class="text-center my-5">Tutorial Laravel #30 : Membuat Upload File Dengan Laravel</h2>
-                
-                <div class="col-lg-8 mx-auto my-5">	
-     
-                    @if(count($errors) > 0)
-                    <div class="alert alert-danger">
-                        @foreach ($errors->all() as $error)
-                        {{ $error }} <br/>
-                        @endforeach
+        <section class="section dashboard">
+            <div class="container bg-white rounded p-5">
+            <!-- @if(Session::has('success'))
+        <div class="alert alert-success" role="alert">
+            {{ Session::get('success') }}
+        </div>
+    @endif -->
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <h3>Program EKSKUL</h3>
+                    <a href="/ekstrakuri-create" class="btn">
+                        <i class="bi bi-plus-circle-fill svg4" style="font-size: 1.8rem;"></i>
+                    </a>
+                </div>  
+                @if(Session::has('success'))
+                    <div class="alert alert-success" role="alert">
+                        {{ Session::get('success') }}
                     </div>
-                    @endif
-     
-                    
-                    
-                    <h4 class="my-5">Data</h4>
-     
-                    <table class="table table-bordered table-striped">
-                        <thead>
-                            <tr>
-                                <th width="1%">File</th>
-                                <th>Keterangan</th>
-                                <th width="1%">OPSI</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach($gambar as $g)
-                            <tr>
-                                <td><img width="150px" src="{{ url('/data_file/'.$g->file) }}"></td>
-                                <td>{{$g->keterangan}}</td>
-                                <td><a class="btn btn-danger" href="/upload/hapus/{{ $g->id }}">HAPUS</a></td>
+                @endif
+                <table class="table table-hover">
+                    <thead class="table-primary">
+                        <tr>
+                            <th class="col-custom">NO</th>
+                            <th>JUDUL</th>
+                            <th>GAMBAR</th> 
+                            <th>KETERANGAN</th>
+                            <th>FITUR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if($Ekskul->count() > 0)
+                            @foreach($Ekskul as $praktik)
+                            <tr>                             
+                                <td class="align-middle col-custom">{{ $loop->iteration }}</td>
+                                <td class="align-middle">{{ $praktik->judul }}</td>
+                                <td class="align-middle"><img src="{{ asset('storage/' . $praktik->image) }}" alt="">
+                                    
+                                    {{-- <img width="150px" src="{{ asset('storage/' . gambar) }}" 
+                                    alt="{{ $gambar->category->judul }}" ></td> --}}
+                                <td class="align-middle">{{ $praktik->keterangan }}</td>
+                                <td class="px-0 py-0">
+                                    <div class="d-flex justify-content-center">
+                                        <a href="{{ route('ekstrakurikuler.edit', $praktik->id) }}" class="btn">
+                                            <i class="bi bi-pen-fill svg1" style="font-size: 1.3rem;"></i>
+                                        </a>
+                                        <form action="{{ route('ekstrakurikuler.destroy', $praktik->id) }}" class="" method="POST" type="button" onsubmit="return confirm('Delete?'">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="btn"><i class="bi bi-trash3-fill svg2" style="font-size: 1.3rem;"></i></button>
+                                        </form>
+                                    </div>
+                                </td>                            
                             </tr>
                             @endforeach
-                        </tbody>
-                    </table>
-                </div>
+                        @else
+                        <tr>
+                            <td colspan="5" class="text-center">DATA KOSONG</td>
+                        </tr>
+                        @endif
+                    </tbody>
+                </table>
+                
             </div>
-        </div>
+        </section>
 </main>
 
 @endsection 

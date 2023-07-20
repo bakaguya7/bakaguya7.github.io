@@ -8,7 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Ekskul extends Model
 {
     use HasFactory;
-    protected $table = "ekskuls";
-
-    protected $fillable = ['judul', 'file', 'keterangan'];
+    protected $fillable = [
+        'judul',
+        'image',
+        'keterangan',
+    ];
 }

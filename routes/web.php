@@ -17,7 +17,8 @@ use App\Http\Controllers\SchoolProgramController;
 use App\Http\Controllers\DataWaliSiswaController;
 use App\Http\Controllers\PraktikumController;
 use App\Http\Controllers\PraktikController;
-
+use App\Models\Ekskul;
+use App\Http\Controllers\EkskulController;
 
 ////////////////////////////////////////////////////////////////////////////////
 // ### DASHBOARD ADMIN
@@ -173,6 +174,25 @@ Route::get('/praktik', [PraktikController::class, 'praktikum']);
 
 Route::post('/praktikum-store', [PraktikumController::class, 'store']);
 
+
+// PROGRAM EKSTRAKURIKULER
+Route::resource('/ekstrakurikuler', EkskulController::class);
+
+Route::get('/ekstrakuri-create', function () {
+    return view('admin.ekstrakuri.create', [
+        "title" => "Create Program Ekstrakurikuler"
+    ]);
+});
+
+// Route::get('/praktik', function () {
+//     return view('programsekolah.praktikum', [
+//         "title" => "Login Siswa"
+//     ]);
+// });
+
+Route::get('/ekskul', [EkskulController::class, 'ekstrakurikuler']);
+
+Route::post('/ekskul-store', [EkskulController::class, 'store']);
 
 
 // Route::group(['middleware' => 'guest'], function () {
