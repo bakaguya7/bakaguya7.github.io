@@ -175,6 +175,20 @@ Route::get('/praktik', [PraktikController::class, 'praktikum']);
 
 Route::post('/praktikum-store', [PraktikumController::class, 'store']);
 
+// PROGRAM LOMBA
+Route::resource('/lomba', LombaController::class);
+
+Route::get('/lomba-create', function () {
+    return view('admin.lomba.create', [
+        "title" => "Create Program Lomba"
+    ]);
+});
+
+
+Route::get('/lom', [LomController::class, 'lomba']);
+
+Route::post('/lomba-store', [LombaController::class, 'store']);
+
 
 // PROGRAM EKSTRAKURIKULER
 Route::resource('/ekstrakurikuler', EkskulController::class);

@@ -157,7 +157,7 @@
               </a>
             </li>
             <li>
-              <a href="/">
+              <a href="/lomba">
                 <i class="bi bi-circle"></i><span>Lomba</span>
               </a>
             </li>
