@@ -33,11 +33,22 @@ class PraktikumController extends Controller
         // return $request->file('image')->store('post-image');
         // $validatedData = $request->validate(
         //     [
-        //         'judul' => 'required|max:255',
-        //         'gambar' => '',
+        //         'judul' => 'required',
         //         'desrkipsi' => 'required'
         //     ]
         // );
+
+        // try {
+        //     $data = [
+        //         'judul' => $validated['judul'],
+        //         'deskripsi' => $validated['deskripsi']
+        //     ];
+
+        //     if ($request->hasFile('inputImage') && $request->file('inputImage')->isValid()){
+        //         $image = $request->file('inputImage');
+        //         $extension = $image->extension();
+        //         $newFileName = Str::of()
+        //     }        }
 
         // if ($request->file('gambar')) {
         //     $validatedData['gambar'] = $request->file('image')->store('post-images');

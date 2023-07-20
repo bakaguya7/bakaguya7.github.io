@@ -195,7 +195,7 @@
                                 </div>
                               </div>
                             </div><!-- End Service Item -->
-                            {{-- <div class="col-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="col-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                                 <div class="service-item">
                                   <div class="img">
                                     <img src="img/praktikum/kimia.jpg" class="img-fluid" alt="">
@@ -233,7 +233,7 @@
                                     </div>
                                   </div>
                               </div><!-- End Service Item -->
-                   --}}
+                  
                           </div>
                     </div>
                 </div>

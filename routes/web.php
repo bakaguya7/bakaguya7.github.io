@@ -16,6 +16,7 @@ use App\Http\Controllers\Tagihan;
 use App\Http\Controllers\SchoolProgramController;
 use App\Http\Controllers\DataWaliSiswaController;
 use App\Http\Controllers\PraktikumController;
+use App\Http\Controllers\PraktikController;
 
 
 ////////////////////////////////////////////////////////////////////////////////

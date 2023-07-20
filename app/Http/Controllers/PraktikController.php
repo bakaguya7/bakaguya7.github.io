@@ -11,10 +11,14 @@ use App\Http\Requests\UpdatePraktikumRequest;
 
 class PraktikController extends Controller
 {
-    public function show_data()
+    public function praktikum()
     {
-        $Praktikum = Praktikum::orderBy('id', 'desc')->first();
-        $Praktikum = Praktikum::orderBy('created_at', 'DESC')->get();
-        return view('programsekolah.praktikum', compact('Praktikum', 'Praktikum'));
+        $Praktikum = Praktikum::orderBy('id', 'desc')->get();
+        $Data = Praktikum::orderBy('created_at', 'DESC')->get();
+        return view('programsekolah.praktikum', [
+            "title" => "Create Register Siswa",
+            "Praktikum" => $Praktikum,
+            "Data" => $Data,
+        ]);
     }
 }
