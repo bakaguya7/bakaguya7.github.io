@@ -156,6 +156,11 @@
                 <i class="bi bi-circle"></i><span>Praktikum</span>
               </a>
             </li>
+            <li>
+              <a href="/">
+                <i class="bi bi-circle"></i><span>Lomba</span>
+              </a>
+            </li>
           </ul>
         </li>
       {{-- end program blog sekolah --}}
