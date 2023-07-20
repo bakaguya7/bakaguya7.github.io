@@ -5,11 +5,11 @@
 
 <main id="main" class="main">
     <div class="pagetitle">
-        <h1>Program Sekolah</h1>
+        <h1>Program Praktikum</h1>
             <nav>
                 <ol class="breadcrumb">
                     <!-- <li class="breadcrumb-item">ADMIN</li> -->
-                    <li class="breadcrumb-item active">Program Sekolah</li>
+                    <li class="breadcrumb-item active">Program Praktikum</li>
                 </ol>
             </nav>
         </div>
@@ -17,26 +17,23 @@
 
         <section class="section dashboard">
             <div class="container bg-white rounded p-5">
-                <form action="/program-sekolah" method="POST">
+                <form action="{{ route('praktikum.update', $Praktikum->id) }}" method="POST">
                     @csrf
+                    @method('PUT')
                     <div class="row mb-3 text-dark">
                         <div class="col">
                             <label for="judul">Judul</label>
-                            <input type="text" name="judul" class="form-control" value="{{ $ProgramSekolah->judul }}" placeholder="Judul Program">
+                            <input type="text" name="judul" class="form-control" value="{{ $Praktikum->judul }}" placeholder="Judul">
                         </div>
                         <div class="col">
-                            <label for="tag">Tag</label>
-                            <input type="text" name="tag" class="form-control" value="{{ $ProgramSekolah->tag }}" placeholder="Tag">
+                            <label for="gambar">Upload Gambar</label>
+                            <input type="text" name="gambar" class="form-control" value="{{ $Praktikum->gambar }}" placeholder="Upload Gambar">
                         </div>
                     </div>
                     <div class="row mb-3 text-dark">
                         <div class="col">
-                            <label for="uploadgambar">Upload Gambar</label>
-                            <input type="date" name="uploadgambar" class="form-control" value="{{ $ProgramSekolah->uploadgambar }}" placeholder="Upload Gambar">
-                        </div>
-                        <div class="col">
-                            <label for="isikonten">Isi Konten</label>
-                            <input type="text" name="isikonten" class="form-control" value="{{ $ProgramSekolah->isikonten }}" placeholder="Isi Konten">
+                            <label for="deskripsi">Deskripsi</label>
+                            <input type="text" name="deskripsi" class="form-control" value="{{ $Praktikum->deskripsi }}" placeholder="Deskripsi">
                         </div>
                     </div>
                     <div class="row">

@@ -5,7 +5,6 @@ use App\Http\Controllers\RegisterSiswaController;
 use App\Http\Controllers\RegisterGuruController;
 use App\Http\Controllers\DataSiswaController;
 use App\Http\Controllers\DataGuruController;
-use App\Http\Controllers\ProgramSekolahController;
 use App\Http\Controllers\TagihanSiswaController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\MateriController;
@@ -16,6 +15,7 @@ use App\Http\Controllers\JadwalMengajarController;
 use App\Http\Controllers\Tagihan;
 use App\Http\Controllers\SchoolProgramController;
 use App\Http\Controllers\DataWaliSiswaController;
+use App\Http\Controllers\PraktikumController;
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -85,7 +85,7 @@ Route::get('/data-siswa-create', function () {
 Route::post('/data-siswa-store', [DataSiswaController::class, 'store']);
 
 
-// Program Sekolah
+// School Program
 Route::resource('/school-program', SchoolProgramController::class);
 
 Route::get('/school-program-create', function () {
@@ -151,6 +151,29 @@ Route::get('/login-siswa', function () {
         "title" => "Login Siswa"
     ]);
 });
+
+
+// PROGRAM PRAKTIKUM
+Route::resource('/praktikum', PraktikumController::class);
+
+Route::get('/praktikum-create', function () {
+    return view('admin.praktikum.create', [
+        "title" => "Create Program Praktikum"
+    ]);
+});
+
+// Route::get('/praktik', function () {
+//     return view('programsekolah.praktikum', [
+//         "title" => "Login Siswa"
+//     ]);
+// });
+
+Route::get('/praktik', [PraktikController::class, 'praktikum']);
+
+Route::post('/praktikum-store', [PraktikumController::class, 'store']);
+
+
+
 // Route::group(['middleware' => 'guest'], function () {
 //     Route::get('/login-siswa', 'App\Http\Controllers\RegisterSiswaController@login')->name('login-siswa');
 //     Route::post('/login-siswa', 'App\Http\Controllers\RegisterSiswaController@loginpost')->name('login-siswa');

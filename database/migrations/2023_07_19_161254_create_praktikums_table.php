@@ -11,8 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('school_programs', function (Blueprint $table) {
-            $table->dropColumn('uploadgambar');
+        Schema::create('praktikums', function (Blueprint $table) {
+            $table->id();
+            $table->string('judul');
+            $table->string('image')->nullable();
+            $table->text('deskripsi');
+            $table->timestamps();
         });
     }
 
@@ -21,8 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('school_programs', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('praktikums');
     }
 };

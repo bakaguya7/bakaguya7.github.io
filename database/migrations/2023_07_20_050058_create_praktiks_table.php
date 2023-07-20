@@ -11,12 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('school_programs', function (Blueprint $table) {
+        Schema::create('praktiks', function (Blueprint $table) {
             $table->id();
-            $table->string('judul');
-            $table->string('tag');
-            // $table->string('uploadgambar');
-            $table->string('isikonten');
             $table->timestamps();
         });
     }
@@ -26,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('praktiks');
     }
 };

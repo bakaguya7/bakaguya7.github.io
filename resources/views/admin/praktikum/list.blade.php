@@ -4,11 +4,11 @@
 @section('admin')
 <main id="main" class="main">
     <div class="pagetitle">
-        <h1>Program Sekolah</h1>
+        <h1>Program Praktikum</h1>
             <nav>
                 <ol class="breadcrumb">
                     <!-- <li class="breadcrumb-item">ADMIN</li> -->
-                    <li class="breadcrumb-item active">Program Sekolah</li>
+                    <li class="breadcrumb-item active">Program Praktikum</li>
                 </ol>
             </nav>
         </div>
@@ -22,8 +22,8 @@
         </div>
     @endif -->
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                    <h3>Program Sekolah</h3>
-                    <a href="/program-sekolah-create" class="btn">
+                    <h3>Program Praktikum</h3>
+                    <a href="/praktikum-create" class="btn">
                         <i class="bi bi-plus-circle-fill svg4" style="font-size: 1.8rem;"></i>
                     </a>
                 </div>  
@@ -37,33 +37,34 @@
                         <tr>
                             <th class="col-custom">NO</th>
                             <th>JUDUL</th>
-                            <th>TAG</th>
-                            <th>UPLOAD GAMBAR</th> 
-                            <th>ISI KONTEN</th>
+                            <th>GAMBAR</th> 
+                            <th>DESKRIPSI</th>
                             <th>FITUR</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @if($ProgramSekolah->count() > 0)
-                            @foreach($ProgramSekolah as $program)
-                            <tr>
+                        @if($Praktikum->count() > 0)
+                            @foreach($Praktikum as $praktik)
+                            <tr>                             
                                 <td class="align-middle col-custom">{{ $loop->iteration }}</td>
-                                <td class="align-middle">{{ $program->judul }}</td>
-                                <td class="align-middle">{{ $program->tag }}</td>
-                                <td class="align-middle">{{ $program->uploadgambar }}</td>
-                                <td class="align-middle">{{ $program->isikonten }}</td>
+                                <td class="align-middle">{{ $praktik->judul }}</td>
+                                <td class="align-middle"><img src="{{ asset('storage/' . $praktik->image) }}" alt="">
+                                    
+                                    {{-- <img width="150px" src="{{ asset('storage/' . gambar) }}" 
+                                    alt="{{ $gambar->category->judul }}" ></td> --}}
+                                <td class="align-middle">{{ $praktik->deskripsi }}</td>
                                 <td class="px-0 py-0">
                                     <div class="d-flex justify-content-center">
-                                        <a href="{{ route('program-sekolah.edit', $program->id) }}" class="btn">
+                                        <a href="{{ route('praktikum.edit', $praktik->id) }}" class="btn">
                                             <i class="bi bi-pen-fill svg1" style="font-size: 1.3rem;"></i>
                                         </a>
-                                        <form action="{{ route('program-sekolah.destroy', $program->id) }}" class="" method="POST" type="button" onsubmit="return confirm('Delete?'">
+                                        <form action="{{ route('praktikum.destroy', $praktik->id) }}" class="" method="POST" type="button" onsubmit="return confirm('Delete?'">
                                             @csrf
                                             @method('DELETE')
                                             <button class="btn"><i class="bi bi-trash3-fill svg2" style="font-size: 1.3rem;"></i></button>
                                         </form>
                                     </div>
-                                </td>
+                                </td>                            
                             </tr>
                             @endforeach
                         @else

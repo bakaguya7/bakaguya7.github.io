@@ -38,7 +38,7 @@
                             <th class="col-custom">NO</th>
                             <th>JUDUL</th>
                             <th>TAG</th>
-                            <th>UPLOAD GAMBAR</th> 
+                            {{-- <th>UPLOAD GAMBAR</th>  --}}
                             <th>ISI KONTEN</th>
                             <th>FITUR</th>
                         </tr>
@@ -50,7 +50,7 @@
                                 <td class="align-middle col-custom">{{ $loop->iteration }}</td>
                                 <td class="align-middle">{{ $program->judul }}</td>
                                 <td class="align-middle">{{ $program->tag }}</td>
-                                <td class="align-middle">{{ $program->uploadgambar }}</td>
+                                {{-- <td class="align-middle">{{ $program->uploadgambar }}</td> --}}
                                 <td class="align-middle">{{ $program->isikonten }}</td>
                                 <td class="px-0 py-0">
                                     <div class="d-flex justify-content-center">

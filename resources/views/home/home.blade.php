@@ -24,11 +24,8 @@
                     <p></p>
                     <h1 class="title text-center">PROFIL SEKOLAH</h1>
                 </div>
-
                 <section class="section">
-                    <div class="profil_sekolah p-3">
-                      <img src="img/profile sekolah.jpg" class="gambar">
-                      <div class="visi p-5">
+                      <div class="visi">
                         <h2 class="text-center">Visi</h2>
                         <p>Terwujudnya sekolah yang mampu menghasilkan keluaran yang berakar budaya bangsa, berwawasan kebangsaan dan lingkungan hidup serta bercakrawala global</p>
                       </div>
@@ -42,7 +39,7 @@
                         </ol>
                       </div>
           
-                      <div>
+                      {{-- <div>
                         <H2 class="text-center p-4">PEMBANGUNAN SEKOLAH</H2>
                         <p class="pembangunan">Setelah perang kemerdekaan usai, dibenahilah sistem pendidikan di sekolah menegah atas, sekolah yang sudah ada adalah SMA Bagian A ( Sastra) dan SMA bagian B (Eksakta) . Sekolah ini awalnya didirikan untuk menutupi kekurangan tenaga pamong praja di negara bagian Yogyakarta pada tahun 1950. Mengingat sejak Jakarta ditetapkan menjadi Ibu Kota RIS pada tahun 1949, maka kegiatan pemerintah pusat berangsur-angsur dipindahkan dari Yogyakarta ke Jakarta, bersama-sama dengan pegawai pamong prajanya. Untuk mengatasi kekurangan atau bahkan kekosongan pegawai ini, digelar pertemuan antara tokoh-tokoh UGM dengan para pendidik yang ada, merumuskan upaya apa yang tepat dan apa yang dapat dilaksanakan, untuk mengisi kekosongan formasi pamong praja tersebut. Dari hasil rapat itu, diputuskan untuk mendirikan sebuah sekolah.
           
@@ -51,7 +48,7 @@
           
                         Adanya kedua jenis sekolah menengah atas tersebut belum dapat memenuhi kebutuhan masyarakat, karena itu dibuka jurusan baru yang mempunyai dasar sosial ekonomi yuridis yang kemudian diberi nama SMA bagian C.
                         </p>
-                      </div>
+                      </div> --}}
                     </div>
                 </section>
             </div>
@@ -186,21 +183,19 @@
                         <h1 class="title">PRAKTIKUM</h1>
 
                         <div class="row g-5 g-sm-1">
-
                             <div class="col-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                               <div class="service-item">
                                 <div class="img">
                                   <img src="img/praktikum/biologi.jpg" class="img-fluid" alt="">
                                 </div>
                                 <div class="details position-relative">
-                                  <a href="#" class="stretched-link">
-                                    <h3>BIOLOGI</h3>
+                                  <a href="/praktik" class="stretched-link">
+                                    <h3></h3>
                                   </a>
                                 </div>
                               </div>
                             </div><!-- End Service Item -->
-                  
-                            <div class="col-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                            {{-- <div class="col-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                                 <div class="service-item">
                                   <div class="img">
                                     <img src="img/praktikum/kimia.jpg" class="img-fluid" alt="">
@@ -238,7 +233,7 @@
                                     </div>
                                   </div>
                               </div><!-- End Service Item -->
-                  
+                   --}}
                           </div>
                     </div>
                 </div>

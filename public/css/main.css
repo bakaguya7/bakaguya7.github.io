@@ -140,8 +140,30 @@
   /*==================== 
     PROFIL
   ====================== */
+.profil {
+  position: relative;
+
+
+}
+
+.profil:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 30%;
+  background-image: url("/img/sma_bck.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
   .profil .container {
     text-align: justify;
+    position: relative;
 
   }
 /* 
