@@ -16,7 +16,7 @@
         </div>
     <!-- END TITLE -->
     <!-- ======= PROFIL SEKOLAH ======= -->
-        <section id="profil" class="profil p-2">
+        <section id="profil" class="profil">
             <div class="container p-5">
                 <div class="section-header p-4">
                     <p></p>
@@ -408,37 +408,37 @@
                                 </a>
                             </div>  
                             <div class="col col-sm-4" data-aos="zoom-in" data-aos-delay="200">
-                                <a class="btn eks3" href="/ekslul">
+                                <a class="btn eks3" href="/ekskul">
                                     <h2 class="card-title ">KESENIAN</h2>
                                 </a>
                             </div>  
                             <div class="col col-sm-4" data-aos="zoom-in" data-aos-delay="200">
-                                <a class="btn eks4" href="">
+                                <a class="btn eks4" href="/ekskul">
                                     <h2 class="card-title">BASKET</h2>
                                 </a>
                             </div>
                             <div class="col col-sm-4" data-aos="zoom-in" data-aos-delay="200">
-                                <a class="btn eks5" href="">
+                                <a class="btn eks5" href="/ekskul">
                                     <h2 class="card-title">SEPAK BOLA</h2>
                                 </a>
                             </div>  
                             <div class="col col-sm-4" data-aos="zoom-in" data-aos-delay="200">
-                                <a class="btn eks6" href="">
+                                <a class="btn eks6" href="/ekskul">
                                     <h2 class="card-title">TENIS MEJA</h2>
                                 </a>
                             </div> 
                             <div class="col col-sm-4" data-aos="zoom-in" data-aos-delay="200">
-                                <a class="btn eks7" href="">
+                                <a class="btn eks7" href="/ekskul">
                                     <h2 class="card-title">BULU TANGKIS</h2>
                                 </a>
                             </div>
                             <div class="col col-sm-4" data-aos="zoom-in" data-aos-delay="200">
-                                <a class="btn eks8" href="">
+                                <a class="btn eks8" href="/ekskul">
                                     <h2 class="card-title">TATA RIAS</h2>
                                 </a>
                             </div>  
                             <div class="col col-sm-4" data-aos="zoom-in" data-aos-delay="200">
-                                <a class="btn eks9" href="">
+                                <a class="btn eks9" href="/ekskul">
                                     <h2 class="card-title">KEAGAMAAN</h2>
                                 </a>
                             </div>  
