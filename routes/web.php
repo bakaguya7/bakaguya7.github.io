@@ -19,6 +19,7 @@ use App\Http\Controllers\PraktikumController;
 use App\Http\Controllers\PraktikController;
 use App\Models\Ekskul;
 use App\Http\Controllers\EkskulController;
+use App\Http\Controllers\EkstraController;
 
 ////////////////////////////////////////////////////////////////////////////////
 // ### DASHBOARD ADMIN
@@ -190,7 +191,7 @@ Route::get('/ekstrakuri-create', function () {
 //     ]);
 // });
 
-Route::get('/ekskul', [EkskulController::class, 'ekstrakurikuler']);
+Route::get('/ekskul', [EkstraController::class, 'ekskul']);
 
 Route::post('/ekskul-store', [EkskulController::class, 'store']);
 
@@ -456,11 +457,11 @@ Route::get('/', function () {
 });
 
 // Route EKSTRAKURIKULER
-Route::get('/ekskul', function () {
-    return view('home.ekstra', [
-        "title" => "EKSTRAKURIKULER"
-    ]);
-});
+// Route::get('/ekskul', function () {
+//     return view('home.ekstra', [
+//         "title" => "EKSTRAKURIKULER"
+//     ]);
+// });
 
 //############################################################
 // Route Dashboard
